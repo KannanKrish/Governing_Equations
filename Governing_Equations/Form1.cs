@@ -18,11 +18,22 @@ namespace Governing_Equations
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double[] result=Calculations.MxCalculation(290.9, 17.19, 1.66, 0.425, 20, 30,1);
-            for (int i = 0; i < result.Length; i++)
-            {
-                MessageBox.Show(result[i].ToString());
-            }
+            List<Mx_Value> Mx_Result = Calculations.MxCalculation(290.9, 17.19, 1.66, 0.425, 20, 30, 1);
+            List<Mmin_Value> Mmin_Result = Calculations.MminCalculation(290.9, 17.19, 1.66, 0.425, 90, 140, 1);
+            List<Tb_Value> Tb_Result = Calculations.TbCalculation(20, 30, 1, 1, 5, 1);
+            List<Td_Value> Td_Result = Calculations.TdCalculation(20,21,1,90,91,1,Tb_Result);
+            dataGridView1.AutoGenerateColumns = true;
+            dataGridView1.DataSource = Mx_Result;
+            dataGridView1.Refresh();
+            dataGridView2.AutoGenerateColumns = true;
+            dataGridView2.DataSource = Mmin_Result;
+            dataGridView2.Refresh();
+            dataGridView3.AutoGenerateColumns = true;
+            dataGridView3.DataSource = Tb_Result;
+            dataGridView3.Refresh();
+            dataGridView4.AutoGenerateColumns = true;
+            dataGridView4.DataSource = Td_Result;
+            dataGridView4.Refresh();
         }
     }
 }
