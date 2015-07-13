@@ -50,4 +50,11 @@ namespace Governing_Equations
         public double Tc_Value { get; set; }
         public double Td_Result { get; set; }
     }
+    public class H_Value
+    {
+        public double Tc_Value { get; set; }
+        public double Tsat_Value { get; set; }
+        public double Mx_Value { get; set; }
+        public double H_Result { get; set; }
+    }
 }

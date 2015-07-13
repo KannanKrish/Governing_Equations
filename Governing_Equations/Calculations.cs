@@ -55,5 +55,34 @@ namespace Governing_Equations
             }
             return Td_Result;
         }
+        public static List<H_Value> HCalculation(double R, double CPAd, List<Mx_Value> MxResult, double CPr, double starting_Tc, double ending_Tc, double Tc_Variation, double starting_Tsat, double ending_Tsat, double Tsat_Variation)
+        {
+            List<H_Value> H_Result = new List<H_Value>();
+            for (double i = starting_Tc; i <= ending_Tc; i += Tc_Variation)
+            {
+                for (double j = starting_Tsat; j <= ending_Tsat; j += Tsat_Variation)
+                {
+                    foreach (Mx_Value mxResult in MxResult)
+                    {
+                        H_Result.Add(new H_Value { Tc_Value = i, Tsat_Value = j, Mx_Value = mxResult.Mx_Result, H_Result = Math.Round(R * (CPAd + (mxResult.Mx_Result * CPr)) * (i / j), Parameters.Round_Decimal) });
+                    }
+                }
+            }
+            return H_Result;
+        }
+        public static double Integration(double lowerLimit, double upperLimit, double innerValue)
+        {
+            return (innerValue * upperLimit) - (innerValue * lowerLimit);
+        }
+        public static List<Qab_Value> QabCalculation(double CPAd, List<Mx_Value> MxResult, double CPr, double starting_Ta, double ending_Ta, double Ta_Variation, List<Tb_Value> Tb_Result)
+        {
+            List<Qab_Value> Qab_Result = new List<Qab_Value>();
+            return Qab_Result;
+        }
+        public static List<Qbc_Value> QbcCalculation(double CPAd, List<Mx_Value> MxResult, double CPr, double starting_Ta, double ending_Ta, double Ta_Variation, List<Tb_Value> Tb_Result,)
+        {
+            List<Qbc_Value> Qbc_Result = new List<Qbc_Value>();
+            return Qbc_Result;
+        }
     }
 }
