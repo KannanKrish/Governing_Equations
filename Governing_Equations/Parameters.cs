@@ -57,4 +57,20 @@ namespace Governing_Equations
         public double Mx_Value { get; set; }
         public double H_Result { get; set; }
     }
+    public class Qab_Value
+    {
+        public double Ta_Value { get; set; }
+        public double Tb_Value { get; set; }
+        public double Mx_Value { get; set; }
+        public double Qab_Result { get; set; }
+    }
+    public class Qbc_Value
+    {
+        public double Tb_Value { get; set; }
+        public double Tc_Value { get; set; }
+        public double Mx_Value { get; set; }
+        public double Mmin_Value { get; set; }
+        public double H_Value { get; set; }
+        public double Qbc_Result { get; set; }
+    }
 }

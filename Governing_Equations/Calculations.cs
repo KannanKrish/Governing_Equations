@@ -13,7 +13,11 @@ namespace Governing_Equations
             for (double i = starting_Ta; i <= ending_Ta; i += variation_Ta)
             {
                 double temp = -K * Math.Pow((((i + 273) / Tsat) - 1), n);
-                MxValues.Add(new Mx_Value { Ta_Value = i, Mx_Result = Math.Round(M0 * Math.Exp(temp), Parameters.Round_Decimal) });
+                MxValues.Add(new Mx_Value
+                {
+                    Ta_Value = i,
+                    Mx_Result = Math.Round(M0 * Math.Exp(temp), Parameters.Round_Decimal)
+                });
             }
             return MxValues;
         }
@@ -23,7 +27,11 @@ namespace Governing_Equations
             for (double i = starting_Tc; i <= ending_Tc; i += variation_Tc)
             {
                 double temp = -K * Math.Pow((((i + 273) / Tsat) - 1), n);
-                MminValues.Add(new Mmin_Value { Tc_Value = i, Mmin_Result = Math.Round(M0 * Math.Exp(temp), Parameters.Round_Decimal) });
+                MminValues.Add(new Mmin_Value
+                {
+                    Tc_Value = i,
+                    Mmin_Result = Math.Round(M0 * Math.Exp(temp), Parameters.Round_Decimal)
+                });
             }
             return MminValues;
         }
@@ -35,7 +43,12 @@ namespace Governing_Equations
                 for (double j = starting_Tevap; j <= ending_Tevap; j += variation_Tevap)
                 {
 
-                    Tb_result.Add(new Tb_Value { Ta_Value = i, Tevap_Value = j, Tb_Result = Math.Round((i * i) / j, Parameters.Round_Decimal) });
+                    Tb_result.Add(new Tb_Value
+                    {
+                        Ta_Value = i,
+                        Tevap_Value = j,
+                        Tb_Result = Math.Round((i * i) / j, Parameters.Round_Decimal)
+                    });
                 }
             }
             return Tb_result;
@@ -49,7 +62,13 @@ namespace Governing_Equations
                 {
                     for (double j = starting_Tc; j <= ending_Tc; j += variation_Tc)
                     {
-                        Td_Result.Add(new Td_Value { Ta_Value = i, Tb_Value = Tb_value.Tb_Result, Tc_Value = j, Td_Result = Math.Round((i * Tb_value.Tb_Result) / j, Parameters.Round_Decimal) });
+                        Td_Result.Add(new Td_Value
+                        {
+                            Ta_Value = i,
+                            Tb_Value = Tb_value.Tb_Result,
+                            Tc_Value = j,
+                            Td_Result = Math.Round((i * Tb_value.Tb_Result) / j, Parameters.Round_Decimal)
+                        });
                     }
                 }
             }
@@ -64,7 +83,13 @@ namespace Governing_Equations
                 {
                     foreach (Mx_Value mxResult in MxResult)
                     {
-                        H_Result.Add(new H_Value { Tc_Value = i, Tsat_Value = j, Mx_Value = mxResult.Mx_Result, H_Result = Math.Round(R * (CPAd + (mxResult.Mx_Result * CPr)) * (i / j), Parameters.Round_Decimal) });
+                        H_Result.Add(new H_Value
+                        {
+                            Tc_Value = i,
+                            Tsat_Value = j,
+                            Mx_Value = mxResult.Mx_Result,
+                            H_Result = Math.Round(R * (CPAd + (mxResult.Mx_Result * CPr)) * (i / j), Parameters.Round_Decimal)
+                        });
                     }
                 }
             }
@@ -77,11 +102,51 @@ namespace Governing_Equations
         public static List<Qab_Value> QabCalculation(double CPAd, List<Mx_Value> MxResult, double CPr, double starting_Ta, double ending_Ta, double Ta_Variation, List<Tb_Value> Tb_Result)
         {
             List<Qab_Value> Qab_Result = new List<Qab_Value>();
+            foreach (Mx_Value mxResult in MxResult)
+            {
+                foreach (Tb_Value tbValue in Tb_Result)
+                {
+                    for (double i = starting_Ta; i <= ending_Ta; i += Ta_Variation)
+                    {
+                        Qab_Result.Add(new Qab_Value
+                        {
+                            Ta_Value = i,
+                            Tb_Value = tbValue.Tb_Result,
+                            Mx_Value = mxResult.Mx_Result,
+                            Qab_Result = Calculations.Integration(i, tbValue.Tb_Result, CPAd + (mxResult.Mx_Result * CPr))
+                        });
+                    }
+                }
+            }
             return Qab_Result;
         }
-        public static List<Qbc_Value> QbcCalculation(double CPAd, List<Mx_Value> MxResult, double CPr, double starting_Ta, double ending_Ta, double Ta_Variation, List<Tb_Value> Tb_Result,)
+        public static List<Qbc_Value> QbcCalculation(double CPAd, List<Mx_Value> MxResult, double CPr, double starting_Tc, double ending_Tc, double Tc_Variation, List<Tb_Value> Tb_Result, List<Mmin_Value> MminResult, List<H_Value> HResult)
         {
             List<Qbc_Value> Qbc_Result = new List<Qbc_Value>();
+            foreach (Mx_Value mxResult in MxResult)
+            {
+                foreach (Tb_Value tbValue in Tb_Result)
+                {
+                    foreach (Mmin_Value mminValue in MminResult)
+                    {
+                        foreach (H_Value hResult in HResult)
+                        {
+                            for (double i = starting_Tc; i <= ending_Tc; i += Tc_Variation)
+                            {
+                                Qbc_Result.Add(new Qbc_Value
+                                {
+                                    Tc_Value = i,
+                                    Tb_Value = tbValue.Tb_Result,
+                                    Mx_Value = mxResult.Mx_Result,
+                                    H_Value = hResult.H_Result,
+                                    Mmin_Value = mminValue.Mmin_Result,
+                                    Qbc_Result = Calculations.Integration(tbValue.Tb_Result, i, CPAd + mxResult.Mx_Result * CPr) + Calculations.Integration(mminValue.Mmin_Result, mxResult.Mx_Result, hResult.H_Result)
+                                });
+                            }
+                        }
+                    }
+                }
+            }
             return Qbc_Result;
         }
     }

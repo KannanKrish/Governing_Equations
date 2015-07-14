@@ -18,8 +18,7 @@ namespace Governing_Equations
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Test_Function();
-            MessageBox.Show(Calculations.Integration(4, 6, 28).ToString());
+            Test_Function();
         }
         private void Test_Function()
         {
