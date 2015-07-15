@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Xml.Serialization;
 
 namespace Governing_Equations
 {
@@ -18,14 +20,20 @@ namespace Governing_Equations
         public static double Tc_Starting { get; set; }
         public static double Tc_Ending { get; set; }
         public static double Tc_Variance { get; set; }
-        public static double Tb_Values { get; set; }
-        public static double Td_Values { get; set; }
-        public static double H_Values { get; set; }
         public static double CPAd_Values { get; set; }
         public static double CPr_Values { get; set; }
         public static double R_Values { get; set; }
-        public static double Qab_Values { get; set; }
-        public static double Qbc_Values { get; set; }
+        public static Parameters readParameters(string filePath)
+        {
+            XmlSerializer xmlSerializer = new XmlSerializer(typeof(Parameters));
+            Parameters parameters = (Parameters)xmlSerializer.Deserialize(new StreamReader(filePath));
+            return parameters;
+        }
+        public static void writeParameters(string filePath,Parameters parameters)
+        {
+            XmlSerializer xmlSerializer = new XmlSerializer(typeof(Parameters));
+            xmlSerializer.Serialize(new StreamWriter(filePath),parameters);
+        }
     }
     public class Mmin_Value
     {
