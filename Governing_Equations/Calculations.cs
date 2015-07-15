@@ -113,7 +113,7 @@ namespace Governing_Equations
                             Ta_Value = i,
                             Tb_Value = tbValue.Tb_Result,
                             Mx_Value = mxResult.Mx_Result,
-                            Qab_Result = Calculations.Integration(i, tbValue.Tb_Result, CPAd + (mxResult.Mx_Result * CPr))
+                            Qab_Result = Math.Round(Calculations.Integration(i, tbValue.Tb_Result, CPAd + (mxResult.Mx_Result * CPr)), Parameters.Round_Decimal)
                         });
                     }
                 }

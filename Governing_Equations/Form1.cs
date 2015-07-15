@@ -27,6 +27,8 @@ namespace Governing_Equations
             List<Tb_Value> Tb_Result = Calculations.TbCalculation(20, 30, 1, 1, 5, 1);
             List<Td_Value> Td_Result = Calculations.TdCalculation(20, 21, 1, 90, 91, 1, Tb_Result);
             List<H_Value> H_Result = Calculations.HCalculation(0.287, 0.711, Mx_Result, 2.534, 20, 30, 1, 1, 5, 1);
+            List<Qab_Value> Qab_Result = Calculations.QabCalculation(0.711, Mx_Result, 2.534, 20, 30, 1, Tb_Result);
+            //List<Qbc_Value> Qbc_Result = Calculations.QbcCalculation(0.711, Mx_Result, 2.534, 90, 120, 1, Tb_Result, Mmin_Result, H_Result);
             dataGridView1.AutoGenerateColumns = true;
             dataGridView1.DataSource = Mx_Result;
             dataGridView1.Refresh();
@@ -42,6 +44,12 @@ namespace Governing_Equations
             dataGridView5.AutoGenerateColumns = true;
             dataGridView5.DataSource = H_Result;
             dataGridView5.Refresh();
+            dataGridView6.AutoGenerateColumns = true;
+            dataGridView6.DataSource = Qab_Result;
+            dataGridView6.Refresh();
+            //dataGridView7.AutoGenerateColumns = true;
+            //dataGridView7.DataSource = Qbc_Result;
+            //dataGridView7.Refresh();
         }
     }
 }
