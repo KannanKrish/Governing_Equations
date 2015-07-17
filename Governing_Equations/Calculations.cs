@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 
@@ -74,23 +75,19 @@ namespace Governing_Equations
             }
             return Td_Result;
         }
-        public static List<H_Value> HCalculation(double R, double CPAd, List<Mx_Value> MxResult, double CPr, double starting_Tc, double ending_Tc, double Tc_Variation, double starting_Tsat, double ending_Tsat, double Tsat_Variation)
+        public static List<H_Value> HCalculation(double R, double CPAd, List<Mx_Value> MxResult, double CPr, double starting_Tc, double ending_Tc, double Tc_Variation, double Tsat)
         {
             List<H_Value> H_Result = new List<H_Value>();
             for (double i = starting_Tc; i <= ending_Tc; i += Tc_Variation)
             {
-                for (double j = starting_Tsat; j <= ending_Tsat; j += Tsat_Variation)
+                foreach (Mx_Value mxResult in MxResult)
                 {
-                    foreach (Mx_Value mxResult in MxResult)
+                    H_Result.Add(new H_Value
                     {
-                        H_Result.Add(new H_Value
-                        {
-                            Tc_Value = i,
-                            Tsat_Value = j,
-                            Mx_Value = mxResult.Mx_Result,
-                            H_Result = Math.Round(R * (CPAd + (mxResult.Mx_Result * CPr)) * (i / j), Parameters.Round_Decimal)
-                        });
-                    }
+                        Tc_Value = i,
+                        Mx_Value = mxResult.Mx_Result,
+                        H_Result = Math.Round(R * (CPAd + (mxResult.Mx_Result * CPr)) * (i / Tsat), Parameters.Round_Decimal)
+                    });
                 }
             }
             return H_Result;
@@ -123,6 +120,7 @@ namespace Governing_Equations
         public static List<Qbc_Value> QbcCalculation(double CPAd, List<Mx_Value> MxResult, double CPr, double starting_Tc, double ending_Tc, double Tc_Variation, List<Tb_Value> Tb_Result, List<Mmin_Value> MminResult, List<H_Value> HResult)
         {
             List<Qbc_Value> Qbc_Result = new List<Qbc_Value>();
+            StreamWriter writer = new StreamWriter("Values.txt");
             foreach (Mx_Value mxResult in MxResult)
             {
                 foreach (Tb_Value tbValue in Tb_Result)
@@ -133,20 +131,23 @@ namespace Governing_Equations
                         {
                             for (double i = starting_Tc; i <= ending_Tc; i += Tc_Variation)
                             {
-                                Qbc_Result.Add(new Qbc_Value
-                                {
-                                    Tc_Value = i,
-                                    Tb_Value = tbValue.Tb_Result,
-                                    Mx_Value = mxResult.Mx_Result,
-                                    H_Value = hResult.H_Result,
-                                    Mmin_Value = mminValue.Mmin_Result,
-                                    Qbc_Result = Calculations.Integration(tbValue.Tb_Result, i, CPAd + mxResult.Mx_Result * CPr) + Calculations.Integration(mminValue.Mmin_Result, mxResult.Mx_Result, hResult.H_Result)
-                                });
+                                string values = i.ToString() + " " + tbValue.Tb_Result.ToString() + " " + mxResult.Mx_Result.ToString() + " " + hResult.H_Result.ToString() + " " + mminValue.Mmin_Result.ToString() + " " + Math.Round(Calculations.Integration(tbValue.Tb_Result, i, CPAd + mxResult.Mx_Result * CPr) + Calculations.Integration(mminValue.Mmin_Result, mxResult.Mx_Result, hResult.H_Result), Parameters.Round_Decimal);
+                                writer.WriteLine(values);
+                                //Qbc_Result.Add(new Qbc_Value
+                                //{
+                                //    Tc_Value = i,
+                                //    Tb_Value = tbValue.Tb_Result,
+                                //    Mx_Value = mxResult.Mx_Result,
+                                //    H_Value = hResult.H_Result,
+                                //    Mmin_Value = mminValue.Mmin_Result,
+                                //    Qbc_Result = Calculations.Integration(tbValue.Tb_Result, i, CPAd + mxResult.Mx_Result * CPr) + Calculations.Integration(mminValue.Mmin_Result, mxResult.Mx_Result, hResult.H_Result)
+                                //});
                             }
                         }
                     }
                 }
             }
+            writer.Close();
             return Qbc_Result;
         }
     }

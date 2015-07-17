@@ -9,30 +9,34 @@ namespace Governing_Equations
 {
     public class Parameters
     {
+        [XmlIgnore]
         public static int Round_Decimal = 4;
-        public static double Tsat { get; set; }
-        public static double K_value { get; set; }
-        public static double n_value { get; set; }
-        public static double M0_value { get; set; }
-        public static double Ta_Starting { get; set; }
-        public static double Ta_Ending { get; set; }
-        public static double Ta_Variance { get; set; }
-        public static double Tc_Starting { get; set; }
-        public static double Tc_Ending { get; set; }
-        public static double Tc_Variance { get; set; }
-        public static double CPAd_Values { get; set; }
-        public static double CPr_Values { get; set; }
-        public static double R_Values { get; set; }
+        public double Tsat { get; set; }
+        public double K_value { get; set; }
+        public double n_value { get; set; }
+        public double M0_value { get; set; }
+        public double Ta_Starting { get; set; }
+        public double Ta_Ending { get; set; }
+        public double Ta_Variance { get; set; }
+        public double Tc_Starting { get; set; }
+        public double Tc_Ending { get; set; }
+        public double Tc_Variance { get; set; }
+        public double Tevap_Starting { get; set; }
+        public double Tevap_Ending { get; set; }
+        public double Tevap_Variance { get; set; }
+        public double CPAd_Values { get; set; }
+        public double CPr_Values { get; set; }
+        public double R_Values { get; set; }
         public static Parameters readParameters(string filePath)
         {
             XmlSerializer xmlSerializer = new XmlSerializer(typeof(Parameters));
             Parameters parameters = (Parameters)xmlSerializer.Deserialize(new StreamReader(filePath));
             return parameters;
         }
-        public static void writeParameters(string filePath,Parameters parameters)
+        public static void writeParameters(string filePath, Parameters parameters)
         {
             XmlSerializer xmlSerializer = new XmlSerializer(typeof(Parameters));
-            xmlSerializer.Serialize(new StreamWriter(filePath),parameters);
+            xmlSerializer.Serialize(new StreamWriter(filePath), parameters);
         }
     }
     public class Mmin_Value
@@ -60,8 +64,7 @@ namespace Governing_Equations
     }
     public class H_Value
     {
-        public double Tc_Value { get; set; }
-        public double Tsat_Value { get; set; }
+        public double Tc_Value { get; set; }        
         public double Mx_Value { get; set; }
         public double H_Result { get; set; }
     }
