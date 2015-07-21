@@ -13,7 +13,7 @@ namespace Governing_Equations
             List<Mx_Value> MxValues = new List<Mx_Value>();
             for (double i = starting_Ta; i <= ending_Ta; i += variation_Ta)
             {
-                double temp = -K * Math.Pow((((i + 273) / Tsat) - 1), n);
+                double temp = -K * Math.Pow(((i / Tsat) - 1), n);
                 MxValues.Add(new Mx_Value
                 {
                     Ta_Value = i,
@@ -27,7 +27,7 @@ namespace Governing_Equations
             List<Mmin_Value> MminValues = new List<Mmin_Value>();
             for (double i = starting_Tc; i <= ending_Tc; i += variation_Tc)
             {
-                double temp = -K * Math.Pow((((i + 273) / Tsat) - 1), n);
+                double temp = -K * Math.Pow(((i / Tsat) - 1), n);
                 MminValues.Add(new Mmin_Value
                 {
                     Tc_Value = i,
@@ -120,34 +120,30 @@ namespace Governing_Equations
         public static List<Qbc_Value> QbcCalculation(double CPAd, List<Mx_Value> MxResult, double CPr, double starting_Tc, double ending_Tc, double Tc_Variation, List<Tb_Value> Tb_Result, List<Mmin_Value> MminResult, List<H_Value> HResult)
         {
             List<Qbc_Value> Qbc_Result = new List<Qbc_Value>();
-            StreamWriter writer = new StreamWriter("Values.txt");
-            foreach (Mx_Value mxResult in MxResult)
+            for (double i = starting_Tc; i <= ending_Tc; i += Tc_Variation)
             {
                 foreach (Tb_Value tbValue in Tb_Result)
                 {
-                    foreach (Mmin_Value mminValue in MminResult)
+                    foreach (Mx_Value mxResult in MxResult)
                     {
-                        foreach (H_Value hResult in HResult)
+                        foreach (Mmin_Value mminValue in MminResult)
                         {
-                            for (double i = starting_Tc; i <= ending_Tc; i += Tc_Variation)
+                            foreach (H_Value hResult in HResult)
                             {
-                                string values = i.ToString() + " " + tbValue.Tb_Result.ToString() + " " + mxResult.Mx_Result.ToString() + " " + hResult.H_Result.ToString() + " " + mminValue.Mmin_Result.ToString() + " " + Math.Round(Calculations.Integration(tbValue.Tb_Result, i, CPAd + mxResult.Mx_Result * CPr) + Calculations.Integration(mminValue.Mmin_Result, mxResult.Mx_Result, hResult.H_Result), Parameters.Round_Decimal);
-                                writer.WriteLine(values);
-                                //Qbc_Result.Add(new Qbc_Value
-                                //{
-                                //    Tc_Value = i,
-                                //    Tb_Value = tbValue.Tb_Result,
-                                //    Mx_Value = mxResult.Mx_Result,
-                                //    H_Value = hResult.H_Result,
-                                //    Mmin_Value = mminValue.Mmin_Result,
-                                //    Qbc_Result = Calculations.Integration(tbValue.Tb_Result, i, CPAd + mxResult.Mx_Result * CPr) + Calculations.Integration(mminValue.Mmin_Result, mxResult.Mx_Result, hResult.H_Result)
-                                //});
+                                Qbc_Result.Add(new Qbc_Value
+                                {
+                                    Tc_Value = i,
+                                    Tb_Value = tbValue.Tb_Result,
+                                    Mx_Value = mxResult.Mx_Result,
+                                    H_Value = hResult.H_Result,
+                                    Mmin_Value = mminValue.Mmin_Result,
+                                    Qbc_Result = Math.Round(Calculations.Integration(tbValue.Tb_Result, i, CPAd + mxResult.Mx_Result * CPr) + Calculations.Integration(mminValue.Mmin_Result, mxResult.Mx_Result, hResult.H_Result), Parameters.Round_Decimal)
+                                });
                             }
                         }
                     }
                 }
             }
-            writer.Close();
             return Qbc_Result;
         }
     }

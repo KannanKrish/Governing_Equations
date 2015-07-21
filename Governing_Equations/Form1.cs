@@ -27,7 +27,7 @@ namespace Governing_Equations
         private void load_Values()
         {
             parameters = Parameters.readParameters("settings.xml");
-            MessageBox.Show(parameters.CPAd_Values.ToString());
+            //MessageBox.Show(parameters.CPAd_Values.ToString());
         }
 
         private void save_Values()
@@ -37,14 +37,14 @@ namespace Governing_Equations
             parameters.K_value = 17.19;
             parameters.n_value = 1.66;
             parameters.M0_value = 0.425;
-            parameters.Ta_Starting = 20;
-            parameters.Ta_Ending = 60;
+            parameters.Ta_Starting = 20+273;
+            parameters.Ta_Ending = 60+273;
             parameters.Ta_Variance = 1;
-            parameters.Tc_Starting = 90;
-            parameters.Tc_Ending = 140;
+            parameters.Tc_Starting = 90+273;
+            parameters.Tc_Ending = 140+273;
             parameters.Tc_Variance = 1;
-            parameters.Tevap_Starting = 0;
-            parameters.Tevap_Ending = 5;
+            parameters.Tevap_Starting = 0+273;
+            parameters.Tevap_Ending = 5+273;
             parameters.Tevap_Variance = 1;
             parameters.CPAd_Values = 0.711;
             parameters.CPr_Values = 2.534;
