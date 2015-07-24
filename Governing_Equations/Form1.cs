@@ -20,13 +20,16 @@ namespace Governing_Equations
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //save_Values();
-            //load_Values();
+            //save_Values();            
             //Test_Function();
-            using (DataModel dataModel = new DataModel())
-            {
-                dataModel.MxValue.Add(new Mx_Value { Ta_Value = 293, Mx_Result = 0.4 });
-            }
+            load_Values();
+            TestQueries();            
+        }
+
+        private void TestQueries()
+        {
+            Calculations.MxCalculation(parameters.Tsat, parameters.K_value, parameters.n_value, parameters.M0_value, parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance);
+            this.mx_ValueTableAdapter.Fill(this.resultDatabaseDataSet.Mx_Value);
         }
 
         private void load_Values()
@@ -58,28 +61,28 @@ namespace Governing_Equations
         }
         private void Test_Function()
         {
-            List<Mx_Value> Mx_Result = Calculations.MxCalculation(parameters.Tsat, parameters.K_value, parameters.n_value, parameters.M0_value, parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance);
-            List<Mmin_Value> Mmin_Result = Calculations.MminCalculation(parameters.Tsat, parameters.K_value, parameters.n_value, parameters.M0_value, parameters.Tc_Starting, parameters.Tc_Ending, parameters.Tc_Variance);
-            List<Tb_Value> Tb_Result = Calculations.TbCalculation(parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance, parameters.Tevap_Starting, parameters.Tevap_Ending, parameters.Tevap_Variance);
-            List<Td_Value> Td_Result = Calculations.TdCalculation(parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance, parameters.Tc_Starting, parameters.Tc_Ending, parameters.Tc_Variance, Tb_Result);
-            List<H_Value> H_Result = Calculations.HCalculation(parameters.R_Values, parameters.CPAd_Values, Mx_Result, parameters.CPr_Values, parameters.Tc_Starting, parameters.Tc_Ending, parameters.Tc_Variance, parameters.Tsat);
-            List<Qab_Value> Qab_Result = Calculations.QabCalculation(parameters.CPAd_Values, Mx_Result, parameters.CPr_Values, parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance, Tb_Result);
-            List<Qbc_Value> Qbc_Result = Calculations.QbcCalculation(parameters.CPAd_Values, Mx_Result, parameters.CPr_Values, parameters.Tc_Starting, parameters.Tc_Ending, parameters.Tc_Variance, Tb_Result, Mmin_Result, H_Result);
-            dataGridView3.AutoGenerateColumns = true;
-            dataGridView3.DataSource = Tb_Result;
-            dataGridView3.Refresh();
-            dataGridView4.AutoGenerateColumns = true;
-            dataGridView4.DataSource = Td_Result;
-            dataGridView4.Refresh();
-            dataGridView5.AutoGenerateColumns = true;
-            dataGridView5.DataSource = H_Result;
-            dataGridView5.Refresh();
-            dataGridView6.AutoGenerateColumns = true;
-            dataGridView6.DataSource = Qab_Result;
-            dataGridView6.Refresh();
-            dataGridView7.AutoGenerateColumns = true;
-            dataGridView7.DataSource = Qbc_Result;
-            dataGridView7.Refresh();
+            //List<Mx_Value> Mx_Result = Calculations.MxCalculation(parameters.Tsat, parameters.K_value, parameters.n_value, parameters.M0_value, parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance);
+            //List<Mmin_Value> Mmin_Result = Calculations.MminCalculation(parameters.Tsat, parameters.K_value, parameters.n_value, parameters.M0_value, parameters.Tc_Starting, parameters.Tc_Ending, parameters.Tc_Variance);
+            //List<Tb_Value> Tb_Result = Calculations.TbCalculation(parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance, parameters.Tevap_Starting, parameters.Tevap_Ending, parameters.Tevap_Variance);
+            //List<Td_Value> Td_Result = Calculations.TdCalculation(parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance, parameters.Tc_Starting, parameters.Tc_Ending, parameters.Tc_Variance, Tb_Result);
+            //List<H_Value> H_Result = Calculations.HCalculation(parameters.R_Values, parameters.CPAd_Values, Mx_Result, parameters.CPr_Values, parameters.Tc_Starting, parameters.Tc_Ending, parameters.Tc_Variance, parameters.Tsat);
+            //List<Qab_Value> Qab_Result = Calculations.QabCalculation(parameters.CPAd_Values, Mx_Result, parameters.CPr_Values, parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance, Tb_Result);
+            //List<Qbc_Value> Qbc_Result = Calculations.QbcCalculation(parameters.CPAd_Values, Mx_Result, parameters.CPr_Values, parameters.Tc_Starting, parameters.Tc_Ending, parameters.Tc_Variance, Tb_Result, Mmin_Result, H_Result);
+            //dataGridView3.AutoGenerateColumns = true;
+            //dataGridView3.DataSource = Tb_Result;
+            //dataGridView3.Refresh();
+            //dataGridView4.AutoGenerateColumns = true;
+            //dataGridView4.DataSource = Td_Result;
+            //dataGridView4.Refresh();
+            //dataGridView5.AutoGenerateColumns = true;
+            //dataGridView5.DataSource = H_Result;
+            //dataGridView5.Refresh();
+            //dataGridView6.AutoGenerateColumns = true;
+            //dataGridView6.DataSource = Qab_Result;
+            //dataGridView6.Refresh();
+            //dataGridView7.AutoGenerateColumns = true;
+            //dataGridView7.DataSource = Qbc_Result;
+            //dataGridView7.Refresh();
         }
 
         private void mx_ValueBindingNavigatorSaveItem_Click(object sender, EventArgs e)
