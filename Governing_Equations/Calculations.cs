@@ -8,6 +8,8 @@ namespace Governing_Equations
 {
     public class Calculations
     {
+        static ResultDatabaseDataSet.Mx_ValueDataTable test = new ResultDatabaseDataSet.Mx_ValueDataTable();
+        
         public static List<Mx_Value> MxCalculation(double Tsat, double K, double n, double M0, double starting_Ta, double ending_Ta, double variation_Ta)
         {
             List<Mx_Value> MxValues = new List<Mx_Value>();
@@ -19,6 +21,7 @@ namespace Governing_Equations
                     Ta_Value = i,
                     Mx_Result = Math.Round(M0 * Math.Exp(temp), Parameters.Round_Decimal)
                 });
+                
             }
             return MxValues;
         }

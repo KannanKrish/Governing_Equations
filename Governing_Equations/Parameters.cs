@@ -39,24 +39,28 @@ namespace Governing_Equations
             xmlSerializer.Serialize(new StreamWriter(filePath), parameters);
         }
     }
-    public class Mmin_Value
-    {
-        public double Tc_Value { get; set; }
-        public double Mmin_Result { get; set; }
-    }
     public class Mx_Value
     {
+        public long ID { get; set; }
         public double Ta_Value { get; set; }
         public double Mx_Result { get; set; }
     }
+    public class Mmin_Value
+    {
+        public long ID { get; set; }
+        public double Tc_Value { get; set; }
+        public double Mmin_Result { get; set; }
+    }
     public class Tb_Value
     {
+        public long ID { get; set; }
         public double Ta_Value { get; set; }
         public double Tevap_Value { get; set; }
         public double Tb_Result { get; set; }
     }
     public class Td_Value
     {
+        public long ID { get; set; }
         public double Ta_Value { get; set; }
         public double Tb_Value { get; set; }
         public double Tc_Value { get; set; }
@@ -64,12 +68,14 @@ namespace Governing_Equations
     }
     public class H_Value
     {
-        public double Tc_Value { get; set; }        
+        public long ID { get; set; }
+        public double Tc_Value { get; set; }
         public double Mx_Value { get; set; }
         public double H_Result { get; set; }
     }
     public class Qab_Value
     {
+        public long ID { get; set; }
         public double Ta_Value { get; set; }
         public double Tb_Value { get; set; }
         public double Mx_Value { get; set; }
@@ -77,6 +83,7 @@ namespace Governing_Equations
     }
     public class Qbc_Value
     {
+        public long ID { get; set; }
         public double Tb_Value { get; set; }
         public double Tc_Value { get; set; }
         public double Mx_Value { get; set; }

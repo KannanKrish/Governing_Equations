@@ -12,6 +12,7 @@ namespace Governing_Equations
     public partial class Form1 : Form
     {
         Parameters parameters = new Parameters();
+
         public Form1()
         {
             InitializeComponent();
@@ -20,8 +21,12 @@ namespace Governing_Equations
         private void button1_Click(object sender, EventArgs e)
         {
             //save_Values();
-            load_Values();
-            Test_Function();
+            //load_Values();
+            //Test_Function();
+            using (DataModel dataModel = new DataModel())
+            {
+                dataModel.MxValue.Add(new Mx_Value { Ta_Value = 293, Mx_Result = 0.4 });
+            }
         }
 
         private void load_Values()
@@ -37,14 +42,14 @@ namespace Governing_Equations
             parameters.K_value = 17.19;
             parameters.n_value = 1.66;
             parameters.M0_value = 0.425;
-            parameters.Ta_Starting = 20+273;
-            parameters.Ta_Ending = 60+273;
+            parameters.Ta_Starting = 20 + 273;
+            parameters.Ta_Ending = 60 + 273;
             parameters.Ta_Variance = 1;
-            parameters.Tc_Starting = 90+273;
-            parameters.Tc_Ending = 140+273;
+            parameters.Tc_Starting = 90 + 273;
+            parameters.Tc_Ending = 140 + 273;
             parameters.Tc_Variance = 1;
-            parameters.Tevap_Starting = 0+273;
-            parameters.Tevap_Ending = 5+273;
+            parameters.Tevap_Starting = 0 + 273;
+            parameters.Tevap_Ending = 5 + 273;
             parameters.Tevap_Variance = 1;
             parameters.CPAd_Values = 0.711;
             parameters.CPr_Values = 2.534;
@@ -60,12 +65,6 @@ namespace Governing_Equations
             List<H_Value> H_Result = Calculations.HCalculation(parameters.R_Values, parameters.CPAd_Values, Mx_Result, parameters.CPr_Values, parameters.Tc_Starting, parameters.Tc_Ending, parameters.Tc_Variance, parameters.Tsat);
             List<Qab_Value> Qab_Result = Calculations.QabCalculation(parameters.CPAd_Values, Mx_Result, parameters.CPr_Values, parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance, Tb_Result);
             List<Qbc_Value> Qbc_Result = Calculations.QbcCalculation(parameters.CPAd_Values, Mx_Result, parameters.CPr_Values, parameters.Tc_Starting, parameters.Tc_Ending, parameters.Tc_Variance, Tb_Result, Mmin_Result, H_Result);
-            dataGridView1.AutoGenerateColumns = true;
-            dataGridView1.DataSource = Mx_Result;
-            dataGridView1.Refresh();
-            dataGridView2.AutoGenerateColumns = true;
-            dataGridView2.DataSource = Mmin_Result;
-            dataGridView2.Refresh();
             dataGridView3.AutoGenerateColumns = true;
             dataGridView3.DataSource = Tb_Result;
             dataGridView3.Refresh();
@@ -81,6 +80,21 @@ namespace Governing_Equations
             dataGridView7.AutoGenerateColumns = true;
             dataGridView7.DataSource = Qbc_Result;
             dataGridView7.Refresh();
+        }
+
+        private void mx_ValueBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.mx_ValueBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.resultDatabaseDataSet);
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'resultDatabaseDataSet.Mx_Value' table. You can move, or remove it, as needed.
+            this.mx_ValueTableAdapter.Fill(this.resultDatabaseDataSet.Mx_Value);
+
         }
     }
 }
