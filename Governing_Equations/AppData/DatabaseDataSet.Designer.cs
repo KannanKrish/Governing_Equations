@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace Governing_Equations {
+namespace Governing_Equations.AppData {
     
     
     /// <summary>
@@ -3731,7 +3731,7 @@ namespace Governing_Equations {
         }
     }
 }
-namespace Governing_Equations.DatabaseDataSetTableAdapters {
+namespace Governing_Equations.AppData.DatabaseDataSetTableAdapters {
     
     
     /// <summary>

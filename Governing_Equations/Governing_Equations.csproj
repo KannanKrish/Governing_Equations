@@ -63,10 +63,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Calculations.cs" />
-    <Compile Include="DatabaseDataSet.cs">
+    <Compile Include="AppData\DatabaseDataSet.cs">
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DatabaseDataSet.Designer.cs">
+    <Compile Include="AppData\DatabaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
@@ -93,15 +93,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="App.config" />
-    <None Include="DatabaseDataSet.xsc">
+    <None Include="AppData\DatabaseDataSet.xsc">
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </None>
-    <None Include="DatabaseDataSet.xsd">
+    <None Include="AppData\DatabaseDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DatabaseDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DatabaseDataSet.xss">
+    <None Include="AppData\DatabaseDataSet.xss">
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
@@ -115,10 +115,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Database.mdf">
+    <Content Include="AppData\Database.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Database_log.ldf">
+    <Content Include="AppData\Database_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
