@@ -23,13 +23,13 @@ namespace Governing_Equations
             //save_Values();            
             //Test_Function();
             load_Values();
-            TestQueries();            
+            TestQueries();
         }
 
         private void TestQueries()
         {
             Calculations.MxCalculation(parameters.Tsat, parameters.K_value, parameters.n_value, parameters.M0_value, parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance);
-            this.mx_ValueTableAdapter.Fill(this.resultDatabaseDataSet.Mx_Value);
+
         }
 
         private void load_Values()
@@ -84,19 +84,8 @@ namespace Governing_Equations
             //dataGridView7.DataSource = Qbc_Result;
             //dataGridView7.Refresh();
         }
-
-        private void mx_ValueBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.mx_ValueBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.resultDatabaseDataSet);
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'resultDatabaseDataSet.Mx_Value' table. You can move, or remove it, as needed.
-            this.mx_ValueTableAdapter.Fill(this.resultDatabaseDataSet.Mx_Value);
 
         }
     }

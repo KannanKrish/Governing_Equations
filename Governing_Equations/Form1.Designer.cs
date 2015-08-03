@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -68,9 +67,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -79,14 +75,7 @@
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
             this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.dataGridView7 = new System.Windows.Forms.DataGridView();
-            this.resultDatabaseDataSet = new Governing_Equations.ResultDatabaseDataSet();
-            this.mx_ValueBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.mx_ValueTableAdapter = new Governing_Equations.ResultDatabaseDataSetTableAdapters.Mx_ValueTableAdapter();
-            this.tableAdapterManager = new Governing_Equations.ResultDatabaseDataSetTableAdapters.TableAdapterManager();
-            this.mx_ValueBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -99,7 +88,6 @@
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.mx_ValueBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.mx_ValueDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -108,24 +96,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            this.tabPage6.SuspendLayout();
-            this.tabPage7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
-            this.tabPage8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resultDatabaseDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mx_ValueBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mx_ValueBindingNavigator)).BeginInit();
-            this.mx_ValueBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mx_ValueDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -519,48 +491,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Tsat";
             // 
-            // dataGridView3
-            // 
-            this.dataGridView3.AllowUserToAddRows = false;
-            this.dataGridView3.AllowUserToDeleteRows = false;
-            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView3.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView3.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.ReadOnly = true;
-            this.dataGridView3.Size = new System.Drawing.Size(650, 371);
-            this.dataGridView3.TabIndex = 4;
-            // 
-            // dataGridView4
-            // 
-            this.dataGridView4.AllowUserToAddRows = false;
-            this.dataGridView4.AllowUserToDeleteRows = false;
-            this.dataGridView4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView4.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView4.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.ReadOnly = true;
-            this.dataGridView4.Size = new System.Drawing.Size(650, 371);
-            this.dataGridView4.TabIndex = 4;
-            // 
-            // dataGridView5
-            // 
-            this.dataGridView5.AllowUserToAddRows = false;
-            this.dataGridView5.AllowUserToDeleteRows = false;
-            this.dataGridView5.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView5.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView5.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.ReadOnly = true;
-            this.dataGridView5.Size = new System.Drawing.Size(650, 371);
-            this.dataGridView5.TabIndex = 4;
-            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
@@ -593,8 +523,6 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.mx_ValueBindingNavigator);
-            this.tabPage2.Controls.Add(this.mx_ValueDataGridView);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -615,7 +543,6 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.dataGridView3);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
@@ -626,7 +553,6 @@
             // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.dataGridView4);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
@@ -637,7 +563,6 @@
             // 
             // tabPage6
             // 
-            this.tabPage6.Controls.Add(this.dataGridView5);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
@@ -648,7 +573,6 @@
             // 
             // tabPage7
             // 
-            this.tabPage7.Controls.Add(this.dataGridView6);
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
@@ -657,23 +581,8 @@
             this.tabPage7.Text = "Qab Result";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
-            // dataGridView6
-            // 
-            this.dataGridView6.AllowUserToAddRows = false;
-            this.dataGridView6.AllowUserToDeleteRows = false;
-            this.dataGridView6.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView6.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView6.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.ReadOnly = true;
-            this.dataGridView6.Size = new System.Drawing.Size(650, 371);
-            this.dataGridView6.TabIndex = 4;
-            // 
             // tabPage8
             // 
-            this.tabPage8.Controls.Add(this.dataGridView7);
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
@@ -681,78 +590,6 @@
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Qbc Result";
             this.tabPage8.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView7
-            // 
-            this.dataGridView7.AllowUserToAddRows = false;
-            this.dataGridView7.AllowUserToDeleteRows = false;
-            this.dataGridView7.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView7.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView7.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView7.Name = "dataGridView7";
-            this.dataGridView7.ReadOnly = true;
-            this.dataGridView7.Size = new System.Drawing.Size(650, 371);
-            this.dataGridView7.TabIndex = 4;
-            // 
-            // resultDatabaseDataSet
-            // 
-            this.resultDatabaseDataSet.DataSetName = "ResultDatabaseDataSet";
-            this.resultDatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // mx_ValueBindingSource
-            // 
-            this.mx_ValueBindingSource.DataMember = "Mx_Value";
-            this.mx_ValueBindingSource.DataSource = this.resultDatabaseDataSet;
-            // 
-            // mx_ValueTableAdapter
-            // 
-            this.mx_ValueTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.H_ValueTableAdapter = null;
-            this.tableAdapterManager.Mmin_ValueTableAdapter = null;
-            this.tableAdapterManager.Mx_ValueTableAdapter = this.mx_ValueTableAdapter;
-            this.tableAdapterManager.Qab_ValueTableAdapter = null;
-            this.tableAdapterManager.Qbc_ValueTableAdapter = null;
-            this.tableAdapterManager.Tb_ValueTableAdapter = null;
-            this.tableAdapterManager.Td_ValueTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = Governing_Equations.ResultDatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // mx_ValueBindingNavigator
-            // 
-            this.mx_ValueBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.mx_ValueBindingNavigator.BindingSource = this.mx_ValueBindingSource;
-            this.mx_ValueBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.mx_ValueBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.mx_ValueBindingNavigator.Dock = System.Windows.Forms.DockStyle.None;
-            this.mx_ValueBindingNavigator.GripMargin = new System.Windows.Forms.Padding(0);
-            this.mx_ValueBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.mx_ValueBindingNavigatorSaveItem});
-            this.mx_ValueBindingNavigator.Location = new System.Drawing.Point(3, 3);
-            this.mx_ValueBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.mx_ValueBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.mx_ValueBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.mx_ValueBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.mx_ValueBindingNavigator.Name = "mx_ValueBindingNavigator";
-            this.mx_ValueBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.mx_ValueBindingNavigator.Size = new System.Drawing.Size(305, 25);
-            this.mx_ValueBindingNavigator.TabIndex = 6;
-            this.mx_ValueBindingNavigator.Text = "bindingNavigator1";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -795,7 +632,7 @@
             // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
             // 
             // bindingNavigatorMoveNextItem
@@ -809,16 +646,12 @@
             // 
             // bindingNavigatorMoveLastItem
             // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 23);
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
             // 
             // bindingNavigatorAddNewItem
@@ -841,28 +674,8 @@
             // 
             // mx_ValueBindingNavigatorSaveItem
             // 
-            this.mx_ValueBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.mx_ValueBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("mx_ValueBindingNavigatorSaveItem.Image")));
             this.mx_ValueBindingNavigatorSaveItem.Name = "mx_ValueBindingNavigatorSaveItem";
             this.mx_ValueBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
-            this.mx_ValueBindingNavigatorSaveItem.Text = "Save Data";
-            this.mx_ValueBindingNavigatorSaveItem.Click += new System.EventHandler(this.mx_ValueBindingNavigatorSaveItem_Click);
-            // 
-            // mx_ValueDataGridView
-            // 
-            this.mx_ValueDataGridView.AllowUserToOrderColumns = true;
-            this.mx_ValueDataGridView.AutoGenerateColumns = false;
-            this.mx_ValueDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.mx_ValueDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.mx_ValueDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3});
-            this.mx_ValueDataGridView.DataSource = this.mx_ValueBindingSource;
-            this.mx_ValueDataGridView.Location = new System.Drawing.Point(3, 31);
-            this.mx_ValueDataGridView.Name = "mx_ValueDataGridView";
-            this.mx_ValueDataGridView.Size = new System.Drawing.Size(653, 346);
-            this.mx_ValueDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -898,27 +711,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage6.ResumeLayout(false);
-            this.tabPage7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
-            this.tabPage8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resultDatabaseDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mx_ValueBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mx_ValueBindingNavigator)).EndInit();
-            this.mx_ValueBindingNavigator.ResumeLayout(false);
-            this.mx_ValueBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mx_ValueDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -937,11 +732,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.DataGridView dataGridView4;
-        private System.Windows.Forms.DataGridView dataGridView5;
-        private System.Windows.Forms.DataGridView dataGridView6;
-        private System.Windows.Forms.DataGridView dataGridView7;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
@@ -977,11 +767,6 @@
         private System.Windows.Forms.NumericUpDown numericUpDown4;
         private System.Windows.Forms.NumericUpDown numericUpDown3;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private ResultDatabaseDataSet resultDatabaseDataSet;
-        private System.Windows.Forms.BindingSource mx_ValueBindingSource;
-        private ResultDatabaseDataSetTableAdapters.Mx_ValueTableAdapter mx_ValueTableAdapter;
-        private ResultDatabaseDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator mx_ValueBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
@@ -994,7 +779,6 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton mx_ValueBindingNavigatorSaveItem;
-        private System.Windows.Forms.DataGridView mx_ValueDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
