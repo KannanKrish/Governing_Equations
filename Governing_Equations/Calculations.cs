@@ -8,7 +8,7 @@ namespace Governing_Equations
 {
     public class Calculations
     {
-        static DatabaseDataSetTableAdapters.QueriesTableAdapter query = new DatabaseDataSetTableAdapters.QueriesTableAdapter();
+        static AppData.DatabaseDataSetTableAdapters.QueriesTableAdapter query = new AppData.DatabaseDataSetTableAdapters.QueriesTableAdapter();
 
         public static void MxCalculation(double Tsat, double K, double n, double M0, double starting_Ta, double ending_Ta, double variation_Ta)
         {

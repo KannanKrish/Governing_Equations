@@ -88,5 +88,96 @@ namespace Governing_Equations
         {
 
         }
+
+        //private void fillToolStripButton_Click(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        this.pickMxValueTableAdapter.Fill(this.databaseDataSet.pickMxValue, new System.Nullable<int>(((int)(System.Convert.ChangeType(startIndexToolStripTextBox.Text, typeof(int))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(endIndexToolStripTextBox.Text, typeof(int))))));
+        //    }
+        //    catch (System.Exception ex)
+        //    {
+        //        System.Windows.Forms.MessageBox.Show(ex.Message);
+        //    }
+
+        //}
+
+        //private void fillToolStripButton_Click_1(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        this.pickMminValueTableAdapter.Fill(this.databaseDataSet.pickMminValue, new System.Nullable<int>(((int)(System.Convert.ChangeType(startIndexToolStripTextBox.Text, typeof(int))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(endIndexToolStripTextBox.Text, typeof(int))))));
+        //    }
+        //    catch (System.Exception ex)
+        //    {
+        //        System.Windows.Forms.MessageBox.Show(ex.Message);
+        //    }
+
+        //}
+
+        //private void fillToolStripButton_Click_2(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        this.pickTbValueTableAdapter.Fill(this.databaseDataSet.pickTbValue, new System.Nullable<int>(((int)(System.Convert.ChangeType(startIndexToolStripTextBox.Text, typeof(int))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(endIndexToolStripTextBox.Text, typeof(int))))));
+        //    }
+        //    catch (System.Exception ex)
+        //    {
+        //        System.Windows.Forms.MessageBox.Show(ex.Message);
+        //    }
+
+        //}
+
+        //private void fillToolStripButton_Click_3(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        this.pickTdValueTableAdapter.Fill(this.databaseDataSet.pickTdValue, new System.Nullable<int>(((int)(System.Convert.ChangeType(startIndexToolStripTextBox.Text, typeof(int))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(endIndexToolStripTextBox.Text, typeof(int))))));
+        //    }
+        //    catch (System.Exception ex)
+        //    {
+        //        System.Windows.Forms.MessageBox.Show(ex.Message);
+        //    }
+
+        //}
+
+        //private void fillToolStripButton_Click_4(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        this.pickHValueTableAdapter.Fill(this.databaseDataSet.pickHValue, new System.Nullable<int>(((int)(System.Convert.ChangeType(startIndexToolStripTextBox.Text, typeof(int))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(endIndexToolStripTextBox.Text, typeof(int))))));
+        //    }
+        //    catch (System.Exception ex)
+        //    {
+        //        System.Windows.Forms.MessageBox.Show(ex.Message);
+        //    }
+
+        //}
+
+        //private void fillToolStripButton_Click_5(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        this.pickQabValueTableAdapter.Fill(this.databaseDataSet.pickQabValue, new System.Nullable<int>(((int)(System.Convert.ChangeType(startIndexToolStripTextBox.Text, typeof(int))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(endIndexToolStripTextBox.Text, typeof(int))))));
+        //    }
+        //    catch (System.Exception ex)
+        //    {
+        //        System.Windows.Forms.MessageBox.Show(ex.Message);
+        //    }
+
+        //}
+
+        //private void fillToolStripButton_Click_6(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        this.pickQbcValueTableAdapter.Fill(this.databaseDataSet.pickQbcValue, new System.Nullable<int>(((int)(System.Convert.ChangeType(startIndexToolStripTextBox.Text, typeof(int))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(endIndexToolStripTextBox.Text, typeof(int))))));
+        //    }
+        //    catch (System.Exception ex)
+        //    {
+        //        System.Windows.Forms.MessageBox.Show(ex.Message);
+        //    }
+
+        //}
     }
 }
