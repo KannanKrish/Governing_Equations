@@ -70,20 +70,81 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.statusStrip8 = new System.Windows.Forms.StatusStrip();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.MxPrevious = new System.Windows.Forms.ToolStripStatusLabel();
+            this.MxNext = new System.Windows.Forms.ToolStripStatusLabel();
             this.pickMxValueDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pickMxValueBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.databaseDataSet = new Governing_Equations.AppData.DatabaseDataSet();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.statusStrip2 = new System.Windows.Forms.StatusStrip();
+            this.MminPrevious = new System.Windows.Forms.ToolStripStatusLabel();
+            this.MminNext = new System.Windows.Forms.ToolStripStatusLabel();
             this.pickMminValueDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pickMminValueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.statusStrip3 = new System.Windows.Forms.StatusStrip();
+            this.TbPrevious = new System.Windows.Forms.ToolStripStatusLabel();
+            this.TbNext = new System.Windows.Forms.ToolStripStatusLabel();
             this.pickTbValueDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pickTbValueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.statusStrip4 = new System.Windows.Forms.StatusStrip();
+            this.TdPrevious = new System.Windows.Forms.ToolStripStatusLabel();
+            this.TdNext = new System.Windows.Forms.ToolStripStatusLabel();
             this.pickTdValueDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pickTdValueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.statusStrip5 = new System.Windows.Forms.StatusStrip();
+            this.HPrevious = new System.Windows.Forms.ToolStripStatusLabel();
+            this.HNext = new System.Windows.Forms.ToolStripStatusLabel();
             this.pickHValueDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pickHValueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.statusStrip6 = new System.Windows.Forms.StatusStrip();
+            this.QabPrevious = new System.Windows.Forms.ToolStripStatusLabel();
+            this.QabNext = new System.Windows.Forms.ToolStripStatusLabel();
             this.pickQabValueDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pickQabValueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.statusStrip7 = new System.Windows.Forms.StatusStrip();
+            this.QbcPrevious = new System.Windows.Forms.ToolStripStatusLabel();
+            this.QbcNext = new System.Windows.Forms.ToolStripStatusLabel();
             this.pickQbcValueDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pickQbcValueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -99,53 +160,6 @@
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.statusStrip2 = new System.Windows.Forms.StatusStrip();
-            this.statusStrip3 = new System.Windows.Forms.StatusStrip();
-            this.statusStrip4 = new System.Windows.Forms.StatusStrip();
-            this.statusStrip5 = new System.Windows.Forms.StatusStrip();
-            this.statusStrip6 = new System.Windows.Forms.StatusStrip();
-            this.statusStrip7 = new System.Windows.Forms.StatusStrip();
-            this.statusStrip8 = new System.Windows.Forms.StatusStrip();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pickMxValueBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.databaseDataSet = new Governing_Equations.AppData.DatabaseDataSet();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pickMminValueBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pickTbValueBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pickTdValueBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pickHValueBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pickQabValueBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pickQbcValueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pickMxValueTableAdapter = new Governing_Equations.AppData.DatabaseDataSetTableAdapters.pickMxValueTableAdapter();
             this.tableAdapterManager = new Governing_Equations.AppData.DatabaseDataSetTableAdapters.TableAdapterManager();
             this.pickMminValueTableAdapter = new Governing_Equations.AppData.DatabaseDataSetTableAdapters.pickMminValueTableAdapter();
@@ -154,20 +168,6 @@
             this.pickHValueTableAdapter = new Governing_Equations.AppData.DatabaseDataSetTableAdapters.pickHValueTableAdapter();
             this.pickQabValueTableAdapter = new Governing_Equations.AppData.DatabaseDataSetTableAdapters.pickQabValueTableAdapter();
             this.pickQbcValueTableAdapter = new Governing_Equations.AppData.DatabaseDataSetTableAdapters.pickQbcValueTableAdapter();
-            this.MxPrevious = new System.Windows.Forms.ToolStripStatusLabel();
-            this.MxNext = new System.Windows.Forms.ToolStripStatusLabel();
-            this.MminPrevious = new System.Windows.Forms.ToolStripStatusLabel();
-            this.MminNext = new System.Windows.Forms.ToolStripStatusLabel();
-            this.TbPrevious = new System.Windows.Forms.ToolStripStatusLabel();
-            this.TbNext = new System.Windows.Forms.ToolStripStatusLabel();
-            this.TdPrevious = new System.Windows.Forms.ToolStripStatusLabel();
-            this.TdNext = new System.Windows.Forms.ToolStripStatusLabel();
-            this.HPrevious = new System.Windows.Forms.ToolStripStatusLabel();
-            this.HNext = new System.Windows.Forms.ToolStripStatusLabel();
-            this.QabPrevious = new System.Windows.Forms.ToolStripStatusLabel();
-            this.QabNext = new System.Windows.Forms.ToolStripStatusLabel();
-            this.QbcPrevious = new System.Windows.Forms.ToolStripStatusLabel();
-            this.QbcNext = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
@@ -176,33 +176,33 @@
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pickMxValueDataGridView)).BeginInit();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pickMminValueDataGridView)).BeginInit();
-            this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pickTbValueDataGridView)).BeginInit();
-            this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pickTdValueDataGridView)).BeginInit();
-            this.tabPage6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pickHValueDataGridView)).BeginInit();
-            this.tabPage7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pickQabValueDataGridView)).BeginInit();
-            this.tabPage8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pickQbcValueDataGridView)).BeginInit();
             this.statusStrip1.SuspendLayout();
-            this.statusStrip2.SuspendLayout();
-            this.statusStrip3.SuspendLayout();
-            this.statusStrip4.SuspendLayout();
-            this.statusStrip5.SuspendLayout();
-            this.statusStrip6.SuspendLayout();
-            this.statusStrip7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pickMxValueDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pickMxValueBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            this.statusStrip2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pickMminValueDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pickMminValueBindingSource)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            this.statusStrip3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pickTbValueDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pickTbValueBindingSource)).BeginInit();
+            this.tabPage5.SuspendLayout();
+            this.statusStrip4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pickTdValueDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pickTdValueBindingSource)).BeginInit();
+            this.tabPage6.SuspendLayout();
+            this.statusStrip5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pickHValueDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pickHValueBindingSource)).BeginInit();
+            this.tabPage7.SuspendLayout();
+            this.statusStrip6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pickQabValueDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pickQabValueBindingSource)).BeginInit();
+            this.tabPage8.SuspendLayout();
+            this.statusStrip7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pickQbcValueDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pickQbcValueBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -628,6 +628,14 @@
             this.tabPage1.Text = "Input";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // statusStrip8
+            // 
+            this.statusStrip8.Location = new System.Drawing.Point(3, 352);
+            this.statusStrip8.Name = "statusStrip8";
+            this.statusStrip8.Size = new System.Drawing.Size(650, 22);
+            this.statusStrip8.TabIndex = 3;
+            this.statusStrip8.Text = "statusStrip8";
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.statusStrip1);
@@ -639,6 +647,38 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mx Result";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MxPrevious,
+            this.MxNext});
+            this.statusStrip1.Location = new System.Drawing.Point(3, 337);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(650, 37);
+            this.statusStrip1.TabIndex = 1;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // MxPrevious
+            // 
+            this.MxPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.MxPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
+            this.MxPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.MxPrevious.Name = "MxPrevious";
+            this.MxPrevious.Size = new System.Drawing.Size(32, 32);
+            this.MxPrevious.Text = "toolStripSplitButton1";
+            this.MxPrevious.Click += new System.EventHandler(this.MxPrevious_Click);
+            // 
+            // MxNext
+            // 
+            this.MxNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.MxNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
+            this.MxNext.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.MxNext.Name = "MxNext";
+            this.MxNext.Size = new System.Drawing.Size(32, 32);
+            this.MxNext.Text = "toolStripSplitButton2";
+            this.MxNext.Click += new System.EventHandler(this.MxNext_Click);
             // 
             // pickMxValueDataGridView
             // 
@@ -659,6 +699,37 @@
             this.pickMxValueDataGridView.Size = new System.Drawing.Size(650, 371);
             this.pickMxValueDataGridView.TabIndex = 0;
             // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "TaValue";
+            this.dataGridViewTextBoxColumn5.HeaderText = "TaValue";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "MxResult";
+            this.dataGridViewTextBoxColumn6.HeaderText = "MxResult";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // pickMxValueBindingSource
+            // 
+            this.pickMxValueBindingSource.DataMember = "pickMxValue";
+            this.pickMxValueBindingSource.DataSource = this.databaseDataSet;
+            // 
+            // databaseDataSet
+            // 
+            this.databaseDataSet.DataSetName = "DatabaseDataSet";
+            this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.statusStrip2);
@@ -670,6 +741,38 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Mmin Result";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // statusStrip2
+            // 
+            this.statusStrip2.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.statusStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MminPrevious,
+            this.MminNext});
+            this.statusStrip2.Location = new System.Drawing.Point(3, 337);
+            this.statusStrip2.Name = "statusStrip2";
+            this.statusStrip2.Size = new System.Drawing.Size(650, 37);
+            this.statusStrip2.TabIndex = 1;
+            this.statusStrip2.Text = "statusStrip2";
+            // 
+            // MminPrevious
+            // 
+            this.MminPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.MminPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
+            this.MminPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.MminPrevious.Name = "MminPrevious";
+            this.MminPrevious.Size = new System.Drawing.Size(32, 32);
+            this.MminPrevious.Text = "toolStripSplitButton1";
+            this.MminPrevious.Click += new System.EventHandler(this.MminPrevious_Click);
+            // 
+            // MminNext
+            // 
+            this.MminNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.MminNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
+            this.MminNext.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.MminNext.Name = "MminNext";
+            this.MminNext.Size = new System.Drawing.Size(32, 32);
+            this.MminNext.Text = "toolStripSplitButton2";
+            this.MminNext.Click += new System.EventHandler(this.MminNext_Click);
             // 
             // pickMminValueDataGridView
             // 
@@ -690,6 +793,32 @@
             this.pickMminValueDataGridView.Size = new System.Drawing.Size(650, 371);
             this.pickMminValueDataGridView.TabIndex = 0;
             // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "TcValue";
+            this.dataGridViewTextBoxColumn8.HeaderText = "TcValue";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "MminResult";
+            this.dataGridViewTextBoxColumn9.HeaderText = "MminResult";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            // 
+            // pickMminValueBindingSource
+            // 
+            this.pickMminValueBindingSource.DataMember = "pickMminValue";
+            this.pickMminValueBindingSource.DataSource = this.databaseDataSet;
+            // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.statusStrip3);
@@ -701,6 +830,38 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Tb Result";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // statusStrip3
+            // 
+            this.statusStrip3.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.statusStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TbPrevious,
+            this.TbNext});
+            this.statusStrip3.Location = new System.Drawing.Point(3, 337);
+            this.statusStrip3.Name = "statusStrip3";
+            this.statusStrip3.Size = new System.Drawing.Size(650, 37);
+            this.statusStrip3.TabIndex = 1;
+            this.statusStrip3.Text = "statusStrip3";
+            // 
+            // TbPrevious
+            // 
+            this.TbPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.TbPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
+            this.TbPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TbPrevious.Name = "TbPrevious";
+            this.TbPrevious.Size = new System.Drawing.Size(32, 32);
+            this.TbPrevious.Text = "toolStripSplitButton1";
+            this.TbPrevious.Click += new System.EventHandler(this.TbPrevious_Click);
+            // 
+            // TbNext
+            // 
+            this.TbNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.TbNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
+            this.TbNext.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TbNext.Name = "TbNext";
+            this.TbNext.Size = new System.Drawing.Size(32, 32);
+            this.TbNext.Text = "toolStripSplitButton2";
+            this.TbNext.Click += new System.EventHandler(this.TbNext_Click);
             // 
             // pickTbValueDataGridView
             // 
@@ -722,6 +883,39 @@
             this.pickTbValueDataGridView.Size = new System.Drawing.Size(650, 371);
             this.pickTbValueDataGridView.TabIndex = 0;
             // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "TaValue";
+            this.dataGridViewTextBoxColumn11.HeaderText = "TaValue";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "TevapValue";
+            this.dataGridViewTextBoxColumn12.HeaderText = "TevapValue";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "TbResult";
+            this.dataGridViewTextBoxColumn13.HeaderText = "TbResult";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.ReadOnly = true;
+            // 
+            // pickTbValueBindingSource
+            // 
+            this.pickTbValueBindingSource.DataMember = "pickTbValue";
+            this.pickTbValueBindingSource.DataSource = this.databaseDataSet;
+            // 
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.statusStrip4);
@@ -733,6 +927,36 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Td Result";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // statusStrip4
+            // 
+            this.statusStrip4.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.statusStrip4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TdPrevious,
+            this.TdNext});
+            this.statusStrip4.Location = new System.Drawing.Point(3, 337);
+            this.statusStrip4.Name = "statusStrip4";
+            this.statusStrip4.Size = new System.Drawing.Size(650, 37);
+            this.statusStrip4.TabIndex = 1;
+            this.statusStrip4.Text = "statusStrip4";
+            // 
+            // TdPrevious
+            // 
+            this.TdPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.TdPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
+            this.TdPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TdPrevious.Name = "TdPrevious";
+            this.TdPrevious.Size = new System.Drawing.Size(32, 32);
+            this.TdPrevious.Text = "toolStripSplitButton1";
+            // 
+            // TdNext
+            // 
+            this.TdNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.TdNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
+            this.TdNext.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TdNext.Name = "TdNext";
+            this.TdNext.Size = new System.Drawing.Size(32, 32);
+            this.TdNext.Text = "toolStripSplitButton2";
             // 
             // pickTdValueDataGridView
             // 
@@ -755,6 +979,46 @@
             this.pickTdValueDataGridView.Size = new System.Drawing.Size(650, 371);
             this.pickTdValueDataGridView.TabIndex = 0;
             // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn14.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "TaValue";
+            this.dataGridViewTextBoxColumn15.HeaderText = "TaValue";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.dataGridViewTextBoxColumn15.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "TbValue";
+            this.dataGridViewTextBoxColumn16.HeaderText = "TbValue";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "TcValue";
+            this.dataGridViewTextBoxColumn17.HeaderText = "TcValue";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            this.dataGridViewTextBoxColumn17.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "TdResult";
+            this.dataGridViewTextBoxColumn18.HeaderText = "TdResult";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.dataGridViewTextBoxColumn18.ReadOnly = true;
+            // 
+            // pickTdValueBindingSource
+            // 
+            this.pickTdValueBindingSource.DataMember = "pickTdValue";
+            this.pickTdValueBindingSource.DataSource = this.databaseDataSet;
+            // 
             // tabPage6
             // 
             this.tabPage6.Controls.Add(this.statusStrip5);
@@ -766,6 +1030,36 @@
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "H Result";
             this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // statusStrip5
+            // 
+            this.statusStrip5.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.statusStrip5.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.HPrevious,
+            this.HNext});
+            this.statusStrip5.Location = new System.Drawing.Point(3, 337);
+            this.statusStrip5.Name = "statusStrip5";
+            this.statusStrip5.Size = new System.Drawing.Size(650, 37);
+            this.statusStrip5.TabIndex = 1;
+            this.statusStrip5.Text = "statusStrip5";
+            // 
+            // HPrevious
+            // 
+            this.HPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.HPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
+            this.HPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.HPrevious.Name = "HPrevious";
+            this.HPrevious.Size = new System.Drawing.Size(32, 32);
+            this.HPrevious.Text = "toolStripSplitButton1";
+            // 
+            // HNext
+            // 
+            this.HNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.HNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
+            this.HNext.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.HNext.Name = "HNext";
+            this.HNext.Size = new System.Drawing.Size(32, 32);
+            this.HNext.Text = "toolStripSplitButton2";
             // 
             // pickHValueDataGridView
             // 
@@ -787,6 +1081,39 @@
             this.pickHValueDataGridView.Size = new System.Drawing.Size(650, 371);
             this.pickHValueDataGridView.TabIndex = 0;
             // 
+            // dataGridViewTextBoxColumn19
+            // 
+            this.dataGridViewTextBoxColumn19.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn19.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            this.dataGridViewTextBoxColumn19.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn20
+            // 
+            this.dataGridViewTextBoxColumn20.DataPropertyName = "TcValue";
+            this.dataGridViewTextBoxColumn20.HeaderText = "TcValue";
+            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            this.dataGridViewTextBoxColumn20.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn21
+            // 
+            this.dataGridViewTextBoxColumn21.DataPropertyName = "MxValue";
+            this.dataGridViewTextBoxColumn21.HeaderText = "MxValue";
+            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            this.dataGridViewTextBoxColumn21.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn22
+            // 
+            this.dataGridViewTextBoxColumn22.DataPropertyName = "HResult";
+            this.dataGridViewTextBoxColumn22.HeaderText = "HResult";
+            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
+            this.dataGridViewTextBoxColumn22.ReadOnly = true;
+            // 
+            // pickHValueBindingSource
+            // 
+            this.pickHValueBindingSource.DataMember = "pickHValue";
+            this.pickHValueBindingSource.DataSource = this.databaseDataSet;
+            // 
             // tabPage7
             // 
             this.tabPage7.Controls.Add(this.statusStrip6);
@@ -798,6 +1125,36 @@
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Qab Result";
             this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // statusStrip6
+            // 
+            this.statusStrip6.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.statusStrip6.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.QabPrevious,
+            this.QabNext});
+            this.statusStrip6.Location = new System.Drawing.Point(3, 337);
+            this.statusStrip6.Name = "statusStrip6";
+            this.statusStrip6.Size = new System.Drawing.Size(650, 37);
+            this.statusStrip6.TabIndex = 1;
+            this.statusStrip6.Text = "statusStrip6";
+            // 
+            // QabPrevious
+            // 
+            this.QabPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.QabPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
+            this.QabPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.QabPrevious.Name = "QabPrevious";
+            this.QabPrevious.Size = new System.Drawing.Size(32, 32);
+            this.QabPrevious.Text = "toolStripSplitButton1";
+            // 
+            // QabNext
+            // 
+            this.QabNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.QabNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
+            this.QabNext.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.QabNext.Name = "QabNext";
+            this.QabNext.Size = new System.Drawing.Size(32, 32);
+            this.QabNext.Text = "toolStripSplitButton2";
             // 
             // pickQabValueDataGridView
             // 
@@ -820,6 +1177,46 @@
             this.pickQabValueDataGridView.Size = new System.Drawing.Size(650, 371);
             this.pickQabValueDataGridView.TabIndex = 0;
             // 
+            // dataGridViewTextBoxColumn23
+            // 
+            this.dataGridViewTextBoxColumn23.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn23.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            this.dataGridViewTextBoxColumn23.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.DataPropertyName = "TaValue";
+            this.dataGridViewTextBoxColumn24.HeaderText = "TaValue";
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            this.dataGridViewTextBoxColumn24.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn25
+            // 
+            this.dataGridViewTextBoxColumn25.DataPropertyName = "TbValue";
+            this.dataGridViewTextBoxColumn25.HeaderText = "TbValue";
+            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
+            this.dataGridViewTextBoxColumn25.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn26
+            // 
+            this.dataGridViewTextBoxColumn26.DataPropertyName = "MxValue";
+            this.dataGridViewTextBoxColumn26.HeaderText = "MxValue";
+            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
+            this.dataGridViewTextBoxColumn26.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn27
+            // 
+            this.dataGridViewTextBoxColumn27.DataPropertyName = "QabResult";
+            this.dataGridViewTextBoxColumn27.HeaderText = "QabResult";
+            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
+            this.dataGridViewTextBoxColumn27.ReadOnly = true;
+            // 
+            // pickQabValueBindingSource
+            // 
+            this.pickQabValueBindingSource.DataMember = "pickQabValue";
+            this.pickQabValueBindingSource.DataSource = this.databaseDataSet;
+            // 
             // tabPage8
             // 
             this.tabPage8.AutoScroll = true;
@@ -832,6 +1229,36 @@
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Qbc Result";
             this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // statusStrip7
+            // 
+            this.statusStrip7.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.statusStrip7.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.QbcPrevious,
+            this.QbcNext});
+            this.statusStrip7.Location = new System.Drawing.Point(3, 337);
+            this.statusStrip7.Name = "statusStrip7";
+            this.statusStrip7.Size = new System.Drawing.Size(650, 37);
+            this.statusStrip7.TabIndex = 1;
+            this.statusStrip7.Text = "statusStrip7";
+            // 
+            // QbcPrevious
+            // 
+            this.QbcPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.QbcPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
+            this.QbcPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.QbcPrevious.Name = "QbcPrevious";
+            this.QbcPrevious.Size = new System.Drawing.Size(32, 32);
+            this.QbcPrevious.Text = "toolStripSplitButton1";
+            // 
+            // QbcNext
+            // 
+            this.QbcNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.QbcNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
+            this.QbcNext.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.QbcNext.Name = "QbcNext";
+            this.QbcNext.Size = new System.Drawing.Size(32, 32);
+            this.QbcNext.Text = "toolStripSplitButton2";
             // 
             // pickQbcValueDataGridView
             // 
@@ -855,6 +1282,60 @@
             this.pickQbcValueDataGridView.ReadOnly = true;
             this.pickQbcValueDataGridView.Size = new System.Drawing.Size(650, 371);
             this.pickQbcValueDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn28
+            // 
+            this.dataGridViewTextBoxColumn28.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn28.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
+            this.dataGridViewTextBoxColumn28.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn29
+            // 
+            this.dataGridViewTextBoxColumn29.DataPropertyName = "TbValue";
+            this.dataGridViewTextBoxColumn29.HeaderText = "TbValue";
+            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
+            this.dataGridViewTextBoxColumn29.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn30
+            // 
+            this.dataGridViewTextBoxColumn30.DataPropertyName = "TcValue";
+            this.dataGridViewTextBoxColumn30.HeaderText = "TcValue";
+            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
+            this.dataGridViewTextBoxColumn30.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn31
+            // 
+            this.dataGridViewTextBoxColumn31.DataPropertyName = "MxValue";
+            this.dataGridViewTextBoxColumn31.HeaderText = "MxValue";
+            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
+            this.dataGridViewTextBoxColumn31.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn32
+            // 
+            this.dataGridViewTextBoxColumn32.DataPropertyName = "MminValue";
+            this.dataGridViewTextBoxColumn32.HeaderText = "MminValue";
+            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
+            this.dataGridViewTextBoxColumn32.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn33
+            // 
+            this.dataGridViewTextBoxColumn33.DataPropertyName = "HValue";
+            this.dataGridViewTextBoxColumn33.HeaderText = "HValue";
+            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
+            this.dataGridViewTextBoxColumn33.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn34
+            // 
+            this.dataGridViewTextBoxColumn34.DataPropertyName = "QbcResult";
+            this.dataGridViewTextBoxColumn34.HeaderText = "QbcResult";
+            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
+            this.dataGridViewTextBoxColumn34.ReadOnly = true;
+            // 
+            // pickQbcValueBindingSource
+            // 
+            this.pickQbcValueBindingSource.DataMember = "pickQbcValue";
+            this.pickQbcValueBindingSource.DataSource = this.databaseDataSet;
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -961,355 +1442,6 @@
             this.dataGridViewTextBoxColumn3.HeaderText = "Mx_Result";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
-            // statusStrip1
-            // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MxPrevious,
-            this.MxNext});
-            this.statusStrip1.Location = new System.Drawing.Point(3, 337);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(650, 37);
-            this.statusStrip1.TabIndex = 1;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // statusStrip2
-            // 
-            this.statusStrip2.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.statusStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MminPrevious,
-            this.MminNext});
-            this.statusStrip2.Location = new System.Drawing.Point(3, 337);
-            this.statusStrip2.Name = "statusStrip2";
-            this.statusStrip2.Size = new System.Drawing.Size(650, 37);
-            this.statusStrip2.TabIndex = 1;
-            this.statusStrip2.Text = "statusStrip2";
-            // 
-            // statusStrip3
-            // 
-            this.statusStrip3.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.statusStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TbPrevious,
-            this.TbNext});
-            this.statusStrip3.Location = new System.Drawing.Point(3, 337);
-            this.statusStrip3.Name = "statusStrip3";
-            this.statusStrip3.Size = new System.Drawing.Size(650, 37);
-            this.statusStrip3.TabIndex = 1;
-            this.statusStrip3.Text = "statusStrip3";
-            // 
-            // statusStrip4
-            // 
-            this.statusStrip4.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.statusStrip4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TdPrevious,
-            this.TdNext});
-            this.statusStrip4.Location = new System.Drawing.Point(3, 337);
-            this.statusStrip4.Name = "statusStrip4";
-            this.statusStrip4.Size = new System.Drawing.Size(650, 37);
-            this.statusStrip4.TabIndex = 1;
-            this.statusStrip4.Text = "statusStrip4";
-            // 
-            // statusStrip5
-            // 
-            this.statusStrip5.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.statusStrip5.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.HPrevious,
-            this.HNext});
-            this.statusStrip5.Location = new System.Drawing.Point(3, 337);
-            this.statusStrip5.Name = "statusStrip5";
-            this.statusStrip5.Size = new System.Drawing.Size(650, 37);
-            this.statusStrip5.TabIndex = 1;
-            this.statusStrip5.Text = "statusStrip5";
-            // 
-            // statusStrip6
-            // 
-            this.statusStrip6.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.statusStrip6.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.QabPrevious,
-            this.QabNext});
-            this.statusStrip6.Location = new System.Drawing.Point(3, 337);
-            this.statusStrip6.Name = "statusStrip6";
-            this.statusStrip6.Size = new System.Drawing.Size(650, 37);
-            this.statusStrip6.TabIndex = 1;
-            this.statusStrip6.Text = "statusStrip6";
-            // 
-            // statusStrip7
-            // 
-            this.statusStrip7.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.statusStrip7.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.QbcPrevious,
-            this.QbcNext});
-            this.statusStrip7.Location = new System.Drawing.Point(3, 337);
-            this.statusStrip7.Name = "statusStrip7";
-            this.statusStrip7.Size = new System.Drawing.Size(650, 37);
-            this.statusStrip7.TabIndex = 1;
-            this.statusStrip7.Text = "statusStrip7";
-            // 
-            // statusStrip8
-            // 
-            this.statusStrip8.Location = new System.Drawing.Point(3, 352);
-            this.statusStrip8.Name = "statusStrip8";
-            this.statusStrip8.Size = new System.Drawing.Size(650, 22);
-            this.statusStrip8.TabIndex = 3;
-            this.statusStrip8.Text = "statusStrip8";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "TaValue";
-            this.dataGridViewTextBoxColumn5.HeaderText = "TaValue";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "MxResult";
-            this.dataGridViewTextBoxColumn6.HeaderText = "MxResult";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            // 
-            // pickMxValueBindingSource
-            // 
-            this.pickMxValueBindingSource.DataMember = "pickMxValue";
-            this.pickMxValueBindingSource.DataSource = this.databaseDataSet;
-            // 
-            // databaseDataSet
-            // 
-            this.databaseDataSet.DataSetName = "DatabaseDataSet";
-            this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "TcValue";
-            this.dataGridViewTextBoxColumn8.HeaderText = "TcValue";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "MminResult";
-            this.dataGridViewTextBoxColumn9.HeaderText = "MminResult";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.ReadOnly = true;
-            // 
-            // pickMminValueBindingSource
-            // 
-            this.pickMminValueBindingSource.DataMember = "pickMminValue";
-            this.pickMminValueBindingSource.DataSource = this.databaseDataSet;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn10.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "TaValue";
-            this.dataGridViewTextBoxColumn11.HeaderText = "TaValue";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "TevapValue";
-            this.dataGridViewTextBoxColumn12.HeaderText = "TevapValue";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.DataPropertyName = "TbResult";
-            this.dataGridViewTextBoxColumn13.HeaderText = "TbResult";
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.ReadOnly = true;
-            // 
-            // pickTbValueBindingSource
-            // 
-            this.pickTbValueBindingSource.DataMember = "pickTbValue";
-            this.pickTbValueBindingSource.DataSource = this.databaseDataSet;
-            // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn14.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn15
-            // 
-            this.dataGridViewTextBoxColumn15.DataPropertyName = "TaValue";
-            this.dataGridViewTextBoxColumn15.HeaderText = "TaValue";
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            this.dataGridViewTextBoxColumn15.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn16
-            // 
-            this.dataGridViewTextBoxColumn16.DataPropertyName = "TbValue";
-            this.dataGridViewTextBoxColumn16.HeaderText = "TbValue";
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            this.dataGridViewTextBoxColumn16.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn17
-            // 
-            this.dataGridViewTextBoxColumn17.DataPropertyName = "TcValue";
-            this.dataGridViewTextBoxColumn17.HeaderText = "TcValue";
-            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            this.dataGridViewTextBoxColumn17.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn18
-            // 
-            this.dataGridViewTextBoxColumn18.DataPropertyName = "TdResult";
-            this.dataGridViewTextBoxColumn18.HeaderText = "TdResult";
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            this.dataGridViewTextBoxColumn18.ReadOnly = true;
-            // 
-            // pickTdValueBindingSource
-            // 
-            this.pickTdValueBindingSource.DataMember = "pickTdValue";
-            this.pickTdValueBindingSource.DataSource = this.databaseDataSet;
-            // 
-            // dataGridViewTextBoxColumn19
-            // 
-            this.dataGridViewTextBoxColumn19.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn19.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
-            this.dataGridViewTextBoxColumn19.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn20
-            // 
-            this.dataGridViewTextBoxColumn20.DataPropertyName = "TcValue";
-            this.dataGridViewTextBoxColumn20.HeaderText = "TcValue";
-            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
-            this.dataGridViewTextBoxColumn20.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn21
-            // 
-            this.dataGridViewTextBoxColumn21.DataPropertyName = "MxValue";
-            this.dataGridViewTextBoxColumn21.HeaderText = "MxValue";
-            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
-            this.dataGridViewTextBoxColumn21.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn22
-            // 
-            this.dataGridViewTextBoxColumn22.DataPropertyName = "HResult";
-            this.dataGridViewTextBoxColumn22.HeaderText = "HResult";
-            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
-            this.dataGridViewTextBoxColumn22.ReadOnly = true;
-            // 
-            // pickHValueBindingSource
-            // 
-            this.pickHValueBindingSource.DataMember = "pickHValue";
-            this.pickHValueBindingSource.DataSource = this.databaseDataSet;
-            // 
-            // dataGridViewTextBoxColumn23
-            // 
-            this.dataGridViewTextBoxColumn23.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn23.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
-            this.dataGridViewTextBoxColumn23.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn24
-            // 
-            this.dataGridViewTextBoxColumn24.DataPropertyName = "TaValue";
-            this.dataGridViewTextBoxColumn24.HeaderText = "TaValue";
-            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
-            this.dataGridViewTextBoxColumn24.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn25
-            // 
-            this.dataGridViewTextBoxColumn25.DataPropertyName = "TbValue";
-            this.dataGridViewTextBoxColumn25.HeaderText = "TbValue";
-            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
-            this.dataGridViewTextBoxColumn25.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn26
-            // 
-            this.dataGridViewTextBoxColumn26.DataPropertyName = "MxValue";
-            this.dataGridViewTextBoxColumn26.HeaderText = "MxValue";
-            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
-            this.dataGridViewTextBoxColumn26.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn27
-            // 
-            this.dataGridViewTextBoxColumn27.DataPropertyName = "QabResult";
-            this.dataGridViewTextBoxColumn27.HeaderText = "QabResult";
-            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
-            this.dataGridViewTextBoxColumn27.ReadOnly = true;
-            // 
-            // pickQabValueBindingSource
-            // 
-            this.pickQabValueBindingSource.DataMember = "pickQabValue";
-            this.pickQabValueBindingSource.DataSource = this.databaseDataSet;
-            // 
-            // dataGridViewTextBoxColumn28
-            // 
-            this.dataGridViewTextBoxColumn28.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn28.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
-            this.dataGridViewTextBoxColumn28.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn29
-            // 
-            this.dataGridViewTextBoxColumn29.DataPropertyName = "TbValue";
-            this.dataGridViewTextBoxColumn29.HeaderText = "TbValue";
-            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
-            this.dataGridViewTextBoxColumn29.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn30
-            // 
-            this.dataGridViewTextBoxColumn30.DataPropertyName = "TcValue";
-            this.dataGridViewTextBoxColumn30.HeaderText = "TcValue";
-            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
-            this.dataGridViewTextBoxColumn30.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn31
-            // 
-            this.dataGridViewTextBoxColumn31.DataPropertyName = "MxValue";
-            this.dataGridViewTextBoxColumn31.HeaderText = "MxValue";
-            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
-            this.dataGridViewTextBoxColumn31.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn32
-            // 
-            this.dataGridViewTextBoxColumn32.DataPropertyName = "MminValue";
-            this.dataGridViewTextBoxColumn32.HeaderText = "MminValue";
-            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
-            this.dataGridViewTextBoxColumn32.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn33
-            // 
-            this.dataGridViewTextBoxColumn33.DataPropertyName = "HValue";
-            this.dataGridViewTextBoxColumn33.HeaderText = "HValue";
-            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
-            this.dataGridViewTextBoxColumn33.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn34
-            // 
-            this.dataGridViewTextBoxColumn34.DataPropertyName = "QbcResult";
-            this.dataGridViewTextBoxColumn34.HeaderText = "QbcResult";
-            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
-            this.dataGridViewTextBoxColumn34.ReadOnly = true;
-            // 
-            // pickQbcValueBindingSource
-            // 
-            this.pickQbcValueBindingSource.DataMember = "pickQbcValue";
-            this.pickQbcValueBindingSource.DataSource = this.databaseDataSet;
-            // 
             // pickMxValueTableAdapter
             // 
             this.pickMxValueTableAdapter.ClearBeforeFill = true;
@@ -1344,132 +1476,6 @@
             // 
             this.pickQbcValueTableAdapter.ClearBeforeFill = true;
             // 
-            // MxPrevious
-            // 
-            this.MxPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.MxPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
-            this.MxPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.MxPrevious.Name = "MxPrevious";
-            this.MxPrevious.Size = new System.Drawing.Size(32, 32);
-            this.MxPrevious.Text = "toolStripSplitButton1";
-            // 
-            // MxNext
-            // 
-            this.MxNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.MxNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
-            this.MxNext.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.MxNext.Name = "MxNext";
-            this.MxNext.Size = new System.Drawing.Size(32, 32);
-            this.MxNext.Text = "toolStripSplitButton2";
-            // 
-            // MminPrevious
-            // 
-            this.MminPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.MminPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
-            this.MminPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.MminPrevious.Name = "MminPrevious";
-            this.MminPrevious.Size = new System.Drawing.Size(32, 32);
-            this.MminPrevious.Text = "toolStripSplitButton1";
-            // 
-            // MminNext
-            // 
-            this.MminNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.MminNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
-            this.MminNext.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.MminNext.Name = "MminNext";
-            this.MminNext.Size = new System.Drawing.Size(32, 32);
-            this.MminNext.Text = "toolStripSplitButton2";
-            // 
-            // TbPrevious
-            // 
-            this.TbPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.TbPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
-            this.TbPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.TbPrevious.Name = "TbPrevious";
-            this.TbPrevious.Size = new System.Drawing.Size(32, 32);
-            this.TbPrevious.Text = "toolStripSplitButton1";
-            // 
-            // TbNext
-            // 
-            this.TbNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.TbNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
-            this.TbNext.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.TbNext.Name = "TbNext";
-            this.TbNext.Size = new System.Drawing.Size(32, 32);
-            this.TbNext.Text = "toolStripSplitButton2";
-            // 
-            // TdPrevious
-            // 
-            this.TdPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.TdPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
-            this.TdPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.TdPrevious.Name = "TdPrevious";
-            this.TdPrevious.Size = new System.Drawing.Size(32, 32);
-            this.TdPrevious.Text = "toolStripSplitButton1";
-            // 
-            // TdNext
-            // 
-            this.TdNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.TdNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
-            this.TdNext.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.TdNext.Name = "TdNext";
-            this.TdNext.Size = new System.Drawing.Size(32, 32);
-            this.TdNext.Text = "toolStripSplitButton2";
-            // 
-            // HPrevious
-            // 
-            this.HPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.HPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
-            this.HPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.HPrevious.Name = "HPrevious";
-            this.HPrevious.Size = new System.Drawing.Size(32, 32);
-            this.HPrevious.Text = "toolStripSplitButton1";
-            // 
-            // HNext
-            // 
-            this.HNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.HNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
-            this.HNext.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.HNext.Name = "HNext";
-            this.HNext.Size = new System.Drawing.Size(32, 32);
-            this.HNext.Text = "toolStripSplitButton2";
-            // 
-            // QabPrevious
-            // 
-            this.QabPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.QabPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
-            this.QabPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.QabPrevious.Name = "QabPrevious";
-            this.QabPrevious.Size = new System.Drawing.Size(32, 32);
-            this.QabPrevious.Text = "toolStripSplitButton1";
-            // 
-            // QabNext
-            // 
-            this.QabNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.QabNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
-            this.QabNext.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.QabNext.Name = "QabNext";
-            this.QabNext.Size = new System.Drawing.Size(32, 32);
-            this.QabNext.Text = "toolStripSplitButton2";
-            // 
-            // QbcPrevious
-            // 
-            this.QbcPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.QbcPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
-            this.QbcPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.QbcPrevious.Name = "QbcPrevious";
-            this.QbcPrevious.Size = new System.Drawing.Size(32, 32);
-            this.QbcPrevious.Text = "toolStripSplitButton1";
-            // 
-            // QbcNext
-            // 
-            this.QbcNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.QbcNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
-            this.QbcNext.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.QbcNext.Name = "QbcNext";
-            this.QbcNext.Size = new System.Drawing.Size(32, 32);
-            this.QbcNext.Text = "toolStripSplitButton2";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1490,46 +1496,46 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pickMxValueDataGridView)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pickMminValueDataGridView)).EndInit();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pickTbValueDataGridView)).EndInit();
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pickTdValueDataGridView)).EndInit();
-            this.tabPage6.ResumeLayout(false);
-            this.tabPage6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pickHValueDataGridView)).EndInit();
-            this.tabPage7.ResumeLayout(false);
-            this.tabPage7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pickQabValueDataGridView)).EndInit();
-            this.tabPage8.ResumeLayout(false);
-            this.tabPage8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pickQbcValueDataGridView)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.statusStrip2.ResumeLayout(false);
-            this.statusStrip2.PerformLayout();
-            this.statusStrip3.ResumeLayout(false);
-            this.statusStrip3.PerformLayout();
-            this.statusStrip4.ResumeLayout(false);
-            this.statusStrip4.PerformLayout();
-            this.statusStrip5.ResumeLayout(false);
-            this.statusStrip5.PerformLayout();
-            this.statusStrip6.ResumeLayout(false);
-            this.statusStrip6.PerformLayout();
-            this.statusStrip7.ResumeLayout(false);
-            this.statusStrip7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pickMxValueDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pickMxValueBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            this.statusStrip2.ResumeLayout(false);
+            this.statusStrip2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pickMminValueDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pickMminValueBindingSource)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            this.statusStrip3.ResumeLayout(false);
+            this.statusStrip3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pickTbValueDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pickTbValueBindingSource)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
+            this.statusStrip4.ResumeLayout(false);
+            this.statusStrip4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pickTdValueDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pickTdValueBindingSource)).EndInit();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
+            this.statusStrip5.ResumeLayout(false);
+            this.statusStrip5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pickHValueDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pickHValueBindingSource)).EndInit();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
+            this.statusStrip6.ResumeLayout(false);
+            this.statusStrip6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pickQabValueDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pickQabValueBindingSource)).EndInit();
+            this.tabPage8.ResumeLayout(false);
+            this.tabPage8.PerformLayout();
+            this.statusStrip7.ResumeLayout(false);
+            this.statusStrip7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pickQbcValueDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pickQbcValueBindingSource)).EndInit();
             this.ResumeLayout(false);
 
