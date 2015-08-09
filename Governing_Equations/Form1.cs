@@ -35,8 +35,16 @@ namespace Governing_Equations
 
         private void TestQueries()
         {
-            Calculations.MxCalculation(parameters.Tsat, parameters.K_value, parameters.n_value, parameters.M0_value, parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance);
-            Calculations.MminCalculation(parameters.Tsat, parameters.K_value, parameters.n_value, parameters.M0_value, parameters.Tc_Starting, parameters.Tc_Ending, parameters.Tc_Variance);                        
+            Calculations.TbCalculation(parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance, parameters.Tevap_Starting, parameters.Tevap_Ending, parameters.Tevap_Variance);
+            AppData.DatabaseDataSetTableAdapters.pickTbResultTableAdapter TbResult = new AppData.DatabaseDataSetTableAdapters.pickTbResultTableAdapter();
+            foreach (DataRow tbResult in TbResult.GetData().Rows)
+            {
+                MessageBox.Show(tbResult.ItemArray[0].ToString());
+            }
+            //Calculations.MxCalculation(parameters.Tsat, parameters.K_value, parameters.n_value, parameters.M0_value, parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance);
+            //Calculations.MminCalculation(parameters.Tsat, parameters.K_value, parameters.n_value, parameters.M0_value, parameters.Tc_Starting, parameters.Tc_Ending, parameters.Tc_Variance);
+            //Calculations.TbCalculation(parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance, parameters.Tevap_Starting, parameters.Tevap_Ending, parameters.Tevap_Variance);
+
         }
 
         private void load_Values()

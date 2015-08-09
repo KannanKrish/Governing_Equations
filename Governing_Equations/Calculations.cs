@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,10 @@ namespace Governing_Equations
     public class Calculations
     {
         static AppData.DatabaseDataSetTableAdapters.QueriesTableAdapter query = new AppData.DatabaseDataSetTableAdapters.QueriesTableAdapter();
-
+        public static double Integration(double lowerLimit, double upperLimit, double innerValue)
+        {
+            return (innerValue * upperLimit) - (innerValue * lowerLimit);
+        }
         public static void MxCalculation(double Tsat, double K, double n, double M0, double starting_Ta, double ending_Ta, double variation_Ta)
         {
             for (double i = starting_Ta; i <= ending_Ta; i += variation_Ta)
@@ -25,39 +29,43 @@ namespace Governing_Equations
             for (double i = starting_Ta; i <= ending_Ta; i += variation_Ta)
                 for (double j = starting_Tevap; j <= ending_Tevap; j += variation_Tevap)
                     query.InsertTbValue(i, j, Math.Round((i * i) / j, Parameters.Round_Decimal));
-        }
-        public static void TdCalculation(double starting_Ta, double ending_Ta, double variation_Ta, double starting_Tc, double ending_Tc, double variation_Tc, List<Tb_Value> Tb_Result)
+        }        
+        public static void TdCalculation(double starting_Ta, double ending_Ta, double variation_Ta, double starting_Tc, double ending_Tc, double variation_Tc)
         {
+            AppData.DatabaseDataSetTableAdapters.pickTbResultTableAdapter Tb_Result = new AppData.DatabaseDataSetTableAdapters.pickTbResultTableAdapter();
             for (double i = starting_Ta; i <= ending_Ta; i += variation_Ta)
-                foreach (Tb_Value Tb_value in Tb_Result)
+                foreach (DataRow Tb_value in Tb_Result.GetData().Rows)
                     for (double j = starting_Tc; j <= ending_Tc; j += variation_Tc)
-                        query.InsertTdValue(i, Tb_value.Tb_Result, j, Math.Round((i * Tb_value.Tb_Result) / j, Parameters.Round_Decimal));
+                        query.InsertTdValue(i, Convert.ToDouble(Tb_value.ItemArray[0]), j, Math.Round((i * Convert.ToDouble(Tb_value.ItemArray[0])) / j, Parameters.Round_Decimal));
         }
-        public static void HCalculation(double R, double CPAd, List<Mx_Value> MxResult, double CPr, double starting_Tc, double ending_Tc, double Tc_Variation, double Tsat)
+        public static void HCalculation(double R, double CPAd, double CPr, double starting_Tc, double ending_Tc, double Tc_Variation, double Tsat)
         {
+            AppData.DatabaseDataSetTableAdapters.pickMxResultTableAdapter Mx_Result = new AppData.DatabaseDataSetTableAdapters.pickMxResultTableAdapter();
             for (double i = starting_Tc; i <= ending_Tc; i += Tc_Variation)
-                foreach (Mx_Value mxResult in MxResult)
-                    query.InsertHValue(i, mxResult.Mx_Result, Math.Round(R * (CPAd + (mxResult.Mx_Result * CPr)) * (i / Tsat), Parameters.Round_Decimal));
+                foreach (DataRow mxResult in Mx_Result.GetData().Rows)
+                    query.InsertHValue(i, Convert.ToDouble(mxResult.ItemArray[0]), Math.Round(R * (CPAd + (Convert.ToDouble(mxResult.ItemArray[0]) * CPr)) * (i / Tsat), Parameters.Round_Decimal));
         }
-        public static double Integration(double lowerLimit, double upperLimit, double innerValue)
+        public static void QabCalculation(double CPAd, double CPr, double starting_Ta, double ending_Ta, double Ta_Variation)
         {
-            return (innerValue * upperLimit) - (innerValue * lowerLimit);
-        }
-        public static void QabCalculation(double CPAd, List<Mx_Value> MxResult, double CPr, double starting_Ta, double ending_Ta, double Ta_Variation, List<Tb_Value> Tb_Result)
-        {
-            foreach (Mx_Value mxResult in MxResult)
-                foreach (Tb_Value tbValue in Tb_Result)
+            AppData.DatabaseDataSetTableAdapters.pickMxResultTableAdapter Mx_Result = new AppData.DatabaseDataSetTableAdapters.pickMxResultTableAdapter();
+            AppData.DatabaseDataSetTableAdapters.pickTbResultTableAdapter Tb_Result = new AppData.DatabaseDataSetTableAdapters.pickTbResultTableAdapter();
+            foreach (DataRow mxResult in Mx_Result.GetData().Rows)
+                foreach (DataRow tbValue in Tb_Result.GetData().Rows)
                     for (double i = starting_Ta; i <= ending_Ta; i += Ta_Variation)
-                        query.InsertQabValue(i, tbValue.Tb_Result, mxResult.Mx_Result, Math.Round(Calculations.Integration(i, tbValue.Tb_Result, CPAd + (mxResult.Mx_Result * CPr)), Parameters.Round_Decimal));
+                        query.InsertQabValue(i, Convert.ToDouble(tbValue.ItemArray[0]), Convert.ToDouble(mxResult.ItemArray[0]), Math.Round(Calculations.Integration(i, Convert.ToDouble(tbValue.ItemArray[0]), CPAd + (Convert.ToDouble(mxResult.ItemArray[0]) * CPr)), Parameters.Round_Decimal));
         }
-        public static void QbcCalculation(double CPAd, List<Mx_Value> MxResult, double CPr, double starting_Tc, double ending_Tc, double Tc_Variation, List<Tb_Value> Tb_Result, List<Mmin_Value> MminResult, List<H_Value> HResult)
+        public static void QbcCalculation(double CPAd, double CPr, double starting_Tc, double ending_Tc, double Tc_Variation)
         {
+            AppData.DatabaseDataSetTableAdapters.pickMxResultTableAdapter Mx_Result = new AppData.DatabaseDataSetTableAdapters.pickMxResultTableAdapter();
+            AppData.DatabaseDataSetTableAdapters.pickTbResultTableAdapter Tb_Result = new AppData.DatabaseDataSetTableAdapters.pickTbResultTableAdapter();
+            AppData.DatabaseDataSetTableAdapters.pickMminResultTableAdapter Mmin_Result = new AppData.DatabaseDataSetTableAdapters.pickMminResultTableAdapter();
+            AppData.DatabaseDataSetTableAdapters.pickHResultTableAdapter H_Result = new AppData.DatabaseDataSetTableAdapters.pickHResultTableAdapter();
             for (double i = starting_Tc; i <= ending_Tc; i += Tc_Variation)
-                foreach (Tb_Value tbValue in Tb_Result)
-                    foreach (Mx_Value mxResult in MxResult)
-                        foreach (Mmin_Value mminValue in MminResult)
-                            foreach (H_Value hResult in HResult)
-                                query.InsertQbcValue(i, tbValue.Tb_Result, mxResult.Mx_Result, hResult.H_Result, mminValue.Mmin_Result, Math.Round(Calculations.Integration(tbValue.Tb_Result, i, CPAd + mxResult.Mx_Result * CPr) + Calculations.Integration(mminValue.Mmin_Result, mxResult.Mx_Result, hResult.H_Result), Parameters.Round_Decimal));
+                foreach (DataRow tbValue in Tb_Result.GetData().Rows)
+                    foreach (DataRow mxResult in Mx_Result.GetData().Rows)
+                        foreach (DataRow mminValue in Mmin_Result.GetData().Rows)
+                            foreach (DataRow hResult in H_Result.GetData().Rows)
+                                query.InsertQbcValue(i, Convert.ToDouble(tbValue.ItemArray[0]), Convert.ToDouble(mxResult.ItemArray[0]), Convert.ToDouble(hResult.ItemArray[0]), Convert.ToDouble(mminValue.ItemArray[0]), Math.Round(Calculations.Integration(Convert.ToDouble(tbValue.ItemArray[0]), i, CPAd + Convert.ToDouble(mxResult.ItemArray[0]) * CPr) + Calculations.Integration(Convert.ToDouble(mminValue.ItemArray[0]), Convert.ToDouble(mxResult.ItemArray[0]), Convert.ToDouble(hResult.ItemArray[0])), Parameters.Round_Decimal));
 
         }
     }
