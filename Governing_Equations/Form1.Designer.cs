@@ -73,8 +73,6 @@
             this.statusStrip8 = new System.Windows.Forms.StatusStrip();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.MxPrevious = new System.Windows.Forms.ToolStripStatusLabel();
-            this.MxNext = new System.Windows.Forms.ToolStripStatusLabel();
             this.pickMxValueDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -83,8 +81,6 @@
             this.databaseDataSet = new Governing_Equations.AppData.DatabaseDataSet();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.statusStrip2 = new System.Windows.Forms.StatusStrip();
-            this.MminPrevious = new System.Windows.Forms.ToolStripStatusLabel();
-            this.MminNext = new System.Windows.Forms.ToolStripStatusLabel();
             this.pickMminValueDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -92,8 +88,6 @@
             this.pickMminValueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.statusStrip3 = new System.Windows.Forms.StatusStrip();
-            this.TbPrevious = new System.Windows.Forms.ToolStripStatusLabel();
-            this.TbNext = new System.Windows.Forms.ToolStripStatusLabel();
             this.pickTbValueDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -102,8 +96,6 @@
             this.pickTbValueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.statusStrip4 = new System.Windows.Forms.StatusStrip();
-            this.TdPrevious = new System.Windows.Forms.ToolStripStatusLabel();
-            this.TdNext = new System.Windows.Forms.ToolStripStatusLabel();
             this.pickTdValueDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -113,8 +105,6 @@
             this.pickTdValueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.statusStrip5 = new System.Windows.Forms.StatusStrip();
-            this.HPrevious = new System.Windows.Forms.ToolStripStatusLabel();
-            this.HNext = new System.Windows.Forms.ToolStripStatusLabel();
             this.pickHValueDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -123,8 +113,6 @@
             this.pickHValueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.statusStrip6 = new System.Windows.Forms.StatusStrip();
-            this.QabPrevious = new System.Windows.Forms.ToolStripStatusLabel();
-            this.QabNext = new System.Windows.Forms.ToolStripStatusLabel();
             this.pickQabValueDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -134,8 +122,6 @@
             this.pickQabValueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.statusStrip7 = new System.Windows.Forms.StatusStrip();
-            this.QbcPrevious = new System.Windows.Forms.ToolStripStatusLabel();
-            this.QbcNext = new System.Windows.Forms.ToolStripStatusLabel();
             this.pickQbcValueDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -145,17 +131,12 @@
             this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pickQbcValueBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.mx_ValueBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -168,6 +149,25 @@
             this.pickHValueTableAdapter = new Governing_Equations.AppData.DatabaseDataSetTableAdapters.pickHValueTableAdapter();
             this.pickQabValueTableAdapter = new Governing_Equations.AppData.DatabaseDataSetTableAdapters.pickQabValueTableAdapter();
             this.pickQbcValueTableAdapter = new Governing_Equations.AppData.DatabaseDataSetTableAdapters.pickQbcValueTableAdapter();
+            this.MxPrevious = new System.Windows.Forms.ToolStripStatusLabel();
+            this.MxNext = new System.Windows.Forms.ToolStripStatusLabel();
+            this.MminPrevious = new System.Windows.Forms.ToolStripStatusLabel();
+            this.MminNext = new System.Windows.Forms.ToolStripStatusLabel();
+            this.TbPrevious = new System.Windows.Forms.ToolStripStatusLabel();
+            this.TbNext = new System.Windows.Forms.ToolStripStatusLabel();
+            this.TdPrevious = new System.Windows.Forms.ToolStripStatusLabel();
+            this.TdNext = new System.Windows.Forms.ToolStripStatusLabel();
+            this.HPrevious = new System.Windows.Forms.ToolStripStatusLabel();
+            this.HNext = new System.Windows.Forms.ToolStripStatusLabel();
+            this.QabPrevious = new System.Windows.Forms.ToolStripStatusLabel();
+            this.QabNext = new System.Windows.Forms.ToolStripStatusLabel();
+            this.QbcPrevious = new System.Windows.Forms.ToolStripStatusLabel();
+            this.QbcNext = new System.Windows.Forms.ToolStripStatusLabel();
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
@@ -660,30 +660,13 @@
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // MxPrevious
-            // 
-            this.MxPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.MxPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
-            this.MxPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.MxPrevious.Name = "MxPrevious";
-            this.MxPrevious.Size = new System.Drawing.Size(32, 32);
-            this.MxPrevious.Text = "toolStripSplitButton1";
-            this.MxPrevious.Click += new System.EventHandler(this.MxPrevious_Click);
-            // 
-            // MxNext
-            // 
-            this.MxNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.MxNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
-            this.MxNext.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.MxNext.Name = "MxNext";
-            this.MxNext.Size = new System.Drawing.Size(32, 32);
-            this.MxNext.Text = "toolStripSplitButton2";
-            this.MxNext.Click += new System.EventHandler(this.MxNext_Click);
-            // 
             // pickMxValueDataGridView
             // 
             this.pickMxValueDataGridView.AllowUserToAddRows = false;
             this.pickMxValueDataGridView.AllowUserToDeleteRows = false;
+            this.pickMxValueDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pickMxValueDataGridView.AutoGenerateColumns = false;
             this.pickMxValueDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.pickMxValueDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -692,11 +675,10 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.pickMxValueDataGridView.DataSource = this.pickMxValueBindingSource;
-            this.pickMxValueDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pickMxValueDataGridView.Location = new System.Drawing.Point(3, 3);
             this.pickMxValueDataGridView.Name = "pickMxValueDataGridView";
             this.pickMxValueDataGridView.ReadOnly = true;
-            this.pickMxValueDataGridView.Size = new System.Drawing.Size(650, 371);
+            this.pickMxValueDataGridView.Size = new System.Drawing.Size(650, 331);
             this.pickMxValueDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn4
@@ -754,30 +736,13 @@
             this.statusStrip2.TabIndex = 1;
             this.statusStrip2.Text = "statusStrip2";
             // 
-            // MminPrevious
-            // 
-            this.MminPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.MminPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
-            this.MminPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.MminPrevious.Name = "MminPrevious";
-            this.MminPrevious.Size = new System.Drawing.Size(32, 32);
-            this.MminPrevious.Text = "toolStripSplitButton1";
-            this.MminPrevious.Click += new System.EventHandler(this.MminPrevious_Click);
-            // 
-            // MminNext
-            // 
-            this.MminNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.MminNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
-            this.MminNext.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.MminNext.Name = "MminNext";
-            this.MminNext.Size = new System.Drawing.Size(32, 32);
-            this.MminNext.Text = "toolStripSplitButton2";
-            this.MminNext.Click += new System.EventHandler(this.MminNext_Click);
-            // 
             // pickMminValueDataGridView
             // 
             this.pickMminValueDataGridView.AllowUserToAddRows = false;
             this.pickMminValueDataGridView.AllowUserToDeleteRows = false;
+            this.pickMminValueDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pickMminValueDataGridView.AutoGenerateColumns = false;
             this.pickMminValueDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.pickMminValueDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -786,11 +751,10 @@
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn9});
             this.pickMminValueDataGridView.DataSource = this.pickMminValueBindingSource;
-            this.pickMminValueDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pickMminValueDataGridView.Location = new System.Drawing.Point(3, 3);
             this.pickMminValueDataGridView.Name = "pickMminValueDataGridView";
             this.pickMminValueDataGridView.ReadOnly = true;
-            this.pickMminValueDataGridView.Size = new System.Drawing.Size(650, 371);
+            this.pickMminValueDataGridView.Size = new System.Drawing.Size(650, 331);
             this.pickMminValueDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn7
@@ -843,30 +807,13 @@
             this.statusStrip3.TabIndex = 1;
             this.statusStrip3.Text = "statusStrip3";
             // 
-            // TbPrevious
-            // 
-            this.TbPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.TbPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
-            this.TbPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.TbPrevious.Name = "TbPrevious";
-            this.TbPrevious.Size = new System.Drawing.Size(32, 32);
-            this.TbPrevious.Text = "toolStripSplitButton1";
-            this.TbPrevious.Click += new System.EventHandler(this.TbPrevious_Click);
-            // 
-            // TbNext
-            // 
-            this.TbNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.TbNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
-            this.TbNext.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.TbNext.Name = "TbNext";
-            this.TbNext.Size = new System.Drawing.Size(32, 32);
-            this.TbNext.Text = "toolStripSplitButton2";
-            this.TbNext.Click += new System.EventHandler(this.TbNext_Click);
-            // 
             // pickTbValueDataGridView
             // 
             this.pickTbValueDataGridView.AllowUserToAddRows = false;
             this.pickTbValueDataGridView.AllowUserToDeleteRows = false;
+            this.pickTbValueDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pickTbValueDataGridView.AutoGenerateColumns = false;
             this.pickTbValueDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.pickTbValueDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -876,11 +823,10 @@
             this.dataGridViewTextBoxColumn12,
             this.dataGridViewTextBoxColumn13});
             this.pickTbValueDataGridView.DataSource = this.pickTbValueBindingSource;
-            this.pickTbValueDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pickTbValueDataGridView.Location = new System.Drawing.Point(3, 3);
             this.pickTbValueDataGridView.Name = "pickTbValueDataGridView";
             this.pickTbValueDataGridView.ReadOnly = true;
-            this.pickTbValueDataGridView.Size = new System.Drawing.Size(650, 371);
+            this.pickTbValueDataGridView.Size = new System.Drawing.Size(650, 331);
             this.pickTbValueDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn10
@@ -940,28 +886,13 @@
             this.statusStrip4.TabIndex = 1;
             this.statusStrip4.Text = "statusStrip4";
             // 
-            // TdPrevious
-            // 
-            this.TdPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.TdPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
-            this.TdPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.TdPrevious.Name = "TdPrevious";
-            this.TdPrevious.Size = new System.Drawing.Size(32, 32);
-            this.TdPrevious.Text = "toolStripSplitButton1";
-            // 
-            // TdNext
-            // 
-            this.TdNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.TdNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
-            this.TdNext.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.TdNext.Name = "TdNext";
-            this.TdNext.Size = new System.Drawing.Size(32, 32);
-            this.TdNext.Text = "toolStripSplitButton2";
-            // 
             // pickTdValueDataGridView
             // 
             this.pickTdValueDataGridView.AllowUserToAddRows = false;
             this.pickTdValueDataGridView.AllowUserToDeleteRows = false;
+            this.pickTdValueDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pickTdValueDataGridView.AutoGenerateColumns = false;
             this.pickTdValueDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.pickTdValueDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -972,11 +903,10 @@
             this.dataGridViewTextBoxColumn17,
             this.dataGridViewTextBoxColumn18});
             this.pickTdValueDataGridView.DataSource = this.pickTdValueBindingSource;
-            this.pickTdValueDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pickTdValueDataGridView.Location = new System.Drawing.Point(3, 3);
             this.pickTdValueDataGridView.Name = "pickTdValueDataGridView";
             this.pickTdValueDataGridView.ReadOnly = true;
-            this.pickTdValueDataGridView.Size = new System.Drawing.Size(650, 371);
+            this.pickTdValueDataGridView.Size = new System.Drawing.Size(650, 331);
             this.pickTdValueDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn14
@@ -1043,28 +973,13 @@
             this.statusStrip5.TabIndex = 1;
             this.statusStrip5.Text = "statusStrip5";
             // 
-            // HPrevious
-            // 
-            this.HPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.HPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
-            this.HPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.HPrevious.Name = "HPrevious";
-            this.HPrevious.Size = new System.Drawing.Size(32, 32);
-            this.HPrevious.Text = "toolStripSplitButton1";
-            // 
-            // HNext
-            // 
-            this.HNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.HNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
-            this.HNext.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.HNext.Name = "HNext";
-            this.HNext.Size = new System.Drawing.Size(32, 32);
-            this.HNext.Text = "toolStripSplitButton2";
-            // 
             // pickHValueDataGridView
             // 
             this.pickHValueDataGridView.AllowUserToAddRows = false;
             this.pickHValueDataGridView.AllowUserToDeleteRows = false;
+            this.pickHValueDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pickHValueDataGridView.AutoGenerateColumns = false;
             this.pickHValueDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.pickHValueDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -1074,11 +989,10 @@
             this.dataGridViewTextBoxColumn21,
             this.dataGridViewTextBoxColumn22});
             this.pickHValueDataGridView.DataSource = this.pickHValueBindingSource;
-            this.pickHValueDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pickHValueDataGridView.Location = new System.Drawing.Point(3, 3);
             this.pickHValueDataGridView.Name = "pickHValueDataGridView";
             this.pickHValueDataGridView.ReadOnly = true;
-            this.pickHValueDataGridView.Size = new System.Drawing.Size(650, 371);
+            this.pickHValueDataGridView.Size = new System.Drawing.Size(650, 331);
             this.pickHValueDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn19
@@ -1138,28 +1052,13 @@
             this.statusStrip6.TabIndex = 1;
             this.statusStrip6.Text = "statusStrip6";
             // 
-            // QabPrevious
-            // 
-            this.QabPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.QabPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
-            this.QabPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.QabPrevious.Name = "QabPrevious";
-            this.QabPrevious.Size = new System.Drawing.Size(32, 32);
-            this.QabPrevious.Text = "toolStripSplitButton1";
-            // 
-            // QabNext
-            // 
-            this.QabNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.QabNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
-            this.QabNext.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.QabNext.Name = "QabNext";
-            this.QabNext.Size = new System.Drawing.Size(32, 32);
-            this.QabNext.Text = "toolStripSplitButton2";
-            // 
             // pickQabValueDataGridView
             // 
             this.pickQabValueDataGridView.AllowUserToAddRows = false;
             this.pickQabValueDataGridView.AllowUserToDeleteRows = false;
+            this.pickQabValueDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pickQabValueDataGridView.AutoGenerateColumns = false;
             this.pickQabValueDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.pickQabValueDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -1170,11 +1069,10 @@
             this.dataGridViewTextBoxColumn26,
             this.dataGridViewTextBoxColumn27});
             this.pickQabValueDataGridView.DataSource = this.pickQabValueBindingSource;
-            this.pickQabValueDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pickQabValueDataGridView.Location = new System.Drawing.Point(3, 3);
             this.pickQabValueDataGridView.Name = "pickQabValueDataGridView";
             this.pickQabValueDataGridView.ReadOnly = true;
-            this.pickQabValueDataGridView.Size = new System.Drawing.Size(650, 371);
+            this.pickQabValueDataGridView.Size = new System.Drawing.Size(650, 331);
             this.pickQabValueDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn23
@@ -1242,28 +1140,13 @@
             this.statusStrip7.TabIndex = 1;
             this.statusStrip7.Text = "statusStrip7";
             // 
-            // QbcPrevious
-            // 
-            this.QbcPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.QbcPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
-            this.QbcPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.QbcPrevious.Name = "QbcPrevious";
-            this.QbcPrevious.Size = new System.Drawing.Size(32, 32);
-            this.QbcPrevious.Text = "toolStripSplitButton1";
-            // 
-            // QbcNext
-            // 
-            this.QbcNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.QbcNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
-            this.QbcNext.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.QbcNext.Name = "QbcNext";
-            this.QbcNext.Size = new System.Drawing.Size(32, 32);
-            this.QbcNext.Text = "toolStripSplitButton2";
-            // 
             // pickQbcValueDataGridView
             // 
             this.pickQbcValueDataGridView.AllowUserToAddRows = false;
             this.pickQbcValueDataGridView.AllowUserToDeleteRows = false;
+            this.pickQbcValueDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pickQbcValueDataGridView.AutoGenerateColumns = false;
             this.pickQbcValueDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.pickQbcValueDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -1276,11 +1159,10 @@
             this.dataGridViewTextBoxColumn33,
             this.dataGridViewTextBoxColumn34});
             this.pickQbcValueDataGridView.DataSource = this.pickQbcValueBindingSource;
-            this.pickQbcValueDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pickQbcValueDataGridView.Location = new System.Drawing.Point(3, 3);
             this.pickQbcValueDataGridView.Name = "pickQbcValueDataGridView";
             this.pickQbcValueDataGridView.ReadOnly = true;
-            this.pickQbcValueDataGridView.Size = new System.Drawing.Size(650, 371);
+            this.pickQbcValueDataGridView.Size = new System.Drawing.Size(650, 334);
             this.pickQbcValueDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn28
@@ -1337,24 +1219,6 @@
             this.pickQbcValueBindingSource.DataMember = "pickQbcValue";
             this.pickQbcValueBindingSource.DataSource = this.databaseDataSet;
             // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-            // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
@@ -1381,15 +1245,6 @@
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
             // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
-            // 
             // bindingNavigatorMoveLastItem
             // 
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
@@ -1399,24 +1254,6 @@
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // mx_ValueBindingNavigatorSaveItem
             // 
@@ -1475,6 +1312,247 @@
             // pickQbcValueTableAdapter
             // 
             this.pickQbcValueTableAdapter.ClearBeforeFill = true;
+            // 
+            // MxPrevious
+            // 
+            this.MxPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.MxPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
+            this.MxPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.MxPrevious.Name = "MxPrevious";
+            this.MxPrevious.Size = new System.Drawing.Size(32, 32);
+            this.MxPrevious.Text = "toolStripSplitButton1";
+            this.MxPrevious.Click += new System.EventHandler(this.MxPrevious_Click);
+            this.MxPrevious.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseDown);
+            this.MxPrevious.MouseLeave += new System.EventHandler(this.PreviousMouseLeave);
+            this.MxPrevious.MouseHover += new System.EventHandler(this.PreviousMouseHover);
+            this.MxPrevious.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseMove);
+            // 
+            // MxNext
+            // 
+            this.MxNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.MxNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
+            this.MxNext.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.MxNext.Name = "MxNext";
+            this.MxNext.Size = new System.Drawing.Size(32, 32);
+            this.MxNext.Text = "toolStripSplitButton2";
+            this.MxNext.Click += new System.EventHandler(this.MxNext_Click);
+            this.MxNext.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NextMouseDown);
+            this.MxNext.MouseLeave += new System.EventHandler(this.NextMouseLeave);
+            this.MxNext.MouseHover += new System.EventHandler(this.NextMouseHover);
+            this.MxNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NextMouseMove);
+            // 
+            // MminPrevious
+            // 
+            this.MminPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.MminPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
+            this.MminPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.MminPrevious.Name = "MminPrevious";
+            this.MminPrevious.Size = new System.Drawing.Size(32, 32);
+            this.MminPrevious.Text = "toolStripSplitButton1";
+            this.MminPrevious.Click += new System.EventHandler(this.MminPrevious_Click);
+            this.MminPrevious.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseDown);
+            this.MminPrevious.MouseLeave += new System.EventHandler(this.PreviousMouseLeave);
+            this.MminPrevious.MouseHover += new System.EventHandler(this.PreviousMouseHover);
+            this.MminPrevious.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseMove);
+            // 
+            // MminNext
+            // 
+            this.MminNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.MminNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
+            this.MminNext.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.MminNext.Name = "MminNext";
+            this.MminNext.Size = new System.Drawing.Size(32, 32);
+            this.MminNext.Text = "toolStripSplitButton2";
+            this.MminNext.Click += new System.EventHandler(this.MminNext_Click);
+            this.MminNext.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NextMouseDown);
+            this.MminNext.MouseLeave += new System.EventHandler(this.NextMouseLeave);
+            this.MminNext.MouseHover += new System.EventHandler(this.NextMouseHover);
+            this.MminNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NextMouseMove);
+            // 
+            // TbPrevious
+            // 
+            this.TbPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.TbPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
+            this.TbPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TbPrevious.Name = "TbPrevious";
+            this.TbPrevious.Size = new System.Drawing.Size(32, 32);
+            this.TbPrevious.Text = "toolStripSplitButton1";
+            this.TbPrevious.Click += new System.EventHandler(this.TbPrevious_Click);
+            this.TbPrevious.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseDown);
+            this.TbPrevious.MouseLeave += new System.EventHandler(this.PreviousMouseLeave);
+            this.TbPrevious.MouseHover += new System.EventHandler(this.PreviousMouseHover);
+            this.TbPrevious.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseMove);
+            // 
+            // TbNext
+            // 
+            this.TbNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.TbNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
+            this.TbNext.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TbNext.Name = "TbNext";
+            this.TbNext.Size = new System.Drawing.Size(32, 32);
+            this.TbNext.Text = "toolStripSplitButton2";
+            this.TbNext.Click += new System.EventHandler(this.TbNext_Click);
+            this.TbNext.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NextMouseDown);
+            this.TbNext.MouseLeave += new System.EventHandler(this.NextMouseLeave);
+            this.TbNext.MouseHover += new System.EventHandler(this.NextMouseHover);
+            this.TbNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NextMouseMove);
+            // 
+            // TdPrevious
+            // 
+            this.TdPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.TdPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
+            this.TdPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TdPrevious.Name = "TdPrevious";
+            this.TdPrevious.Size = new System.Drawing.Size(32, 32);
+            this.TdPrevious.Text = "toolStripSplitButton1";
+            this.TdPrevious.Click += new System.EventHandler(this.TdPrevious_Click);
+            this.TdPrevious.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseDown);
+            this.TdPrevious.MouseLeave += new System.EventHandler(this.PreviousMouseLeave);
+            this.TdPrevious.MouseHover += new System.EventHandler(this.PreviousMouseHover);
+            this.TdPrevious.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseMove);
+            // 
+            // TdNext
+            // 
+            this.TdNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.TdNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
+            this.TdNext.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TdNext.Name = "TdNext";
+            this.TdNext.Size = new System.Drawing.Size(32, 32);
+            this.TdNext.Text = "toolStripSplitButton2";
+            this.TdNext.Click += new System.EventHandler(this.TdNext_Click);
+            this.TdNext.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NextMouseDown);
+            this.TdNext.MouseLeave += new System.EventHandler(this.NextMouseLeave);
+            this.TdNext.MouseHover += new System.EventHandler(this.NextMouseHover);
+            this.TdNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NextMouseMove);
+            // 
+            // HPrevious
+            // 
+            this.HPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.HPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
+            this.HPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.HPrevious.Name = "HPrevious";
+            this.HPrevious.Size = new System.Drawing.Size(32, 32);
+            this.HPrevious.Text = "toolStripSplitButton1";
+            this.HPrevious.Click += new System.EventHandler(this.HPrevious_Click);
+            this.HPrevious.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseDown);
+            this.HPrevious.MouseLeave += new System.EventHandler(this.PreviousMouseLeave);
+            this.HPrevious.MouseHover += new System.EventHandler(this.PreviousMouseHover);
+            this.HPrevious.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseMove);
+            // 
+            // HNext
+            // 
+            this.HNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.HNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
+            this.HNext.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.HNext.Name = "HNext";
+            this.HNext.Size = new System.Drawing.Size(32, 32);
+            this.HNext.Text = "toolStripSplitButton2";
+            this.HNext.Click += new System.EventHandler(this.HNext_Click);
+            this.HNext.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NextMouseDown);
+            this.HNext.MouseLeave += new System.EventHandler(this.NextMouseLeave);
+            this.HNext.MouseHover += new System.EventHandler(this.NextMouseHover);
+            this.HNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NextMouseMove);
+            // 
+            // QabPrevious
+            // 
+            this.QabPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.QabPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
+            this.QabPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.QabPrevious.Name = "QabPrevious";
+            this.QabPrevious.Size = new System.Drawing.Size(32, 32);
+            this.QabPrevious.Text = "toolStripSplitButton1";
+            this.QabPrevious.Click += new System.EventHandler(this.QabPrevious_Click);
+            this.QabPrevious.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseDown);
+            this.QabPrevious.MouseLeave += new System.EventHandler(this.PreviousMouseLeave);
+            this.QabPrevious.MouseHover += new System.EventHandler(this.PreviousMouseHover);
+            this.QabPrevious.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseMove);
+            // 
+            // QabNext
+            // 
+            this.QabNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.QabNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
+            this.QabNext.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.QabNext.Name = "QabNext";
+            this.QabNext.Size = new System.Drawing.Size(32, 32);
+            this.QabNext.Text = "toolStripSplitButton2";
+            this.QabNext.Click += new System.EventHandler(this.QabNext_Click);
+            this.QabNext.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NextMouseDown);
+            this.QabNext.MouseLeave += new System.EventHandler(this.NextMouseLeave);
+            this.QabNext.MouseHover += new System.EventHandler(this.NextMouseHover);
+            this.QabNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NextMouseMove);
+            // 
+            // QbcPrevious
+            // 
+            this.QbcPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.QbcPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
+            this.QbcPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.QbcPrevious.Name = "QbcPrevious";
+            this.QbcPrevious.Size = new System.Drawing.Size(32, 32);
+            this.QbcPrevious.Text = "toolStripSplitButton1";
+            this.QbcPrevious.Click += new System.EventHandler(this.QbcPrevious_Click);
+            this.QbcPrevious.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseDown);
+            this.QbcPrevious.MouseLeave += new System.EventHandler(this.PreviousMouseLeave);
+            this.QbcPrevious.MouseHover += new System.EventHandler(this.PreviousMouseHover);
+            this.QbcPrevious.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseMove);
+            // 
+            // QbcNext
+            // 
+            this.QbcNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.QbcNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
+            this.QbcNext.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.QbcNext.Name = "QbcNext";
+            this.QbcNext.Size = new System.Drawing.Size(32, 32);
+            this.QbcNext.Text = "toolStripSplitButton2";
+            this.QbcNext.Click += new System.EventHandler(this.QbcNext_Click);
+            this.QbcNext.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NextMouseDown);
+            this.QbcNext.MouseLeave += new System.EventHandler(this.NextMouseLeave);
+            this.QbcNext.MouseHover += new System.EventHandler(this.NextMouseHover);
+            this.QbcNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NextMouseMove);
+            // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Text = "Move first";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
+            // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveNextItem.Text = "Move next";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // Form1
             // 

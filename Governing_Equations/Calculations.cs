@@ -29,7 +29,7 @@ namespace Governing_Equations
             for (double i = starting_Ta; i <= ending_Ta; i += variation_Ta)
                 for (double j = starting_Tevap; j <= ending_Tevap; j += variation_Tevap)
                     query.InsertTbValue(i, j, Math.Round((i * i) / j, Parameters.Round_Decimal));
-        }        
+        }
         public static void TdCalculation(double starting_Ta, double ending_Ta, double variation_Ta, double starting_Tc, double ending_Tc, double variation_Tc)
         {
             AppData.DatabaseDataSetTableAdapters.pickTbResultTableAdapter Tb_Result = new AppData.DatabaseDataSetTableAdapters.pickTbResultTableAdapter();

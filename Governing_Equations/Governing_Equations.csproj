@@ -124,7 +124,11 @@
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
     <Content Include="Image\left-arrow.png" />
+    <Content Include="Image\left-arrow_clicke.png" />
+    <Content Include="Image\left-arrow_hover.png" />
     <Content Include="Image\right-arrow.png" />
+    <Content Include="Image\right-arrow_click.png" />
+    <Content Include="Image\right-arrow_hover.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">

@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace Governing_Equations
@@ -19,12 +14,11 @@ namespace Governing_Equations
         int QbcValueIndex = 1;
         int TbValueIndex = 1;
         int TdValueIndex = 1;
-        int loadAmount = 4;
+        int loadAmount = 19;
         public Form1()
         {
             InitializeComponent();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             //save_Values();            
@@ -32,27 +26,22 @@ namespace Governing_Equations
             load_Values();
             TestQueries();
         }
-
         private void TestQueries()
         {
-            Calculations.TbCalculation(parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance, parameters.Tevap_Starting, parameters.Tevap_Ending, parameters.Tevap_Variance);
-            AppData.DatabaseDataSetTableAdapters.pickTbResultTableAdapter TbResult = new AppData.DatabaseDataSetTableAdapters.pickTbResultTableAdapter();
-            foreach (DataRow tbResult in TbResult.GetData().Rows)
-            {
-                MessageBox.Show(tbResult.ItemArray[0].ToString());
-            }
-            //Calculations.MxCalculation(parameters.Tsat, parameters.K_value, parameters.n_value, parameters.M0_value, parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance);
+            Calculations.MxCalculation(parameters.Tsat, parameters.K_value, parameters.n_value, parameters.M0_value, parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance);
             //Calculations.MminCalculation(parameters.Tsat, parameters.K_value, parameters.n_value, parameters.M0_value, parameters.Tc_Starting, parameters.Tc_Ending, parameters.Tc_Variance);
             //Calculations.TbCalculation(parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance, parameters.Tevap_Starting, parameters.Tevap_Ending, parameters.Tevap_Variance);
+            //Calculations.TdCalculation(parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance, parameters.Tc_Starting, parameters.Tc_Ending, parameters.Tc_Variance);
+            //Calculations.HCalculation(parameters.R_Values, parameters.CPAd_Values, parameters.CPr_Values, parameters.Tc_Starting, parameters.Tc_Ending, parameters.Tc_Variance, parameters.Tsat);
+            //Calculations.QabCalculation(parameters.CPAd_Values, parameters.CPr_Values, parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance);
+            //Calculations.QbcCalculation(parameters.CPAd_Values, parameters.CPr_Values, parameters.Tc_Starting, parameters.Tc_Ending, parameters.Tc_Variance);
 
         }
-
         private void load_Values()
         {
             parameters = Parameters.readParameters("settings.xml");
             //MessageBox.Show(parameters.CPAd_Values.ToString());
         }
-
         private void save_Values()
         {
             //A.C-Methonal            
@@ -74,11 +63,45 @@ namespace Governing_Equations
             parameters.R_Values = 0.287;
             Parameters.writeParameters("settings.xml", parameters);
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
+
+        #region "Button Animation"
+        private void PreviousMouseMove(object sender, MouseEventArgs e)
+        {
+            ((ToolStripStatusLabel)sender).Image = Properties.Resources.left_arrow_hover;
+        }
+        private void PreviousMouseDown(object sender, MouseEventArgs e)
+        {
+            ((ToolStripStatusLabel)sender).Image = Properties.Resources.left_arrow_clicke;
+        }
+        private void PreviousMouseLeave(object sender, EventArgs e)
+        {
+            ((ToolStripStatusLabel)sender).Image = Properties.Resources.left_arrow;
+        }
+        private void PreviousMouseHover(object sender, EventArgs e)
+        {
+            ((ToolStripStatusLabel)sender).Image = Properties.Resources.left_arrow_hover;
+        }
+        private void NextMouseLeave(object sender, EventArgs e)
+        {
+            ((ToolStripStatusLabel)sender).Image = Properties.Resources.right_arrow;
+        }
+        private void NextMouseMove(object sender, MouseEventArgs e)
+        {
+            ((ToolStripStatusLabel)sender).Image = Properties.Resources.right_arrow_hover;
+        }
+        private void NextMouseDown(object sender, MouseEventArgs e)
+        {
+            ((ToolStripStatusLabel)sender).Image = Properties.Resources.right_arrow_click;
+        }
+        private void NextMouseHover(object sender, EventArgs e)
+        {
+            ((ToolStripStatusLabel)sender).Image = Properties.Resources.right_arrow_hover;
+        }
+        #endregion
 
         #region "Next and Back Button Activity"
         private void MxNext_Click(object sender, EventArgs e)
@@ -93,7 +116,6 @@ namespace Governing_Equations
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void MxPrevious_Click(object sender, EventArgs e)
         {
             if (MxValueIndex <= 0)
@@ -108,7 +130,6 @@ namespace Governing_Equations
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void MminNext_Click(object sender, EventArgs e)
         {
             try
@@ -118,10 +139,9 @@ namespace Governing_Equations
             }
             catch (System.Exception ex)
             {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message);
             }
         }
-
         private void MminPrevious_Click(object sender, EventArgs e)
         {
             if (MminValueIndex <= 0)
@@ -136,7 +156,6 @@ namespace Governing_Equations
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void TbNext_Click(object sender, EventArgs e)
         {
             try
@@ -146,10 +165,9 @@ namespace Governing_Equations
             }
             catch (System.Exception ex)
             {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message);
             }
         }
-
         private void TbPrevious_Click(object sender, EventArgs e)
         {
             if (TbValueIndex <= 0)
@@ -164,7 +182,110 @@ namespace Governing_Equations
                 MessageBox.Show(ex.Message);
             }
         }
+        private void TdNext_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.pickTdValueTableAdapter.Fill(this.databaseDataSet.pickTdValue, TdValueIndex, TdValueIndex + loadAmount);
+                TdValueIndex += loadAmount + 1;
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void TdPrevious_Click(object sender, EventArgs e)
+        {
+            if (TdValueIndex <= 0)
+                return;
+            try
+            {
+                TdValueIndex -= loadAmount + 1;
+                this.pickTdValueTableAdapter.Fill(this.databaseDataSet.pickTdValue, TdValueIndex, TdValueIndex + loadAmount);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void HNext_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.pickHValueTableAdapter.Fill(this.databaseDataSet.pickHValue, HValueIndex, HValueIndex + loadAmount);
+                HValueIndex += loadAmount + 1;
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void HPrevious_Click(object sender, EventArgs e)
+        {
+            if (HValueIndex <= 0)
+                return;
+            try
+            {
+                HValueIndex -= loadAmount + 1;
+                this.pickHValueTableAdapter.Fill(this.databaseDataSet.pickHValue, HValueIndex, HValueIndex + loadAmount);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void QabNext_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.pickQabValueTableAdapter.Fill(this.databaseDataSet.pickQabValue, QabValueIndex, QabValueIndex + loadAmount);
+                QabValueIndex += loadAmount + 1;
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void QabPrevious_Click(object sender, EventArgs e)
+        {
+            if (QabValueIndex <= 0)
+                return;
+            try
+            {
+                QabValueIndex -= loadAmount + 1;
+                this.pickQabValueTableAdapter.Fill(this.databaseDataSet.pickQabValue, QabValueIndex, QabValueIndex + loadAmount);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void QbcNext_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.pickQbcValueTableAdapter.Fill(this.databaseDataSet.pickQbcValue, QbcValueIndex, QbcValueIndex + loadAmount);
+                QbcValueIndex += loadAmount + 1;
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void QbcPrevious_Click(object sender, EventArgs e)
+        {
+            if (QbcValueIndex <= 0)
+                return;
+            try
+            {
+                QbcValueIndex -= loadAmount + 1;
+                this.pickQbcValueTableAdapter.Fill(this.databaseDataSet.pickQbcValue, QbcValueIndex, QbcValueIndex + loadAmount);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         #endregion
-
     }
 }
