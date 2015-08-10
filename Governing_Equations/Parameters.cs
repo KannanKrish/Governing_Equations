@@ -10,7 +10,7 @@ namespace Governing_Equations
     public class Parameters
     {
         [XmlIgnore]
-        public static int Round_Decimal = 4;
+        public static int Round_Decimal { get; set; }
         public double Tsat { get; set; }
         public double K_value { get; set; }
         public double n_value { get; set; }

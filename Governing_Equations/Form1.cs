@@ -21,7 +21,7 @@ namespace Governing_Equations
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            //save_Values();            
+            //save_Values();
             //Test_Function();
             load_Values();
             TestQueries();
@@ -35,16 +35,37 @@ namespace Governing_Equations
             //Calculations.HCalculation(parameters.R_Values, parameters.CPAd_Values, parameters.CPr_Values, parameters.Tc_Starting, parameters.Tc_Ending, parameters.Tc_Variance, parameters.Tsat);
             //Calculations.QabCalculation(parameters.CPAd_Values, parameters.CPr_Values, parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance);
             //Calculations.QbcCalculation(parameters.CPAd_Values, parameters.CPr_Values, parameters.Tc_Starting, parameters.Tc_Ending, parameters.Tc_Variance);
-
         }
         private void load_Values()
         {
             parameters = Parameters.readParameters("settings.xml");
+            load_into_Controls();
             //MessageBox.Show(parameters.CPAd_Values.ToString());
+        }
+        private void load_into_Controls()
+        {
+            txtCPAdValue.Text = parameters.CPAd_Values.ToString();
+            txtCPrValue.Text = parameters.CPr_Values.ToString();
+            txtKValue.Text = parameters.K_value.ToString();
+            txtM0Value.Text = parameters.M0_value.ToString();
+            txtNValue.Text = parameters.n_value.ToString();
+            txtRValue.Text = parameters.R_Values.ToString();
+            txtTaEndValue.Text = parameters.Ta_Ending.ToString();
+            txtTaStartValue.Text = parameters.Ta_Starting.ToString();
+            txtTcEndValue.Text = parameters.Tc_Ending.ToString();
+            txtTcStartValue.Text = parameters.Tc_Starting.ToString();
+            txtTevapEndValue.Text = parameters.Tevap_Ending.ToString();
+            txtTevapStartValue.Text = parameters.Tevap_Starting.ToString();
+            txtTsatValue.Text = parameters.Tsat.ToString();
+            nupFloatRoundValue.Value = Parameters.Round_Decimal;
+            nupTaVariationValue.Value = (decimal)parameters.Ta_Variance;
+            nupTcVariationValue.Value = (decimal)parameters.Tc_Variance;
+            nupTevapVariationValue.Value = (decimal)parameters.Tevap_Variance;
         }
         private void save_Values()
         {
             //A.C-Methonal            
+            Parameters.Round_Decimal = 4;
             parameters.Tsat = 290.9;
             parameters.K_value = 17.19;
             parameters.n_value = 1.66;
@@ -62,6 +83,26 @@ namespace Governing_Equations
             parameters.CPr_Values = 2.534;
             parameters.R_Values = 0.287;
             Parameters.writeParameters("settings.xml", parameters);
+
+            ////Zeolite Water
+            //parameters.Round_Decimal = 4;
+            //parameters.Tsat = 288.3;
+            //parameters.K_value = 10.21;
+            //parameters.n_value = 1.39;
+            //parameters.M0_value = 0.284;
+            //parameters.Ta_Starting = 20 + 273;
+            //parameters.Ta_Ending = 60 + 273;
+            //parameters.Ta_Variance = 1;
+            //parameters.Tc_Starting = 90 + 273;
+            //parameters.Tc_Ending = 140 + 273;
+            //parameters.Tc_Variance = 1;
+            //parameters.Tevap_Starting = 0 + 273;
+            //parameters.Tevap_Ending = 5 + 273;
+            //parameters.Tevap_Variance = 1;
+            //parameters.CPAd_Values = 0.711;
+            //parameters.CPr_Values = 2.534;
+            //parameters.R_Values = 0.287;
+            //Parameters.writeParameters("settings.xml", parameters);
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -286,6 +327,6 @@ namespace Governing_Equations
                 MessageBox.Show(ex.Message);
             }
         }
-        #endregion
+        #endregion        
     }
 }

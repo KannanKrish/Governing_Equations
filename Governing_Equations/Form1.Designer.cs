@@ -33,46 +33,48 @@
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.nupTaVariationValue = new System.Windows.Forms.NumericUpDown();
+            this.nupTcVariationValue = new System.Windows.Forms.NumericUpDown();
+            this.nupTevapVariationValue = new System.Windows.Forms.NumericUpDown();
+            this.nupFloatRoundValue = new System.Windows.Forms.NumericUpDown();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txtRValue = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtCPrValue = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtCPAdValue = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtM0Value = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtNValue = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtKValue = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.txtTevapEndValue = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.txtTevapStartValue = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtTcEndValue = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtTcStartValue = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtTaEndValue = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtTaStartValue = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTsatValue = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.statusStrip8 = new System.Windows.Forms.StatusStrip();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.MxPrevious = new System.Windows.Forms.ToolStripStatusLabel();
+            this.MxNext = new System.Windows.Forms.ToolStripStatusLabel();
             this.pickMxValueDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -81,6 +83,8 @@
             this.databaseDataSet = new Governing_Equations.AppData.DatabaseDataSet();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.statusStrip2 = new System.Windows.Forms.StatusStrip();
+            this.MminPrevious = new System.Windows.Forms.ToolStripStatusLabel();
+            this.MminNext = new System.Windows.Forms.ToolStripStatusLabel();
             this.pickMminValueDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -88,6 +92,8 @@
             this.pickMminValueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.statusStrip3 = new System.Windows.Forms.StatusStrip();
+            this.TbPrevious = new System.Windows.Forms.ToolStripStatusLabel();
+            this.TbNext = new System.Windows.Forms.ToolStripStatusLabel();
             this.pickTbValueDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -96,6 +102,8 @@
             this.pickTbValueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.statusStrip4 = new System.Windows.Forms.StatusStrip();
+            this.TdPrevious = new System.Windows.Forms.ToolStripStatusLabel();
+            this.TdNext = new System.Windows.Forms.ToolStripStatusLabel();
             this.pickTdValueDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -105,6 +113,8 @@
             this.pickTdValueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.statusStrip5 = new System.Windows.Forms.StatusStrip();
+            this.HPrevious = new System.Windows.Forms.ToolStripStatusLabel();
+            this.HNext = new System.Windows.Forms.ToolStripStatusLabel();
             this.pickHValueDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -113,6 +123,8 @@
             this.pickHValueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.statusStrip6 = new System.Windows.Forms.StatusStrip();
+            this.QabPrevious = new System.Windows.Forms.ToolStripStatusLabel();
+            this.QabNext = new System.Windows.Forms.ToolStripStatusLabel();
             this.pickQabValueDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -122,6 +134,8 @@
             this.pickQabValueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.statusStrip7 = new System.Windows.Forms.StatusStrip();
+            this.QbcPrevious = new System.Windows.Forms.ToolStripStatusLabel();
+            this.QbcNext = new System.Windows.Forms.ToolStripStatusLabel();
             this.pickQbcValueDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -149,30 +163,16 @@
             this.pickHValueTableAdapter = new Governing_Equations.AppData.DatabaseDataSetTableAdapters.pickHValueTableAdapter();
             this.pickQabValueTableAdapter = new Governing_Equations.AppData.DatabaseDataSetTableAdapters.pickQabValueTableAdapter();
             this.pickQbcValueTableAdapter = new Governing_Equations.AppData.DatabaseDataSetTableAdapters.pickQbcValueTableAdapter();
-            this.MxPrevious = new System.Windows.Forms.ToolStripStatusLabel();
-            this.MxNext = new System.Windows.Forms.ToolStripStatusLabel();
-            this.MminPrevious = new System.Windows.Forms.ToolStripStatusLabel();
-            this.MminNext = new System.Windows.Forms.ToolStripStatusLabel();
-            this.TbPrevious = new System.Windows.Forms.ToolStripStatusLabel();
-            this.TbNext = new System.Windows.Forms.ToolStripStatusLabel();
-            this.TdPrevious = new System.Windows.Forms.ToolStripStatusLabel();
-            this.TdNext = new System.Windows.Forms.ToolStripStatusLabel();
-            this.HPrevious = new System.Windows.Forms.ToolStripStatusLabel();
-            this.HNext = new System.Windows.Forms.ToolStripStatusLabel();
-            this.QabPrevious = new System.Windows.Forms.ToolStripStatusLabel();
-            this.QabNext = new System.Windows.Forms.ToolStripStatusLabel();
-            this.QbcPrevious = new System.Windows.Forms.ToolStripStatusLabel();
-            this.QbcNext = new System.Windows.Forms.ToolStripStatusLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupTaVariationValue)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupTcVariationValue)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupTevapVariationValue)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupFloatRoundValue)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -228,40 +228,40 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.numericUpDown4);
-            this.groupBox1.Controls.Add(this.numericUpDown3);
-            this.groupBox1.Controls.Add(this.numericUpDown2);
-            this.groupBox1.Controls.Add(this.numericUpDown1);
+            this.groupBox1.Controls.Add(this.nupTaVariationValue);
+            this.groupBox1.Controls.Add(this.nupTcVariationValue);
+            this.groupBox1.Controls.Add(this.nupTevapVariationValue);
+            this.groupBox1.Controls.Add(this.nupFloatRoundValue);
             this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.textBox13);
+            this.groupBox1.Controls.Add(this.txtRValue);
             this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.textBox12);
+            this.groupBox1.Controls.Add(this.txtCPrValue);
             this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.textBox11);
+            this.groupBox1.Controls.Add(this.txtCPAdValue);
             this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.txtM0Value);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtNValue);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtKValue);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label18);
-            this.groupBox1.Controls.Add(this.textBox16);
+            this.groupBox1.Controls.Add(this.txtTevapEndValue);
             this.groupBox1.Controls.Add(this.label17);
-            this.groupBox1.Controls.Add(this.textBox15);
+            this.groupBox1.Controls.Add(this.txtTevapStartValue);
             this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.textBox9);
+            this.groupBox1.Controls.Add(this.txtTcEndValue);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.textBox8);
+            this.groupBox1.Controls.Add(this.txtTcStartValue);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.txtTaEndValue);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.txtTaStartValue);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtTsatValue);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(268, 16);
             this.groupBox1.Name = "groupBox1";
@@ -270,67 +270,67 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Constants";
             // 
-            // numericUpDown4
+            // nupTaVariationValue
             // 
-            this.numericUpDown4.DecimalPlaces = 2;
-            this.numericUpDown4.Increment = new decimal(new int[] {
+            this.nupTaVariationValue.DecimalPlaces = 2;
+            this.nupTaVariationValue.Increment = new decimal(new int[] {
             1,
             0,
             0,
             131072});
-            this.numericUpDown4.Location = new System.Drawing.Point(262, 79);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(100, 20);
-            this.numericUpDown4.TabIndex = 4;
-            this.numericUpDown4.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            // 
-            // numericUpDown3
-            // 
-            this.numericUpDown3.DecimalPlaces = 2;
-            this.numericUpDown3.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            this.numericUpDown3.Location = new System.Drawing.Point(262, 157);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(100, 20);
-            this.numericUpDown3.TabIndex = 4;
-            this.numericUpDown3.Value = new decimal(new int[] {
+            this.nupTaVariationValue.Location = new System.Drawing.Point(262, 79);
+            this.nupTaVariationValue.Name = "nupTaVariationValue";
+            this.nupTaVariationValue.Size = new System.Drawing.Size(100, 20);
+            this.nupTaVariationValue.TabIndex = 4;
+            this.nupTaVariationValue.Value = new decimal(new int[] {
             1,
             0,
             0,
             131072});
             // 
-            // numericUpDown2
+            // nupTcVariationValue
             // 
-            this.numericUpDown2.DecimalPlaces = 2;
-            this.numericUpDown2.Increment = new decimal(new int[] {
+            this.nupTcVariationValue.DecimalPlaces = 2;
+            this.nupTcVariationValue.Increment = new decimal(new int[] {
             1,
             0,
             0,
             131072});
-            this.numericUpDown2.Location = new System.Drawing.Point(262, 235);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(100, 20);
-            this.numericUpDown2.TabIndex = 4;
-            this.numericUpDown2.Value = new decimal(new int[] {
+            this.nupTcVariationValue.Location = new System.Drawing.Point(262, 157);
+            this.nupTcVariationValue.Name = "nupTcVariationValue";
+            this.nupTcVariationValue.Size = new System.Drawing.Size(100, 20);
+            this.nupTcVariationValue.TabIndex = 4;
+            this.nupTcVariationValue.Value = new decimal(new int[] {
             1,
             0,
             0,
             131072});
             // 
-            // numericUpDown1
+            // nupTevapVariationValue
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(74, 209);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(100, 20);
-            this.numericUpDown1.TabIndex = 4;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.nupTevapVariationValue.DecimalPlaces = 2;
+            this.nupTevapVariationValue.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.nupTevapVariationValue.Location = new System.Drawing.Point(262, 235);
+            this.nupTevapVariationValue.Name = "nupTevapVariationValue";
+            this.nupTevapVariationValue.Size = new System.Drawing.Size(100, 20);
+            this.nupTevapVariationValue.TabIndex = 4;
+            this.nupTevapVariationValue.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            // 
+            // nupFloatRoundValue
+            // 
+            this.nupFloatRoundValue.Location = new System.Drawing.Point(74, 209);
+            this.nupFloatRoundValue.Name = "nupFloatRoundValue";
+            this.nupFloatRoundValue.Size = new System.Drawing.Size(100, 20);
+            this.nupFloatRoundValue.TabIndex = 4;
+            this.nupFloatRoundValue.Value = new decimal(new int[] {
             4,
             0,
             0,
@@ -345,13 +345,13 @@
             this.label15.TabIndex = 0;
             this.label15.Text = "Float Round";
             // 
-            // textBox13
+            // txtRValue
             // 
-            this.textBox13.Location = new System.Drawing.Point(74, 182);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.ReadOnly = true;
-            this.textBox13.Size = new System.Drawing.Size(100, 20);
-            this.textBox13.TabIndex = 1;
+            this.txtRValue.Location = new System.Drawing.Point(74, 182);
+            this.txtRValue.Name = "txtRValue";
+            this.txtRValue.ReadOnly = true;
+            this.txtRValue.Size = new System.Drawing.Size(100, 20);
+            this.txtRValue.TabIndex = 1;
             // 
             // label14
             // 
@@ -362,13 +362,13 @@
             this.label14.TabIndex = 0;
             this.label14.Text = "R";
             // 
-            // textBox12
+            // txtCPrValue
             // 
-            this.textBox12.Location = new System.Drawing.Point(74, 156);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.ReadOnly = true;
-            this.textBox12.Size = new System.Drawing.Size(100, 20);
-            this.textBox12.TabIndex = 1;
+            this.txtCPrValue.Location = new System.Drawing.Point(74, 156);
+            this.txtCPrValue.Name = "txtCPrValue";
+            this.txtCPrValue.ReadOnly = true;
+            this.txtCPrValue.Size = new System.Drawing.Size(100, 20);
+            this.txtCPrValue.TabIndex = 1;
             // 
             // label13
             // 
@@ -379,13 +379,13 @@
             this.label13.TabIndex = 0;
             this.label13.Text = "CPr";
             // 
-            // textBox11
+            // txtCPAdValue
             // 
-            this.textBox11.Location = new System.Drawing.Point(74, 130);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(100, 20);
-            this.textBox11.TabIndex = 1;
+            this.txtCPAdValue.Location = new System.Drawing.Point(74, 130);
+            this.txtCPAdValue.Name = "txtCPAdValue";
+            this.txtCPAdValue.ReadOnly = true;
+            this.txtCPAdValue.Size = new System.Drawing.Size(100, 20);
+            this.txtCPAdValue.TabIndex = 1;
             // 
             // label12
             // 
@@ -396,13 +396,13 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "CPAd";
             // 
-            // textBox4
+            // txtM0Value
             // 
-            this.textBox4.Location = new System.Drawing.Point(74, 104);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 1;
+            this.txtM0Value.Location = new System.Drawing.Point(74, 104);
+            this.txtM0Value.Name = "txtM0Value";
+            this.txtM0Value.ReadOnly = true;
+            this.txtM0Value.Size = new System.Drawing.Size(100, 20);
+            this.txtM0Value.TabIndex = 1;
             // 
             // label5
             // 
@@ -413,13 +413,13 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "M0";
             // 
-            // textBox3
+            // txtNValue
             // 
-            this.textBox3.Location = new System.Drawing.Point(74, 78);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 1;
+            this.txtNValue.Location = new System.Drawing.Point(74, 78);
+            this.txtNValue.Name = "txtNValue";
+            this.txtNValue.ReadOnly = true;
+            this.txtNValue.Size = new System.Drawing.Size(100, 20);
+            this.txtNValue.TabIndex = 1;
             // 
             // label4
             // 
@@ -440,13 +440,13 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // txtKValue
             // 
-            this.textBox2.Location = new System.Drawing.Point(74, 52);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtKValue.Location = new System.Drawing.Point(74, 52);
+            this.txtKValue.Name = "txtKValue";
+            this.txtKValue.ReadOnly = true;
+            this.txtKValue.Size = new System.Drawing.Size(100, 20);
+            this.txtKValue.TabIndex = 1;
             // 
             // label3
             // 
@@ -460,34 +460,34 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(192, 237);
+            this.label18.Location = new System.Drawing.Point(174, 237);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(64, 13);
+            this.label18.Size = new System.Drawing.Size(82, 13);
             this.label18.TabIndex = 0;
-            this.label18.Text = "Tc Variation";
+            this.label18.Text = "Tevap Variation";
             // 
-            // textBox16
+            // txtTevapEndValue
             // 
-            this.textBox16.Location = new System.Drawing.Point(262, 208);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(100, 20);
-            this.textBox16.TabIndex = 1;
+            this.txtTevapEndValue.Location = new System.Drawing.Point(262, 208);
+            this.txtTevapEndValue.Name = "txtTevapEndValue";
+            this.txtTevapEndValue.Size = new System.Drawing.Size(100, 20);
+            this.txtTevapEndValue.TabIndex = 1;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(200, 211);
+            this.label17.Location = new System.Drawing.Point(182, 211);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(56, 13);
+            this.label17.Size = new System.Drawing.Size(74, 13);
             this.label17.TabIndex = 0;
-            this.label17.Text = "Tc Ending";
+            this.label17.Text = "Tevap Ending";
             // 
-            // textBox15
+            // txtTevapStartValue
             // 
-            this.textBox15.Location = new System.Drawing.Point(262, 182);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 20);
-            this.textBox15.TabIndex = 1;
+            this.txtTevapStartValue.Location = new System.Drawing.Point(262, 182);
+            this.txtTevapStartValue.Name = "txtTevapStartValue";
+            this.txtTevapStartValue.Size = new System.Drawing.Size(100, 20);
+            this.txtTevapStartValue.TabIndex = 1;
             // 
             // label16
             // 
@@ -507,12 +507,12 @@
             this.label11.TabIndex = 0;
             this.label11.Text = "Tc Variation";
             // 
-            // textBox9
+            // txtTcEndValue
             // 
-            this.textBox9.Location = new System.Drawing.Point(262, 133);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 1;
+            this.txtTcEndValue.Location = new System.Drawing.Point(262, 133);
+            this.txtTcEndValue.Name = "txtTcEndValue";
+            this.txtTcEndValue.Size = new System.Drawing.Size(100, 20);
+            this.txtTcEndValue.TabIndex = 1;
             // 
             // label10
             // 
@@ -523,12 +523,12 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "Tc Ending";
             // 
-            // textBox8
+            // txtTcStartValue
             // 
-            this.textBox8.Location = new System.Drawing.Point(262, 104);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 1;
+            this.txtTcStartValue.Location = new System.Drawing.Point(262, 104);
+            this.txtTcStartValue.Name = "txtTcStartValue";
+            this.txtTcStartValue.Size = new System.Drawing.Size(100, 20);
+            this.txtTcStartValue.TabIndex = 1;
             // 
             // label9
             // 
@@ -548,12 +548,12 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Ta Variation";
             // 
-            // textBox6
+            // txtTaEndValue
             // 
-            this.textBox6.Location = new System.Drawing.Point(262, 52);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 1;
+            this.txtTaEndValue.Location = new System.Drawing.Point(262, 52);
+            this.txtTaEndValue.Name = "txtTaEndValue";
+            this.txtTaEndValue.Size = new System.Drawing.Size(100, 20);
+            this.txtTaEndValue.TabIndex = 1;
             // 
             // label7
             // 
@@ -564,12 +564,12 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Ta Ending";
             // 
-            // textBox5
+            // txtTaStartValue
             // 
-            this.textBox5.Location = new System.Drawing.Point(262, 26);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 1;
+            this.txtTaStartValue.Location = new System.Drawing.Point(262, 26);
+            this.txtTaStartValue.Name = "txtTaStartValue";
+            this.txtTaStartValue.Size = new System.Drawing.Size(100, 20);
+            this.txtTaStartValue.TabIndex = 1;
             // 
             // label6
             // 
@@ -580,13 +580,13 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Ta Starting";
             // 
-            // textBox1
+            // txtTsatValue
             // 
-            this.textBox1.Location = new System.Drawing.Point(74, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtTsatValue.Location = new System.Drawing.Point(74, 26);
+            this.txtTsatValue.Name = "txtTsatValue";
+            this.txtTsatValue.ReadOnly = true;
+            this.txtTsatValue.Size = new System.Drawing.Size(100, 20);
+            this.txtTsatValue.TabIndex = 1;
             // 
             // label2
             // 
@@ -659,6 +659,34 @@
             this.statusStrip1.Size = new System.Drawing.Size(650, 37);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
+            // 
+            // MxPrevious
+            // 
+            this.MxPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.MxPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
+            this.MxPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.MxPrevious.Name = "MxPrevious";
+            this.MxPrevious.Size = new System.Drawing.Size(32, 32);
+            this.MxPrevious.Text = "toolStripSplitButton1";
+            this.MxPrevious.Click += new System.EventHandler(this.MxPrevious_Click);
+            this.MxPrevious.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseDown);
+            this.MxPrevious.MouseLeave += new System.EventHandler(this.PreviousMouseLeave);
+            this.MxPrevious.MouseHover += new System.EventHandler(this.PreviousMouseHover);
+            this.MxPrevious.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseMove);
+            // 
+            // MxNext
+            // 
+            this.MxNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.MxNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
+            this.MxNext.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.MxNext.Name = "MxNext";
+            this.MxNext.Size = new System.Drawing.Size(32, 32);
+            this.MxNext.Text = "toolStripSplitButton2";
+            this.MxNext.Click += new System.EventHandler(this.MxNext_Click);
+            this.MxNext.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NextMouseDown);
+            this.MxNext.MouseLeave += new System.EventHandler(this.NextMouseLeave);
+            this.MxNext.MouseHover += new System.EventHandler(this.NextMouseHover);
+            this.MxNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NextMouseMove);
             // 
             // pickMxValueDataGridView
             // 
@@ -736,6 +764,34 @@
             this.statusStrip2.TabIndex = 1;
             this.statusStrip2.Text = "statusStrip2";
             // 
+            // MminPrevious
+            // 
+            this.MminPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.MminPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
+            this.MminPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.MminPrevious.Name = "MminPrevious";
+            this.MminPrevious.Size = new System.Drawing.Size(32, 32);
+            this.MminPrevious.Text = "toolStripSplitButton1";
+            this.MminPrevious.Click += new System.EventHandler(this.MminPrevious_Click);
+            this.MminPrevious.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseDown);
+            this.MminPrevious.MouseLeave += new System.EventHandler(this.PreviousMouseLeave);
+            this.MminPrevious.MouseHover += new System.EventHandler(this.PreviousMouseHover);
+            this.MminPrevious.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseMove);
+            // 
+            // MminNext
+            // 
+            this.MminNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.MminNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
+            this.MminNext.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.MminNext.Name = "MminNext";
+            this.MminNext.Size = new System.Drawing.Size(32, 32);
+            this.MminNext.Text = "toolStripSplitButton2";
+            this.MminNext.Click += new System.EventHandler(this.MminNext_Click);
+            this.MminNext.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NextMouseDown);
+            this.MminNext.MouseLeave += new System.EventHandler(this.NextMouseLeave);
+            this.MminNext.MouseHover += new System.EventHandler(this.NextMouseHover);
+            this.MminNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NextMouseMove);
+            // 
             // pickMminValueDataGridView
             // 
             this.pickMminValueDataGridView.AllowUserToAddRows = false;
@@ -806,6 +862,34 @@
             this.statusStrip3.Size = new System.Drawing.Size(650, 37);
             this.statusStrip3.TabIndex = 1;
             this.statusStrip3.Text = "statusStrip3";
+            // 
+            // TbPrevious
+            // 
+            this.TbPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.TbPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
+            this.TbPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TbPrevious.Name = "TbPrevious";
+            this.TbPrevious.Size = new System.Drawing.Size(32, 32);
+            this.TbPrevious.Text = "toolStripSplitButton1";
+            this.TbPrevious.Click += new System.EventHandler(this.TbPrevious_Click);
+            this.TbPrevious.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseDown);
+            this.TbPrevious.MouseLeave += new System.EventHandler(this.PreviousMouseLeave);
+            this.TbPrevious.MouseHover += new System.EventHandler(this.PreviousMouseHover);
+            this.TbPrevious.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseMove);
+            // 
+            // TbNext
+            // 
+            this.TbNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.TbNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
+            this.TbNext.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TbNext.Name = "TbNext";
+            this.TbNext.Size = new System.Drawing.Size(32, 32);
+            this.TbNext.Text = "toolStripSplitButton2";
+            this.TbNext.Click += new System.EventHandler(this.TbNext_Click);
+            this.TbNext.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NextMouseDown);
+            this.TbNext.MouseLeave += new System.EventHandler(this.NextMouseLeave);
+            this.TbNext.MouseHover += new System.EventHandler(this.NextMouseHover);
+            this.TbNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NextMouseMove);
             // 
             // pickTbValueDataGridView
             // 
@@ -885,6 +969,34 @@
             this.statusStrip4.Size = new System.Drawing.Size(650, 37);
             this.statusStrip4.TabIndex = 1;
             this.statusStrip4.Text = "statusStrip4";
+            // 
+            // TdPrevious
+            // 
+            this.TdPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.TdPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
+            this.TdPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TdPrevious.Name = "TdPrevious";
+            this.TdPrevious.Size = new System.Drawing.Size(32, 32);
+            this.TdPrevious.Text = "toolStripSplitButton1";
+            this.TdPrevious.Click += new System.EventHandler(this.TdPrevious_Click);
+            this.TdPrevious.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseDown);
+            this.TdPrevious.MouseLeave += new System.EventHandler(this.PreviousMouseLeave);
+            this.TdPrevious.MouseHover += new System.EventHandler(this.PreviousMouseHover);
+            this.TdPrevious.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseMove);
+            // 
+            // TdNext
+            // 
+            this.TdNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.TdNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
+            this.TdNext.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TdNext.Name = "TdNext";
+            this.TdNext.Size = new System.Drawing.Size(32, 32);
+            this.TdNext.Text = "toolStripSplitButton2";
+            this.TdNext.Click += new System.EventHandler(this.TdNext_Click);
+            this.TdNext.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NextMouseDown);
+            this.TdNext.MouseLeave += new System.EventHandler(this.NextMouseLeave);
+            this.TdNext.MouseHover += new System.EventHandler(this.NextMouseHover);
+            this.TdNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NextMouseMove);
             // 
             // pickTdValueDataGridView
             // 
@@ -973,6 +1085,34 @@
             this.statusStrip5.TabIndex = 1;
             this.statusStrip5.Text = "statusStrip5";
             // 
+            // HPrevious
+            // 
+            this.HPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.HPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
+            this.HPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.HPrevious.Name = "HPrevious";
+            this.HPrevious.Size = new System.Drawing.Size(32, 32);
+            this.HPrevious.Text = "toolStripSplitButton1";
+            this.HPrevious.Click += new System.EventHandler(this.HPrevious_Click);
+            this.HPrevious.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseDown);
+            this.HPrevious.MouseLeave += new System.EventHandler(this.PreviousMouseLeave);
+            this.HPrevious.MouseHover += new System.EventHandler(this.PreviousMouseHover);
+            this.HPrevious.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseMove);
+            // 
+            // HNext
+            // 
+            this.HNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.HNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
+            this.HNext.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.HNext.Name = "HNext";
+            this.HNext.Size = new System.Drawing.Size(32, 32);
+            this.HNext.Text = "toolStripSplitButton2";
+            this.HNext.Click += new System.EventHandler(this.HNext_Click);
+            this.HNext.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NextMouseDown);
+            this.HNext.MouseLeave += new System.EventHandler(this.NextMouseLeave);
+            this.HNext.MouseHover += new System.EventHandler(this.NextMouseHover);
+            this.HNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NextMouseMove);
+            // 
             // pickHValueDataGridView
             // 
             this.pickHValueDataGridView.AllowUserToAddRows = false;
@@ -1051,6 +1191,34 @@
             this.statusStrip6.Size = new System.Drawing.Size(650, 37);
             this.statusStrip6.TabIndex = 1;
             this.statusStrip6.Text = "statusStrip6";
+            // 
+            // QabPrevious
+            // 
+            this.QabPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.QabPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
+            this.QabPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.QabPrevious.Name = "QabPrevious";
+            this.QabPrevious.Size = new System.Drawing.Size(32, 32);
+            this.QabPrevious.Text = "toolStripSplitButton1";
+            this.QabPrevious.Click += new System.EventHandler(this.QabPrevious_Click);
+            this.QabPrevious.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseDown);
+            this.QabPrevious.MouseLeave += new System.EventHandler(this.PreviousMouseLeave);
+            this.QabPrevious.MouseHover += new System.EventHandler(this.PreviousMouseHover);
+            this.QabPrevious.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseMove);
+            // 
+            // QabNext
+            // 
+            this.QabNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.QabNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
+            this.QabNext.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.QabNext.Name = "QabNext";
+            this.QabNext.Size = new System.Drawing.Size(32, 32);
+            this.QabNext.Text = "toolStripSplitButton2";
+            this.QabNext.Click += new System.EventHandler(this.QabNext_Click);
+            this.QabNext.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NextMouseDown);
+            this.QabNext.MouseLeave += new System.EventHandler(this.NextMouseLeave);
+            this.QabNext.MouseHover += new System.EventHandler(this.NextMouseHover);
+            this.QabNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NextMouseMove);
             // 
             // pickQabValueDataGridView
             // 
@@ -1139,6 +1307,34 @@
             this.statusStrip7.Size = new System.Drawing.Size(650, 37);
             this.statusStrip7.TabIndex = 1;
             this.statusStrip7.Text = "statusStrip7";
+            // 
+            // QbcPrevious
+            // 
+            this.QbcPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.QbcPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
+            this.QbcPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.QbcPrevious.Name = "QbcPrevious";
+            this.QbcPrevious.Size = new System.Drawing.Size(32, 32);
+            this.QbcPrevious.Text = "toolStripSplitButton1";
+            this.QbcPrevious.Click += new System.EventHandler(this.QbcPrevious_Click);
+            this.QbcPrevious.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseDown);
+            this.QbcPrevious.MouseLeave += new System.EventHandler(this.PreviousMouseLeave);
+            this.QbcPrevious.MouseHover += new System.EventHandler(this.PreviousMouseHover);
+            this.QbcPrevious.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseMove);
+            // 
+            // QbcNext
+            // 
+            this.QbcNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.QbcNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
+            this.QbcNext.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.QbcNext.Name = "QbcNext";
+            this.QbcNext.Size = new System.Drawing.Size(32, 32);
+            this.QbcNext.Text = "toolStripSplitButton2";
+            this.QbcNext.Click += new System.EventHandler(this.QbcNext_Click);
+            this.QbcNext.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NextMouseDown);
+            this.QbcNext.MouseLeave += new System.EventHandler(this.NextMouseLeave);
+            this.QbcNext.MouseHover += new System.EventHandler(this.NextMouseHover);
+            this.QbcNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NextMouseMove);
             // 
             // pickQbcValueDataGridView
             // 
@@ -1313,202 +1509,6 @@
             // 
             this.pickQbcValueTableAdapter.ClearBeforeFill = true;
             // 
-            // MxPrevious
-            // 
-            this.MxPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.MxPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
-            this.MxPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.MxPrevious.Name = "MxPrevious";
-            this.MxPrevious.Size = new System.Drawing.Size(32, 32);
-            this.MxPrevious.Text = "toolStripSplitButton1";
-            this.MxPrevious.Click += new System.EventHandler(this.MxPrevious_Click);
-            this.MxPrevious.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseDown);
-            this.MxPrevious.MouseLeave += new System.EventHandler(this.PreviousMouseLeave);
-            this.MxPrevious.MouseHover += new System.EventHandler(this.PreviousMouseHover);
-            this.MxPrevious.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseMove);
-            // 
-            // MxNext
-            // 
-            this.MxNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.MxNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
-            this.MxNext.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.MxNext.Name = "MxNext";
-            this.MxNext.Size = new System.Drawing.Size(32, 32);
-            this.MxNext.Text = "toolStripSplitButton2";
-            this.MxNext.Click += new System.EventHandler(this.MxNext_Click);
-            this.MxNext.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NextMouseDown);
-            this.MxNext.MouseLeave += new System.EventHandler(this.NextMouseLeave);
-            this.MxNext.MouseHover += new System.EventHandler(this.NextMouseHover);
-            this.MxNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NextMouseMove);
-            // 
-            // MminPrevious
-            // 
-            this.MminPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.MminPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
-            this.MminPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.MminPrevious.Name = "MminPrevious";
-            this.MminPrevious.Size = new System.Drawing.Size(32, 32);
-            this.MminPrevious.Text = "toolStripSplitButton1";
-            this.MminPrevious.Click += new System.EventHandler(this.MminPrevious_Click);
-            this.MminPrevious.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseDown);
-            this.MminPrevious.MouseLeave += new System.EventHandler(this.PreviousMouseLeave);
-            this.MminPrevious.MouseHover += new System.EventHandler(this.PreviousMouseHover);
-            this.MminPrevious.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseMove);
-            // 
-            // MminNext
-            // 
-            this.MminNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.MminNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
-            this.MminNext.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.MminNext.Name = "MminNext";
-            this.MminNext.Size = new System.Drawing.Size(32, 32);
-            this.MminNext.Text = "toolStripSplitButton2";
-            this.MminNext.Click += new System.EventHandler(this.MminNext_Click);
-            this.MminNext.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NextMouseDown);
-            this.MminNext.MouseLeave += new System.EventHandler(this.NextMouseLeave);
-            this.MminNext.MouseHover += new System.EventHandler(this.NextMouseHover);
-            this.MminNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NextMouseMove);
-            // 
-            // TbPrevious
-            // 
-            this.TbPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.TbPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
-            this.TbPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.TbPrevious.Name = "TbPrevious";
-            this.TbPrevious.Size = new System.Drawing.Size(32, 32);
-            this.TbPrevious.Text = "toolStripSplitButton1";
-            this.TbPrevious.Click += new System.EventHandler(this.TbPrevious_Click);
-            this.TbPrevious.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseDown);
-            this.TbPrevious.MouseLeave += new System.EventHandler(this.PreviousMouseLeave);
-            this.TbPrevious.MouseHover += new System.EventHandler(this.PreviousMouseHover);
-            this.TbPrevious.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseMove);
-            // 
-            // TbNext
-            // 
-            this.TbNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.TbNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
-            this.TbNext.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.TbNext.Name = "TbNext";
-            this.TbNext.Size = new System.Drawing.Size(32, 32);
-            this.TbNext.Text = "toolStripSplitButton2";
-            this.TbNext.Click += new System.EventHandler(this.TbNext_Click);
-            this.TbNext.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NextMouseDown);
-            this.TbNext.MouseLeave += new System.EventHandler(this.NextMouseLeave);
-            this.TbNext.MouseHover += new System.EventHandler(this.NextMouseHover);
-            this.TbNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NextMouseMove);
-            // 
-            // TdPrevious
-            // 
-            this.TdPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.TdPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
-            this.TdPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.TdPrevious.Name = "TdPrevious";
-            this.TdPrevious.Size = new System.Drawing.Size(32, 32);
-            this.TdPrevious.Text = "toolStripSplitButton1";
-            this.TdPrevious.Click += new System.EventHandler(this.TdPrevious_Click);
-            this.TdPrevious.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseDown);
-            this.TdPrevious.MouseLeave += new System.EventHandler(this.PreviousMouseLeave);
-            this.TdPrevious.MouseHover += new System.EventHandler(this.PreviousMouseHover);
-            this.TdPrevious.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseMove);
-            // 
-            // TdNext
-            // 
-            this.TdNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.TdNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
-            this.TdNext.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.TdNext.Name = "TdNext";
-            this.TdNext.Size = new System.Drawing.Size(32, 32);
-            this.TdNext.Text = "toolStripSplitButton2";
-            this.TdNext.Click += new System.EventHandler(this.TdNext_Click);
-            this.TdNext.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NextMouseDown);
-            this.TdNext.MouseLeave += new System.EventHandler(this.NextMouseLeave);
-            this.TdNext.MouseHover += new System.EventHandler(this.NextMouseHover);
-            this.TdNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NextMouseMove);
-            // 
-            // HPrevious
-            // 
-            this.HPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.HPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
-            this.HPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.HPrevious.Name = "HPrevious";
-            this.HPrevious.Size = new System.Drawing.Size(32, 32);
-            this.HPrevious.Text = "toolStripSplitButton1";
-            this.HPrevious.Click += new System.EventHandler(this.HPrevious_Click);
-            this.HPrevious.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseDown);
-            this.HPrevious.MouseLeave += new System.EventHandler(this.PreviousMouseLeave);
-            this.HPrevious.MouseHover += new System.EventHandler(this.PreviousMouseHover);
-            this.HPrevious.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseMove);
-            // 
-            // HNext
-            // 
-            this.HNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.HNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
-            this.HNext.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.HNext.Name = "HNext";
-            this.HNext.Size = new System.Drawing.Size(32, 32);
-            this.HNext.Text = "toolStripSplitButton2";
-            this.HNext.Click += new System.EventHandler(this.HNext_Click);
-            this.HNext.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NextMouseDown);
-            this.HNext.MouseLeave += new System.EventHandler(this.NextMouseLeave);
-            this.HNext.MouseHover += new System.EventHandler(this.NextMouseHover);
-            this.HNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NextMouseMove);
-            // 
-            // QabPrevious
-            // 
-            this.QabPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.QabPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
-            this.QabPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.QabPrevious.Name = "QabPrevious";
-            this.QabPrevious.Size = new System.Drawing.Size(32, 32);
-            this.QabPrevious.Text = "toolStripSplitButton1";
-            this.QabPrevious.Click += new System.EventHandler(this.QabPrevious_Click);
-            this.QabPrevious.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseDown);
-            this.QabPrevious.MouseLeave += new System.EventHandler(this.PreviousMouseLeave);
-            this.QabPrevious.MouseHover += new System.EventHandler(this.PreviousMouseHover);
-            this.QabPrevious.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseMove);
-            // 
-            // QabNext
-            // 
-            this.QabNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.QabNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
-            this.QabNext.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.QabNext.Name = "QabNext";
-            this.QabNext.Size = new System.Drawing.Size(32, 32);
-            this.QabNext.Text = "toolStripSplitButton2";
-            this.QabNext.Click += new System.EventHandler(this.QabNext_Click);
-            this.QabNext.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NextMouseDown);
-            this.QabNext.MouseLeave += new System.EventHandler(this.NextMouseLeave);
-            this.QabNext.MouseHover += new System.EventHandler(this.NextMouseHover);
-            this.QabNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NextMouseMove);
-            // 
-            // QbcPrevious
-            // 
-            this.QbcPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.QbcPrevious.Image = global::Governing_Equations.Properties.Resources.left_arrow;
-            this.QbcPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.QbcPrevious.Name = "QbcPrevious";
-            this.QbcPrevious.Size = new System.Drawing.Size(32, 32);
-            this.QbcPrevious.Text = "toolStripSplitButton1";
-            this.QbcPrevious.Click += new System.EventHandler(this.QbcPrevious_Click);
-            this.QbcPrevious.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseDown);
-            this.QbcPrevious.MouseLeave += new System.EventHandler(this.PreviousMouseLeave);
-            this.QbcPrevious.MouseHover += new System.EventHandler(this.PreviousMouseHover);
-            this.QbcPrevious.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PreviousMouseMove);
-            // 
-            // QbcNext
-            // 
-            this.QbcNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.QbcNext.Image = global::Governing_Equations.Properties.Resources.right_arrow;
-            this.QbcNext.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.QbcNext.Name = "QbcNext";
-            this.QbcNext.Size = new System.Drawing.Size(32, 32);
-            this.QbcNext.Text = "toolStripSplitButton2";
-            this.QbcNext.Click += new System.EventHandler(this.QbcNext_Click);
-            this.QbcNext.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NextMouseDown);
-            this.QbcNext.MouseLeave += new System.EventHandler(this.NextMouseLeave);
-            this.QbcNext.MouseHover += new System.EventHandler(this.NextMouseHover);
-            this.QbcNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NextMouseMove);
-            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -1565,10 +1565,10 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupTaVariationValue)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupTcVariationValue)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupTevapVariationValue)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupFloatRoundValue)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -1624,13 +1624,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtM0Value;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtNValue;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtKValue;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTsatValue;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TabControl tabControl1;
@@ -1642,32 +1642,32 @@
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.TabPage tabPage8;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtTaStartValue;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtTcStartValue;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtTaEndValue;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtTcEndValue;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txtRValue;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtCPrValue;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtCPAdValue;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox txtTevapEndValue;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox txtTevapStartValue;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown nupFloatRoundValue;
+        private System.Windows.Forms.NumericUpDown nupTaVariationValue;
+        private System.Windows.Forms.NumericUpDown nupTcVariationValue;
+        private System.Windows.Forms.NumericUpDown nupTevapVariationValue;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
