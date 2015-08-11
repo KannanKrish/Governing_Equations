@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Governing_Equations
@@ -18,12 +20,7 @@ namespace Governing_Equations
         {
             InitializeComponent();
         }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            load_Values();
-            TestQueries();
-        }
-        private void TestQueries()
+        private void Calculate()
         {
             Calculations.MxCalculation(parameters.Tsat, parameters.K_value, parameters.n_value, parameters.M0_value, parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance);
             Calculations.MminCalculation(parameters.Tsat, parameters.K_value, parameters.n_value, parameters.M0_value, parameters.Tc_Starting, parameters.Tc_Ending, parameters.Tc_Variance);
@@ -33,27 +30,7 @@ namespace Governing_Equations
             Calculations.QabCalculation(parameters.CPAd_Values, parameters.CPr_Values, parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance);
             Calculations.QbcCalculation(parameters.CPAd_Values, parameters.CPr_Values, parameters.Tc_Starting, parameters.Tc_Ending, parameters.Tc_Variance);
         }
-        private void load_Values()
-        {
-            parameters = Parameters.readParameters("settings.xml");
-            parameters.CPAd_Values = Convert.ToDouble(txtCPAdValue.Text);
-            parameters.CPr_Values = Convert.ToDouble(txtCPrValue.Text);
-            parameters.K_value = Convert.ToDouble(txtKValue.Text);
-            parameters.M0_value = Convert.ToDouble(txtM0Value.Text);
-            parameters.n_value = Convert.ToDouble(txtNValue.Text);
-            parameters.R_Values = Convert.ToDouble(txtRValue.Text);
-            parameters.Ta_Ending = Convert.ToDouble(txtTaEndValue.Text);
-            parameters.Ta_Starting = Convert.ToDouble(txtTaStartValue.Text);
-            parameters.Ta_Variance = (double)nupTaVariationValue.Value;
-            parameters.Tc_Ending = Convert.ToDouble(txtTcEndValue.Text);
-            parameters.Tc_Starting = Convert.ToDouble(txtTcStartValue.Text);
-            parameters.Tc_Variance = (double)nupTcVariationValue.Value;
-            parameters.Tevap_Ending = Convert.ToDouble(txtTevapEndValue.Text);
-            parameters.Tevap_Starting = Convert.ToDouble(txtTevapStartValue.Text);
-            parameters.Tevap_Variance = (double)nupTevapVariationValue.Value;
-            Parameters.Round_Decimal = (int)nupFloatRoundValue.Value;
-            load_into_Controls();
-        }
+
         private void load_into_Controls()
         {
             txtCPAdValue.Text = parameters.CPAd_Values.ToString();
@@ -377,6 +354,40 @@ namespace Governing_Equations
                 default:
                     break;
             }
+        }
+
+        private void btnCalculate_Click(object sender, EventArgs e)
+        {
+            Calculate();
+        }
+
+        private void btnLoad_Click(object sender, EventArgs e)
+        {
+            parameters = Parameters.readParameters("settings.xml");
+            load_into_Controls();
+            MessageBox.Show("Settings are loaded", "Loaded", MessageBoxButtons.OK);
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            parameters.CPAd_Values = Convert.ToDouble(txtCPAdValue.Text);
+            parameters.CPr_Values = Convert.ToDouble(txtCPrValue.Text);
+            parameters.K_value = Convert.ToDouble(txtKValue.Text);
+            parameters.M0_value = Convert.ToDouble(txtM0Value.Text);
+            parameters.n_value = Convert.ToDouble(txtNValue.Text);
+            parameters.R_Values = Convert.ToDouble(txtRValue.Text);
+            parameters.Ta_Ending = Convert.ToDouble(txtTaEndValue.Text);
+            parameters.Ta_Starting = Convert.ToDouble(txtTaStartValue.Text);
+            parameters.Ta_Variance = (double)nupTaVariationValue.Value;
+            parameters.Tc_Ending = Convert.ToDouble(txtTcEndValue.Text);
+            parameters.Tc_Starting = Convert.ToDouble(txtTcStartValue.Text);
+            parameters.Tc_Variance = (double)nupTcVariationValue.Value;
+            parameters.Tevap_Ending = Convert.ToDouble(txtTevapEndValue.Text);
+            parameters.Tevap_Starting = Convert.ToDouble(txtTevapStartValue.Text);
+            parameters.Tevap_Variance = (double)nupTevapVariationValue.Value;
+            Parameters.Round_Decimal = (int)nupFloatRoundValue.Value;
+            Parameters.writeParameters("settings.xml", parameters);
+            MessageBox.Show("Settings are saved", "Saved", MessageBoxButtons.OK);
         }
     }
 }

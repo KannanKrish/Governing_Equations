@@ -48,7 +48,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtNValue = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnLoad = new System.Windows.Forms.Button();
             this.txtKValue = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -96,6 +96,7 @@
             this.statusStrip3 = new System.Windows.Forms.StatusStrip();
             this.TbPrevious = new System.Windows.Forms.ToolStripStatusLabel();
             this.TbNext = new System.Windows.Forms.ToolStripStatusLabel();
+            this.TbRowCountStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.pickTbValueDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -106,6 +107,7 @@
             this.statusStrip4 = new System.Windows.Forms.StatusStrip();
             this.TdPrevious = new System.Windows.Forms.ToolStripStatusLabel();
             this.TdNext = new System.Windows.Forms.ToolStripStatusLabel();
+            this.TdRowCountStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.pickTdValueDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -117,6 +119,7 @@
             this.statusStrip5 = new System.Windows.Forms.StatusStrip();
             this.HPrevious = new System.Windows.Forms.ToolStripStatusLabel();
             this.HNext = new System.Windows.Forms.ToolStripStatusLabel();
+            this.HRowCountStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.pickHValueDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -127,6 +130,7 @@
             this.statusStrip6 = new System.Windows.Forms.StatusStrip();
             this.QabPrevious = new System.Windows.Forms.ToolStripStatusLabel();
             this.QabNext = new System.Windows.Forms.ToolStripStatusLabel();
+            this.QabRowCountStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.pickQabValueDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -138,6 +142,7 @@
             this.statusStrip7 = new System.Windows.Forms.StatusStrip();
             this.QbcPrevious = new System.Windows.Forms.ToolStripStatusLabel();
             this.QbcNext = new System.Windows.Forms.ToolStripStatusLabel();
+            this.QbcRowCountStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.pickQbcValueDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -170,11 +175,8 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.TbRowCountStatus = new System.Windows.Forms.ToolStripStatusLabel();
-            this.TdRowCountStatus = new System.Windows.Forms.ToolStripStatusLabel();
-            this.HRowCountStatus = new System.Windows.Forms.ToolStripStatusLabel();
-            this.QabRowCountStatus = new System.Windows.Forms.ToolStripStatusLabel();
-            this.QbcRowCountStatus = new System.Windows.Forms.ToolStripStatusLabel();
+            this.btnCalculate = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nupTaVariationValue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nupTcVariationValue)).BeginInit();
@@ -251,7 +253,9 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.txtNValue);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnCalculate);
+            this.groupBox1.Controls.Add(this.btnSave);
+            this.groupBox1.Controls.Add(this.btnLoad);
             this.groupBox1.Controls.Add(this.txtKValue);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label18);
@@ -438,15 +442,15 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "n";
             // 
-            // button1
+            // btnLoad
             // 
-            this.button1.Location = new System.Drawing.Point(287, 261);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Load";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnLoad.Location = new System.Drawing.Point(206, 261);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(75, 23);
+            this.btnLoad.TabIndex = 3;
+            this.btnLoad.Text = "Load";
+            this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // txtKValue
             // 
@@ -919,6 +923,14 @@
             this.TbNext.MouseHover += new System.EventHandler(this.NextMouseHover);
             this.TbNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NextMouseMove);
             // 
+            // TbRowCountStatus
+            // 
+            this.TbRowCountStatus.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.TbRowCountStatus.ForeColor = System.Drawing.Color.Maroon;
+            this.TbRowCountStatus.Name = "TbRowCountStatus";
+            this.TbRowCountStatus.Size = new System.Drawing.Size(113, 32);
+            this.TbRowCountStatus.Text = "Tb Row Count : ";
+            // 
             // pickTbValueDataGridView
             // 
             this.pickTbValueDataGridView.AllowUserToAddRows = false;
@@ -1026,6 +1038,14 @@
             this.TdNext.MouseLeave += new System.EventHandler(this.NextMouseLeave);
             this.TdNext.MouseHover += new System.EventHandler(this.NextMouseHover);
             this.TdNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NextMouseMove);
+            // 
+            // TdRowCountStatus
+            // 
+            this.TdRowCountStatus.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.TdRowCountStatus.ForeColor = System.Drawing.Color.Maroon;
+            this.TdRowCountStatus.Name = "TdRowCountStatus";
+            this.TdRowCountStatus.Size = new System.Drawing.Size(112, 32);
+            this.TdRowCountStatus.Text = "Td Row Count : ";
             // 
             // pickTdValueDataGridView
             // 
@@ -1143,6 +1163,14 @@
             this.HNext.MouseHover += new System.EventHandler(this.NextMouseHover);
             this.HNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NextMouseMove);
             // 
+            // HRowCountStatus
+            // 
+            this.HRowCountStatus.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.HRowCountStatus.ForeColor = System.Drawing.Color.Maroon;
+            this.HRowCountStatus.Name = "HRowCountStatus";
+            this.HRowCountStatus.Size = new System.Drawing.Size(107, 32);
+            this.HRowCountStatus.Text = "H Row Count : ";
+            // 
             // pickHValueDataGridView
             // 
             this.pickHValueDataGridView.AllowUserToAddRows = false;
@@ -1250,6 +1278,14 @@
             this.QabNext.MouseLeave += new System.EventHandler(this.NextMouseLeave);
             this.QabNext.MouseHover += new System.EventHandler(this.NextMouseHover);
             this.QabNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NextMouseMove);
+            // 
+            // QabRowCountStatus
+            // 
+            this.QabRowCountStatus.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.QabRowCountStatus.ForeColor = System.Drawing.Color.Maroon;
+            this.QabRowCountStatus.Name = "QabRowCountStatus";
+            this.QabRowCountStatus.Size = new System.Drawing.Size(124, 32);
+            this.QabRowCountStatus.Text = "Qab Row Count : ";
             // 
             // pickQabValueDataGridView
             // 
@@ -1367,6 +1403,14 @@
             this.QbcNext.MouseLeave += new System.EventHandler(this.NextMouseLeave);
             this.QbcNext.MouseHover += new System.EventHandler(this.NextMouseHover);
             this.QbcNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NextMouseMove);
+            // 
+            // QbcRowCountStatus
+            // 
+            this.QbcRowCountStatus.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.QbcRowCountStatus.ForeColor = System.Drawing.Color.Maroon;
+            this.QbcRowCountStatus.Name = "QbcRowCountStatus";
+            this.QbcRowCountStatus.Size = new System.Drawing.Size(123, 32);
+            this.QbcRowCountStatus.Text = "Qbc Row Count : ";
             // 
             // pickQbcValueDataGridView
             // 
@@ -1586,45 +1630,25 @@
             this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
-            // TbRowCountStatus
+            // btnCalculate
             // 
-            this.TbRowCountStatus.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.TbRowCountStatus.ForeColor = System.Drawing.Color.Maroon;
-            this.TbRowCountStatus.Name = "TbRowCountStatus";
-            this.TbRowCountStatus.Size = new System.Drawing.Size(113, 32);
-            this.TbRowCountStatus.Text = "Tb Row Count : ";
+            this.btnCalculate.Location = new System.Drawing.Point(287, 261);
+            this.btnCalculate.Name = "btnCalculate";
+            this.btnCalculate.Size = new System.Drawing.Size(75, 23);
+            this.btnCalculate.TabIndex = 3;
+            this.btnCalculate.Text = "Calculate";
+            this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
-            // TdRowCountStatus
+            // btnSave
             // 
-            this.TdRowCountStatus.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.TdRowCountStatus.ForeColor = System.Drawing.Color.Maroon;
-            this.TdRowCountStatus.Name = "TdRowCountStatus";
-            this.TdRowCountStatus.Size = new System.Drawing.Size(112, 32);
-            this.TdRowCountStatus.Text = "Td Row Count : ";
-            // 
-            // HRowCountStatus
-            // 
-            this.HRowCountStatus.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.HRowCountStatus.ForeColor = System.Drawing.Color.Maroon;
-            this.HRowCountStatus.Name = "HRowCountStatus";
-            this.HRowCountStatus.Size = new System.Drawing.Size(107, 32);
-            this.HRowCountStatus.Text = "H Row Count : ";
-            // 
-            // QabRowCountStatus
-            // 
-            this.QabRowCountStatus.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.QabRowCountStatus.ForeColor = System.Drawing.Color.Maroon;
-            this.QabRowCountStatus.Name = "QabRowCountStatus";
-            this.QabRowCountStatus.Size = new System.Drawing.Size(124, 32);
-            this.QabRowCountStatus.Text = "Qab Row Count : ";
-            // 
-            // QbcRowCountStatus
-            // 
-            this.QbcRowCountStatus.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.QbcRowCountStatus.ForeColor = System.Drawing.Color.Maroon;
-            this.QbcRowCountStatus.Name = "QbcRowCountStatus";
-            this.QbcRowCountStatus.Size = new System.Drawing.Size(123, 32);
-            this.QbcRowCountStatus.Text = "Qbc Row Count : ";
+            this.btnSave.Location = new System.Drawing.Point(125, 261);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 3;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // MainForm
             // 
@@ -1704,7 +1728,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtTsatValue;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLoad;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
@@ -1838,6 +1862,8 @@
         private System.Windows.Forms.ToolStripStatusLabel HRowCountStatus;
         private System.Windows.Forms.ToolStripStatusLabel QabRowCountStatus;
         private System.Windows.Forms.ToolStripStatusLabel QbcRowCountStatus;
+        private System.Windows.Forms.Button btnCalculate;
+        private System.Windows.Forms.Button btnSave;
     }
 }
 
