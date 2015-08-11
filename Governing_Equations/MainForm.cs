@@ -347,5 +347,36 @@ namespace Governing_Equations
                     break;
             }
         }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AppData.DatabaseDataSetTableAdapters.QueriesTableAdapter query = new AppData.DatabaseDataSetTableAdapters.QueriesTableAdapter();
+            switch (tabControl1.SelectedTab.Text)
+            {
+                case "Mx Result":
+                    MxRowCountStatus.Text = "Mx Total Rows : " + query.pickMxCount();
+                    break;
+                case "Mmin Result":
+                    MminRowCountStatus.Text = "Mmin Total Rows : " + query.pickMminCount();
+                    break;
+                case "Tb Result":
+                    TbRowCountStatus.Text = "Tb Total Rows : " + query.pickTbCount();
+                    break;
+                case "Td Result":
+                    TdRowCountStatus.Text = "Td Total Rows : " + query.pickTdCount();
+                    break;
+                case "H Result":
+                    HRowCountStatus.Text = "H Total Rows : " + query.pickHCount();
+                    break;
+                case "Qab Result":
+                    QabRowCountStatus.Text = "Qab Total Rows : " + query.pickQabCount();
+                    break;
+                case "Qbc Result":
+                    QbcRowCountStatus.Text = "Qbc Total Rows : " + query.pickQbcCount();
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }

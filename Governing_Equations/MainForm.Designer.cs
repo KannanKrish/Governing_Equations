@@ -75,6 +75,7 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.MxPrevious = new System.Windows.Forms.ToolStripStatusLabel();
             this.MxNext = new System.Windows.Forms.ToolStripStatusLabel();
+            this.MxRowCountStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.pickMxValueDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -85,6 +86,7 @@
             this.statusStrip2 = new System.Windows.Forms.StatusStrip();
             this.MminPrevious = new System.Windows.Forms.ToolStripStatusLabel();
             this.MminNext = new System.Windows.Forms.ToolStripStatusLabel();
+            this.MminRowCountStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.pickMminValueDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -168,6 +170,11 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.TbRowCountStatus = new System.Windows.Forms.ToolStripStatusLabel();
+            this.TdRowCountStatus = new System.Windows.Forms.ToolStripStatusLabel();
+            this.HRowCountStatus = new System.Windows.Forms.ToolStripStatusLabel();
+            this.QabRowCountStatus = new System.Windows.Forms.ToolStripStatusLabel();
+            this.QbcRowCountStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nupTaVariationValue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nupTcVariationValue)).BeginInit();
@@ -614,6 +621,7 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(664, 403);
             this.tabControl1.TabIndex = 5;
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // tabPage1
             // 
@@ -654,7 +662,8 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MxPrevious,
-            this.MxNext});
+            this.MxNext,
+            this.MxRowCountStatus});
             this.statusStrip1.Location = new System.Drawing.Point(3, 337);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(650, 37);
@@ -688,6 +697,14 @@
             this.MxNext.MouseLeave += new System.EventHandler(this.NextMouseLeave);
             this.MxNext.MouseHover += new System.EventHandler(this.NextMouseHover);
             this.MxNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NextMouseMove);
+            // 
+            // MxRowCountStatus
+            // 
+            this.MxRowCountStatus.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.MxRowCountStatus.ForeColor = System.Drawing.Color.Maroon;
+            this.MxRowCountStatus.Name = "MxRowCountStatus";
+            this.MxRowCountStatus.Size = new System.Drawing.Size(116, 32);
+            this.MxRowCountStatus.Text = "Mx Row Count : ";
             // 
             // pickMxValueDataGridView
             // 
@@ -758,7 +775,8 @@
             this.statusStrip2.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.statusStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MminPrevious,
-            this.MminNext});
+            this.MminNext,
+            this.MminRowCountStatus});
             this.statusStrip2.Location = new System.Drawing.Point(3, 337);
             this.statusStrip2.Name = "statusStrip2";
             this.statusStrip2.Size = new System.Drawing.Size(650, 37);
@@ -792,6 +810,14 @@
             this.MminNext.MouseLeave += new System.EventHandler(this.NextMouseLeave);
             this.MminNext.MouseHover += new System.EventHandler(this.NextMouseHover);
             this.MminNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NextMouseMove);
+            // 
+            // MminRowCountStatus
+            // 
+            this.MminRowCountStatus.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.MminRowCountStatus.ForeColor = System.Drawing.Color.Maroon;
+            this.MminRowCountStatus.Name = "MminRowCountStatus";
+            this.MminRowCountStatus.Size = new System.Drawing.Size(134, 32);
+            this.MminRowCountStatus.Text = "Mmin Row Count : ";
             // 
             // pickMminValueDataGridView
             // 
@@ -857,7 +883,8 @@
             this.statusStrip3.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.statusStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TbPrevious,
-            this.TbNext});
+            this.TbNext,
+            this.TbRowCountStatus});
             this.statusStrip3.Location = new System.Drawing.Point(3, 337);
             this.statusStrip3.Name = "statusStrip3";
             this.statusStrip3.Size = new System.Drawing.Size(650, 37);
@@ -964,7 +991,8 @@
             this.statusStrip4.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.statusStrip4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TdPrevious,
-            this.TdNext});
+            this.TdNext,
+            this.TdRowCountStatus});
             this.statusStrip4.Location = new System.Drawing.Point(3, 337);
             this.statusStrip4.Name = "statusStrip4";
             this.statusStrip4.Size = new System.Drawing.Size(650, 37);
@@ -1079,7 +1107,8 @@
             this.statusStrip5.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.statusStrip5.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.HPrevious,
-            this.HNext});
+            this.HNext,
+            this.HRowCountStatus});
             this.statusStrip5.Location = new System.Drawing.Point(3, 337);
             this.statusStrip5.Name = "statusStrip5";
             this.statusStrip5.Size = new System.Drawing.Size(650, 37);
@@ -1186,7 +1215,8 @@
             this.statusStrip6.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.statusStrip6.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.QabPrevious,
-            this.QabNext});
+            this.QabNext,
+            this.QabRowCountStatus});
             this.statusStrip6.Location = new System.Drawing.Point(3, 337);
             this.statusStrip6.Name = "statusStrip6";
             this.statusStrip6.Size = new System.Drawing.Size(650, 37);
@@ -1302,7 +1332,8 @@
             this.statusStrip7.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.statusStrip7.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.QbcPrevious,
-            this.QbcNext});
+            this.QbcNext,
+            this.QbcRowCountStatus});
             this.statusStrip7.Location = new System.Drawing.Point(3, 337);
             this.statusStrip7.Name = "statusStrip7";
             this.statusStrip7.Size = new System.Drawing.Size(650, 37);
@@ -1555,6 +1586,46 @@
             this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
+            // TbRowCountStatus
+            // 
+            this.TbRowCountStatus.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.TbRowCountStatus.ForeColor = System.Drawing.Color.Maroon;
+            this.TbRowCountStatus.Name = "TbRowCountStatus";
+            this.TbRowCountStatus.Size = new System.Drawing.Size(113, 32);
+            this.TbRowCountStatus.Text = "Tb Row Count : ";
+            // 
+            // TdRowCountStatus
+            // 
+            this.TdRowCountStatus.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.TdRowCountStatus.ForeColor = System.Drawing.Color.Maroon;
+            this.TdRowCountStatus.Name = "TdRowCountStatus";
+            this.TdRowCountStatus.Size = new System.Drawing.Size(112, 32);
+            this.TdRowCountStatus.Text = "Td Row Count : ";
+            // 
+            // HRowCountStatus
+            // 
+            this.HRowCountStatus.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.HRowCountStatus.ForeColor = System.Drawing.Color.Maroon;
+            this.HRowCountStatus.Name = "HRowCountStatus";
+            this.HRowCountStatus.Size = new System.Drawing.Size(107, 32);
+            this.HRowCountStatus.Text = "H Row Count : ";
+            // 
+            // QabRowCountStatus
+            // 
+            this.QabRowCountStatus.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.QabRowCountStatus.ForeColor = System.Drawing.Color.Maroon;
+            this.QabRowCountStatus.Name = "QabRowCountStatus";
+            this.QabRowCountStatus.Size = new System.Drawing.Size(124, 32);
+            this.QabRowCountStatus.Text = "Qab Row Count : ";
+            // 
+            // QbcRowCountStatus
+            // 
+            this.QbcRowCountStatus.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.QbcRowCountStatus.ForeColor = System.Drawing.Color.Maroon;
+            this.QbcRowCountStatus.Name = "QbcRowCountStatus";
+            this.QbcRowCountStatus.Size = new System.Drawing.Size(123, 32);
+            this.QbcRowCountStatus.Text = "Qbc Row Count : ";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1760,6 +1831,13 @@
         private System.Windows.Forms.ToolStripStatusLabel QabNext;
         private System.Windows.Forms.ToolStripStatusLabel QbcPrevious;
         private System.Windows.Forms.ToolStripStatusLabel QbcNext;
+        private System.Windows.Forms.ToolStripStatusLabel MxRowCountStatus;
+        private System.Windows.Forms.ToolStripStatusLabel MminRowCountStatus;
+        private System.Windows.Forms.ToolStripStatusLabel TbRowCountStatus;
+        private System.Windows.Forms.ToolStripStatusLabel TdRowCountStatus;
+        private System.Windows.Forms.ToolStripStatusLabel HRowCountStatus;
+        private System.Windows.Forms.ToolStripStatusLabel QabRowCountStatus;
+        private System.Windows.Forms.ToolStripStatusLabel QbcRowCountStatus;
     }
 }
 
