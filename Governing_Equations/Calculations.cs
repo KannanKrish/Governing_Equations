@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
-using System.IO;
-using System.Linq;
-using System.Text;
 
 namespace Governing_Equations
 {
@@ -65,8 +61,7 @@ namespace Governing_Equations
                     foreach (DataRow mxResult in Mx_Result.GetData().Rows)
                         foreach (DataRow mminValue in Mmin_Result.GetData().Rows)
                             foreach (DataRow hResult in H_Result.GetData().Rows)
-                                query.InsertQbcValue(i, Convert.ToDouble(tbValue.ItemArray[0]), Convert.ToDouble(mxResult.ItemArray[0]), Convert.ToDouble(hResult.ItemArray[0]), Convert.ToDouble(mminValue.ItemArray[0]), Math.Round(Calculations.Integration(Convert.ToDouble(tbValue.ItemArray[0]), i, CPAd + Convert.ToDouble(mxResult.ItemArray[0]) * CPr) + Calculations.Integration(Convert.ToDouble(mminValue.ItemArray[0]), Convert.ToDouble(mxResult.ItemArray[0]), Convert.ToDouble(hResult.ItemArray[0])), Parameters.Round_Decimal));
-
+                                query.InsertQbcValue(Convert.ToDouble(tbValue.ItemArray[0]), i, Convert.ToDouble(mxResult.ItemArray[0]), Convert.ToDouble(mminValue.ItemArray[0]), Convert.ToDouble(hResult.ItemArray[0]), Math.Round(Calculations.Integration(Convert.ToDouble(tbValue.ItemArray[0]), i, CPAd + Convert.ToDouble(mxResult.ItemArray[0]) * CPr) + Calculations.Integration(Convert.ToDouble(mminValue.ItemArray[0]), Convert.ToDouble(mxResult.ItemArray[0]), Convert.ToDouble(hResult.ItemArray[0])), Parameters.Round_Decimal));
         }
     }
 }

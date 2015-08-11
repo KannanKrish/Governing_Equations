@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Data;
 using System.Windows.Forms;
 
 namespace Governing_Equations
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         Parameters parameters = new Parameters();
         int HValueIndex = 1;
@@ -15,32 +14,45 @@ namespace Governing_Equations
         int TbValueIndex = 1;
         int TdValueIndex = 1;
         int loadAmount = 19;
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            //save_Values();
-            //Test_Function();
             load_Values();
             TestQueries();
         }
         private void TestQueries()
         {
             Calculations.MxCalculation(parameters.Tsat, parameters.K_value, parameters.n_value, parameters.M0_value, parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance);
-            //Calculations.MminCalculation(parameters.Tsat, parameters.K_value, parameters.n_value, parameters.M0_value, parameters.Tc_Starting, parameters.Tc_Ending, parameters.Tc_Variance);
-            //Calculations.TbCalculation(parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance, parameters.Tevap_Starting, parameters.Tevap_Ending, parameters.Tevap_Variance);
-            //Calculations.TdCalculation(parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance, parameters.Tc_Starting, parameters.Tc_Ending, parameters.Tc_Variance);
-            //Calculations.HCalculation(parameters.R_Values, parameters.CPAd_Values, parameters.CPr_Values, parameters.Tc_Starting, parameters.Tc_Ending, parameters.Tc_Variance, parameters.Tsat);
-            //Calculations.QabCalculation(parameters.CPAd_Values, parameters.CPr_Values, parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance);
-            //Calculations.QbcCalculation(parameters.CPAd_Values, parameters.CPr_Values, parameters.Tc_Starting, parameters.Tc_Ending, parameters.Tc_Variance);
+            Calculations.MminCalculation(parameters.Tsat, parameters.K_value, parameters.n_value, parameters.M0_value, parameters.Tc_Starting, parameters.Tc_Ending, parameters.Tc_Variance);
+            Calculations.TbCalculation(parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance, parameters.Tevap_Starting, parameters.Tevap_Ending, parameters.Tevap_Variance);
+            Calculations.TdCalculation(parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance, parameters.Tc_Starting, parameters.Tc_Ending, parameters.Tc_Variance);
+            Calculations.HCalculation(parameters.R_Values, parameters.CPAd_Values, parameters.CPr_Values, parameters.Tc_Starting, parameters.Tc_Ending, parameters.Tc_Variance, parameters.Tsat);
+            Calculations.QabCalculation(parameters.CPAd_Values, parameters.CPr_Values, parameters.Ta_Starting, parameters.Ta_Ending, parameters.Ta_Variance);
+            Calculations.QbcCalculation(parameters.CPAd_Values, parameters.CPr_Values, parameters.Tc_Starting, parameters.Tc_Ending, parameters.Tc_Variance);
         }
         private void load_Values()
         {
             parameters = Parameters.readParameters("settings.xml");
+            parameters.CPAd_Values = Convert.ToDouble(txtCPAdValue.Text);
+            parameters.CPr_Values = Convert.ToDouble(txtCPrValue.Text);
+            parameters.K_value = Convert.ToDouble(txtKValue.Text);
+            parameters.M0_value = Convert.ToDouble(txtM0Value.Text);
+            parameters.n_value = Convert.ToDouble(txtNValue.Text);
+            parameters.R_Values = Convert.ToDouble(txtRValue.Text);
+            parameters.Ta_Ending = Convert.ToDouble(txtTaEndValue.Text);
+            parameters.Ta_Starting = Convert.ToDouble(txtTaStartValue.Text);
+            parameters.Ta_Variance = (double)nupTaVariationValue.Value;
+            parameters.Tc_Ending = Convert.ToDouble(txtTcEndValue.Text);
+            parameters.Tc_Starting = Convert.ToDouble(txtTcStartValue.Text);
+            parameters.Tc_Variance = (double)nupTcVariationValue.Value;
+            parameters.Tevap_Ending = Convert.ToDouble(txtTevapEndValue.Text);
+            parameters.Tevap_Starting = Convert.ToDouble(txtTevapStartValue.Text);
+            parameters.Tevap_Variance = (double)nupTevapVariationValue.Value;
+            Parameters.Round_Decimal = (int)nupFloatRoundValue.Value;
             load_into_Controls();
-            //MessageBox.Show(parameters.CPAd_Values.ToString());
         }
         private void load_into_Controls()
         {
@@ -62,53 +74,10 @@ namespace Governing_Equations
             nupTcVariationValue.Value = (decimal)parameters.Tc_Variance;
             nupTevapVariationValue.Value = (decimal)parameters.Tevap_Variance;
         }
-        private void save_Values()
-        {
-            //A.C-Methonal            
-            Parameters.Round_Decimal = 4;
-            parameters.Tsat = 290.9;
-            parameters.K_value = 17.19;
-            parameters.n_value = 1.66;
-            parameters.M0_value = 0.425;
-            parameters.Ta_Starting = 20 + 273;
-            parameters.Ta_Ending = 60 + 273;
-            parameters.Ta_Variance = 1;
-            parameters.Tc_Starting = 90 + 273;
-            parameters.Tc_Ending = 140 + 273;
-            parameters.Tc_Variance = 1;
-            parameters.Tevap_Starting = 0 + 273;
-            parameters.Tevap_Ending = 5 + 273;
-            parameters.Tevap_Variance = 1;
-            parameters.CPAd_Values = 0.711;
-            parameters.CPr_Values = 2.534;
-            parameters.R_Values = 0.287;
-            Parameters.writeParameters("settings.xml", parameters);
-
-            ////Zeolite Water
-            //parameters.Round_Decimal = 4;
-            //parameters.Tsat = 288.3;
-            //parameters.K_value = 10.21;
-            //parameters.n_value = 1.39;
-            //parameters.M0_value = 0.284;
-            //parameters.Ta_Starting = 20 + 273;
-            //parameters.Ta_Ending = 60 + 273;
-            //parameters.Ta_Variance = 1;
-            //parameters.Tc_Starting = 90 + 273;
-            //parameters.Tc_Ending = 140 + 273;
-            //parameters.Tc_Variance = 1;
-            //parameters.Tevap_Starting = 0 + 273;
-            //parameters.Tevap_Ending = 5 + 273;
-            //parameters.Tevap_Variance = 1;
-            //parameters.CPAd_Values = 0.711;
-            //parameters.CPr_Values = 2.534;
-            //parameters.R_Values = 0.287;
-            //Parameters.writeParameters("settings.xml", parameters);
-        }
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
-
         #region "Button Animation"
         private void PreviousMouseMove(object sender, MouseEventArgs e)
         {
@@ -327,6 +296,56 @@ namespace Governing_Equations
                 MessageBox.Show(ex.Message);
             }
         }
-        #endregion        
+        #endregion
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (comboBox1.SelectedItem.ToString())
+            {
+                case "A.C-Methonal":
+                    parameters.Tsat = 290.9;
+                    parameters.K_value = 17.19;
+                    parameters.n_value = 1.66;
+                    parameters.M0_value = 0.425;
+                    parameters.Ta_Starting = 20 + 273;
+                    parameters.Ta_Ending = 60 + 273;
+                    parameters.Ta_Variance = 1;
+                    parameters.Tc_Starting = 90 + 273;
+                    parameters.Tc_Ending = 140 + 273;
+                    parameters.Tc_Variance = 1;
+                    parameters.Tevap_Starting = 0 + 273;
+                    parameters.Tevap_Ending = 5 + 273;
+                    parameters.Tevap_Variance = 1;
+                    parameters.CPAd_Values = 0.711;
+                    parameters.CPr_Values = 2.534;
+                    parameters.R_Values = 0.287;
+                    Parameters.writeParameters("settings.xml", parameters);
+                    load_into_Controls();
+                    break;
+                case "Zeolite-Water":
+                    //Zeolite Water                    
+                    parameters.Tsat = 288.3;
+                    parameters.K_value = 10.21;
+                    parameters.n_value = 1.39;
+                    parameters.M0_value = 0.284;
+                    parameters.Ta_Starting = 20 + 273;
+                    parameters.Ta_Ending = 60 + 273;
+                    parameters.Ta_Variance = 1;
+                    parameters.Tc_Starting = 90 + 273;
+                    parameters.Tc_Ending = 140 + 273;
+                    parameters.Tc_Variance = 1;
+                    parameters.Tevap_Starting = 0 + 273;
+                    parameters.Tevap_Ending = 5 + 273;
+                    parameters.Tevap_Variance = 1;
+                    parameters.CPAd_Values = 0.711;
+                    parameters.CPr_Values = 2.534;
+                    parameters.R_Values = 0.287;
+                    Parameters.writeParameters("settings.xml", parameters);
+                    load_into_Controls();
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
+﻿using System.IO;
 using System.Xml.Serialization;
 
 namespace Governing_Equations
@@ -10,7 +6,7 @@ namespace Governing_Equations
     public class Parameters
     {
         [XmlIgnore]
-        public static int Round_Decimal { get; set; }
+        public static int Round_Decimal = 4;
         public double Tsat { get; set; }
         public double K_value { get; set; }
         public double n_value { get; set; }
@@ -29,14 +25,18 @@ namespace Governing_Equations
         public double R_Values { get; set; }
         public static Parameters readParameters(string filePath)
         {
+            StreamReader streamReader = new StreamReader(filePath);
             XmlSerializer xmlSerializer = new XmlSerializer(typeof(Parameters));
-            Parameters parameters = (Parameters)xmlSerializer.Deserialize(new StreamReader(filePath));
+            Parameters parameters = (Parameters)xmlSerializer.Deserialize(streamReader);
+            streamReader.Close();
             return parameters;
         }
         public static void writeParameters(string filePath, Parameters parameters)
         {
+            StreamWriter streamWriter = new StreamWriter(filePath);
             XmlSerializer xmlSerializer = new XmlSerializer(typeof(Parameters));
-            xmlSerializer.Serialize(new StreamWriter(filePath), parameters);
+            xmlSerializer.Serialize(streamWriter, parameters);
+            streamWriter.Close();
         }
     }
     public class Mx_Value
